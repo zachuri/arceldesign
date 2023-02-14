@@ -4,8 +4,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    // @ts-ignore
-    require('postcss-100vh-fix')
-  ],
+  plugins: ["postcss-100vh-fix"],
 };
