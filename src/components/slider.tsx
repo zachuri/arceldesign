@@ -70,10 +70,7 @@ const Slider = () => (
       {images.map((image) => {
         return (
           <SwiperSlide key={image.alt}>
-            <div
-              className="min-h-screen w-full overflow-hidden"
-              style={{ height: "30vh" }}
-            >
+            <div className="min-h-screen w-full overflow-hidden">
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -83,7 +80,7 @@ const Slider = () => (
               />
             </div>
 
-            <div className="fixed bottom-0 z-[100] mb-16 ml-10">
+            <div className="fixed bottom-0 z-[100] p-10">
               <div
                 style={{ letterSpacing: 10 }}
                 className="hidden bg-[#282928] p-2 font-light md:flex "
@@ -98,7 +95,7 @@ const Slider = () => (
             </div>
 
             {/* Smaller Screen */}
-            <div className="fixed bottom-0 -mb-1 w-full md:hidden">
+            <div className="fixed bottom-0 w-full md:hidden">
               <div
                 style={{ letterSpacing: 10 }}
                 className="bg-[#282928] font-light "
