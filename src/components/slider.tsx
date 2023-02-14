@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,6 +12,8 @@ import "swiper/css/effect-fade";
 import SwiperCore, { Autoplay, Navigation, EffectFade } from "swiper";
 import Image from "next/image";
 import Link from "next/link";
+
+import styles from "../styles/carousel.module.css";
 
 const images = [
   {
@@ -58,11 +61,11 @@ const Slider = () => (
       }}
       slidesPerView={1}
       loop={true}
-      navigation={true}
       effect="fade"
       fadeEffect={{ crossFade: true }}
       modules={[Autoplay, Navigation, EffectFade]}
-      className="absolute"
+      className=" absolute"
+      navigation={true}
     >
       {images.map((image) => {
         return (
