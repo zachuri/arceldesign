@@ -31,26 +31,29 @@ const images = [
     href: "/medical",
     type: "Medical",
   },
-  {
-    src: "/assets/home/home3.jpg",
-    alt: "home 3",
-    href: "/residential",
-    type: "Residential",
-  },
-  {
-    src: "/assets/home/home3.jpg",
-    alt: "home 3",
-    href: "/corporate",
-    type: "Corporate",
-  },
+  // {
+  //   src: "/assets/home/home3.jpg",
+  //   alt: "home 3",
+  //   href: "/residential",
+  //   type: "Residential",
+  // },
+  // {
+  //   src: "/assets/home/home3.jpg",
+  //   alt: "home 3",
+  //   href: "/corporate",
+  //   type: "Corporate",
+  // },
 ];
 
 const Slider = () => (
   <>
     <Swiper
-      style={{ "--swiper-navigation-color": "gray" }}
+      style={{
+        "--swiper-navigation-color": "gray",
+        "--swiper-navigation-size": "35px",
+      }}
       autoplay={{
-        delay: 5000,
+        delay: 2500,
         disableOnInteraction: false,
       }}
       slidesPerView={1}
@@ -73,14 +76,15 @@ const Slider = () => (
                 alt={image.alt}
                 fill
                 style={{ objectFit: "cover" }}
+                quality={100}
               />
             </div>
-            <div className="fixed bottom-0 z-[100] mb-20 ml-10">
+            <div className="fixed bottom-0 z-[100] mb-16 ml-10">
               <div
                 style={{ letterSpacing: 10 }}
                 className="bg-[#282928] p-2 font-light "
               >
-                <h2 className="px-2 text-2xl uppercase text-[#838383]">
+                <h2 className="px-2 text-xl uppercase text-[#838383]">
                   <Link href={image.href}>
                     Projects /{" "}
                     <span className="text-[#D8D7D4]">{image.type}</span>
