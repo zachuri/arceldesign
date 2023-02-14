@@ -64,13 +64,13 @@ const Slider = () => (
       effect="fade"
       fadeEffect={{ crossFade: true }}
       modules={[Autoplay, Navigation, EffectFade]}
-      className=" absolute"
+      className="absolute inset-0 h-screen"
       navigation={true}
     >
       {images.map((image) => {
         return (
           <SwiperSlide key={image.alt}>
-            <div className="h-screen w-full overflow-hidden">
+            <div className="w-full overflow-hidden">
               <Image
                 src={image.src}
                 alt={image.alt}
