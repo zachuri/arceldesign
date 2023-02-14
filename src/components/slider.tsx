@@ -79,12 +79,28 @@ const Slider = () => (
                 quality={100}
               />
             </div>
+
             <div className="fixed bottom-0 z-[100] mb-16 ml-10">
               <div
                 style={{ letterSpacing: 10 }}
-                className="bg-[#282928] p-2 font-light "
+                className="hidden bg-[#282928] p-2 font-light md:flex "
               >
                 <h2 className="px-2 text-xl uppercase text-[#838383]">
+                  <Link href={image.href}>
+                    Projects /{" "}
+                    <span className="text-[#D8D7D4]">{image.type}</span>
+                  </Link>
+                </h2>
+              </div>
+            </div>
+
+            {/* Smaller Screen */}
+            <div className="fixed bottom-0 -mb-1 w-full md:hidden">
+              <div
+                style={{ letterSpacing: 10 }}
+                className="bg-[#282928] font-light "
+              >
+                <h2 className="p-2 text-sm uppercase text-[#838383]">
                   <Link href={image.href}>
                     Projects /{" "}
                     <span className="text-[#D8D7D4]">{image.type}</span>
