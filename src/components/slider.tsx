@@ -69,7 +69,7 @@ const Slider = () => (
     >
       {images.map((image) => {
         return (
-          <SwiperSlide key={image.alt}>
+          <SwiperSlide key={image.alt} className="h-auto">
             <div className="w-full">
               <Image
                 src={image.src}
