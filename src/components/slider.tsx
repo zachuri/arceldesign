@@ -69,6 +69,7 @@ const Slider = () => (
       {images.map((image) => {
         return (
           <SwiperSlide key={image.alt}>
+            {/* Solution to safair h-screen*/}
             <div className="h-screen w-full">
               <Image
                 src={image.src}

@@ -17,6 +17,7 @@ body {
   height: 100%;
 }
 
+/* Solution for h-screen for safari */
 @supports (-webkit-touch-callout: none) {
   .h-screen {
     height: -webkit-fill-available;
