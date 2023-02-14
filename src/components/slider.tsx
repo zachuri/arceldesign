@@ -65,12 +65,11 @@ const Slider = () => (
       fadeEffect={{ crossFade: true }}
       modules={[Autoplay, Navigation, EffectFade]}
       navigation={true}
-      className="h-screen"
     >
       {images.map((image) => {
         return (
           <SwiperSlide key={image.alt}>
-            <div className="w-full">
+            <div className="h-screen w-full">
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -80,10 +79,10 @@ const Slider = () => (
               />
             </div>
 
-            <div className="fixed bottom-0 z-[100] p-10">
+            <div className="fixed bottom-0 z-[100] hidden p-10 md:flex">
               <div
                 style={{ letterSpacing: 10 }}
-                className="hidden bg-[#282928] p-2 font-light md:flex "
+                className="bg-[#282928] p-2 font-light"
               >
                 <h2 className="px-2 text-xl uppercase text-[#838383]">
                   <Link href={image.href}>
