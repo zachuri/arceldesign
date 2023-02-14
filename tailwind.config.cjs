@@ -4,5 +4,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: ["postcss-100vh-fix"],
+  plugins: [],
 };

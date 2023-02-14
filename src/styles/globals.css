@@ -12,7 +12,6 @@
     font-family: Proxima Nova Reg, Questrial, SF Pro Display, SF Pro Icons,
       Helvetica Neue, Helvetica, Arial, sans-serif;
 
-    height: 100vh;
   }
 }
 
@@ -21,6 +20,5 @@
   body {
     /* The hack for Safari */
     height: -webkit-fill-available;
-    min-height: 100vh;
   }
 }
