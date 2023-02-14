@@ -7,9 +7,16 @@
   src: url("../../public/assets/fonts/Proxima Nova Reg.ttf");
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 @layer base {
   body {
     font-family: Proxima Nova Reg, Questrial, SF Pro Display, SF Pro Icons,
       Helvetica Neue, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    -webkit-touch-callout: none;
   }
 }
