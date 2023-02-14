@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require("postcss-100vh-fix")  
+    // @ts-ignore
+    require('postcss-100vh-fix')
   ],
 };
