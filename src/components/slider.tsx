@@ -54,7 +54,6 @@ const Slider = () => (
       style={{
         "--swiper-navigation-color": "gray",
         "--swiper-navigation-size": "35px",
-        height: "100vh",
       }}
       autoplay={{
         delay: 2500,
@@ -66,6 +65,7 @@ const Slider = () => (
       fadeEffect={{ crossFade: true }}
       modules={[Autoplay, Navigation, EffectFade]}
       navigation={true}
+      className="h-screen"
     >
       {images.map((image) => {
         return (
