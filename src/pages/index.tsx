@@ -1,6 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
+import Masthead from "../components/masthead";
 import Navbar from "../components/navbar";
 
 const Home: NextPage = () => {
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="flex flex-col bg-white">hello</main>
+      <Masthead />
     </>
   );
 };
