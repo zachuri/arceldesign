@@ -64,7 +64,7 @@ const Slider = () => (
       effect="fade"
       fadeEffect={{ crossFade: true }}
       modules={[Autoplay, Navigation, EffectFade]}
-      className="absolute h-screen"
+      className="h-screen-ios absolute"
       navigation={true}
     >
       {images.map((image) => {
