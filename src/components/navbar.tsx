@@ -11,20 +11,26 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className="m-5 flex flex-row justify-between">
-      <div className="rounded-lg bg-[#282928] p-2">
-        <h1 className="text-4xl text-[#D8D7D4]">ARCELDESIGN, INC.</h1>
-        <p className="text-xl text-[#fff]">INTERIOR DESIGN + BUILD</p>
-      </div>
+    <div className="fixed top-0 z-[100] mt-10 w-full">
+      <div className="flex flex-row justify-between p-10">
+        <div className=" bg-[#282928] p-5 uppercase">
+          <h1 style={{ letterSpacing: 5 }} className="text-4xl text-[#D8D7D4]">
+            ArcelDesign, Inc.
+          </h1>
+          <p style={{ letterSpacing: 5 }} className="text-xl text-[#fff]">
+            Interior Design + Build
+          </p>
+        </div>
 
-      <div className="flex flex-wrap items-center">
-        {links.map((link) => (
-          <div key={link.name} className="p-4">
-            <Link href={link.href}>
-              <button>{link.name}</button>
-            </Link>
-          </div>
-        ))}
+        <div className="flex flex-wrap items-center">
+          {links.map((link) => (
+            <div key={link.name} className="p-4">
+              <Link href={link.href}>
+                <button>{link.name}</button>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
