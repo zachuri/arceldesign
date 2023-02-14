@@ -14,7 +14,7 @@ html {
 body {
   font-family: Proxima Nova Reg, Questrial, SF Pro Display, SF Pro Icons,
     Helvetica Neue, Helvetica, Arial, sans-serif;
-  height: 100%;
+  @apply bg-[#282928];
 }
 
 /* Solution for h-screen for safari */
