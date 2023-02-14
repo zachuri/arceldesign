@@ -10,10 +10,8 @@ const links = [
 ];
 
 const Navbar = () => {
-  const [showSidebar, setShowSidebar] = useState(false);
-
   return (
-    <div className="fixed top-0 z-[100] mt-10 w-full">
+    <div className="fixed top-0 z-[100] w-full">
       <div className="hidden flex-row-reverse p-10 md:flex">
         <div className="bg-[#282928] drop-shadow-lg">
           <div className="-pb-5 p-5 uppercase">
@@ -43,8 +41,8 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger */}
-      <div className="-mt-10 flex flex-row items-center justify-center bg-[#282928] px-10 md:hidden">
-        <div className="w-full  pt-5 drop-shadow-lg">
+      <div className="flex flex-row items-center justify-center bg-[#282928] px-10 md:hidden">
+        <div className="w-full pt-5 drop-shadow-lg">
           <div className="uppercase">
             <h1 style={{ letterSpacing: 5 }} className="text-xl text-[#fff]">
               ArcelDesign, Inc.
