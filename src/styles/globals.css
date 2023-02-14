@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Proxima Nova Reg";
+  src: url("../../public/assets/fonts/Proxima Nova Reg.ttf");
+}
+
+@layer base {
+  body {
+    font-family: Proxima Nova Reg, Questrial, SF Pro Display, SF Pro Icons,
+      Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}
