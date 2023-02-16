@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import HamburgerMenu from "./hamburger-menu";
 
 const links = [
@@ -11,16 +11,9 @@ const links = [
 ];
 
 const Navbar = () => {
-  // NOTE: could've put state in componenet
-  // wanted to learn how to pass state into other componeents!
-
-  const [nav, setNav] = useState<boolean>(false);
-
-  const handleNav = () => {
-    setNav(!nav);
-  };
 
   return (
+    // Navbar for Desktop Screens
     <div className="fixed top-0 z-[100] w-full">
       <div className="hidden flex-row-reverse p-10 md:flex">
         <div className="bg-[#282928] drop-shadow-lg">
@@ -50,8 +43,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Hamburger Menu */}
-      <HamburgerMenu nav={nav} handleNav={handleNav} links={links} />
+      {/* Hamburger Menu for smaller screens */}
+      <HamburgerMenu links={links} />
     </div>
   );
 };
