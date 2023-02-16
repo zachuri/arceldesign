@@ -62,7 +62,9 @@ const HamburgerMenu: React.FC<Props> = ({ links }) => {
             <div className="text-[#838383]">ArcelDesign, Inc.</div>
           </div>
           <div onClick={handleSidebar} className="m-5 p-5">
-            <CancelIcon />
+            <div className="rounded-xl border">
+              <CancelIcon />
+            </div>
           </div>
         </div>
       </div>
