@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import HamburgerMenu from "./hamburger-menu";
 
 const links = [
   { href: "/projects", name: "Projects" },
@@ -10,6 +11,12 @@ const links = [
 ];
 
 const Navbar = () => {
+  const [nav, setNav] = useState<boolean>(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
   return (
     <div className="fixed top-0 z-[100] w-full">
       <div className="hidden flex-row-reverse p-10 md:flex">
@@ -40,51 +47,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Hamburger */}
-      <div className="flex flex-row items-center justify-center bg-[#282928] px-10 md:hidden">
-        <div className="w-full pt-5 drop-shadow-lg">
-          <div className="uppercase">
-            <h1 style={{ letterSpacing: 5 }} className="text-xl text-[#fff]">
-              ArcelDesign, Inc.
-            </h1>
-            <p
-              style={{ letterSpacing: 5 }}
-              className="mb-5 text-xs text-[#838383]"
-            >
-              Interior Design + Build
-            </p>
-            {/* <div className="flex items-center justify-center space-x-3 text-[#fff]">
-              {links.map((link) => (
-                <div
-                  key={link.name}
-                  className="text-md p-1 pb-3 hover:text-[#838383]"
-                >
-                  <Link href={link.href}>
-                    <button>{link.name}</button>
-                  </Link>
-                </div>
-              ))}
-            </div> */}
-          </div>
-        </div>
-        <button>
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="white"
-            className="h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-        </button>
-      </div>
+      {/* Hamburger Menu */}
+      <HamburgerMenu nav={nav} handleNav={handleNav} links={links} />
     </div>
   );
 };
