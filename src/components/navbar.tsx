@@ -11,7 +11,6 @@ const links = [
 ];
 
 const Navbar = () => {
-
   return (
     // Navbar for Desktop Screens
     <div className="fixed top-0 z-[100] w-full">
@@ -27,7 +26,7 @@ const Navbar = () => {
             >
               Interior Design + Build
             </p>
-            <div className="flex items-center justify-center space-x-3 text-[#fff]">
+            <div className="flex items-center justify-center space-x-3 text-[#CFCCC9]">
               {links.map((link) => (
                 <div
                   key={link.name}
