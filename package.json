@@ -9,6 +9,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.11",
+    "@heroicons/react": "^2.0.15",
     "embla-carousel": "^7.0.9",
     "embla-carousel-autoplay": "^7.0.9",
     "embla-carousel-class-names": "^7.0.9",

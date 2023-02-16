@@ -1,17 +1,14 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { CancelIcon, HamburgerIcon } from "./svg-icons";
+import HeadlessSlideOver from "./headless-slider";
 
 interface Props {
   links: { href: string; name: string }[];
 }
 
 const HamburgerMenu: React.FC<Props> = ({ links }) => {
-  const [sidebar, setSidebar] = useState<boolean>(false);
-
-  const handleSidebar = () => {
-    setSidebar(!sidebar);
-  };
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     // Navbar for smaller screens
@@ -29,23 +26,14 @@ const HamburgerMenu: React.FC<Props> = ({ links }) => {
           </p>
         </div>
       </div>
-      <button onClick={handleSidebar}>
+      <button onClick={() => setOpen(true)}>
         <HamburgerIcon />
       </button>
-      <div
-        className={
-          sidebar
-            ? "fixed left-0 top-0 h-screen w-full bg-black/70 duration-500 ease-in"
-            : ""
-        }
-      ></div>
 
-      <div
-        className={
-          sidebar
-            ? "fixed right-0 top-0 h-screen w-[75%] bg-[#282928] duration-500 ease-in-out"
-            : "fixed right-[-100%] top-0 h-screen bg-[#282928] duration-500 ease-in-out"
-        }
+      <HeadlessSlideOver
+        open={open}
+        setOpen={setOpen}
+        title={"ArcelDesign, Inc."}
       >
         <div className="flex flex-row justify-between">
           <div className="m-5 flex flex-col p-5  text-[#fff]">
@@ -59,15 +47,9 @@ const HamburgerMenu: React.FC<Props> = ({ links }) => {
                 </Link>
               </div>
             ))}
-            <div className="text-[#838383]">ArcelDesign, Inc.</div>
-          </div>
-          <div onClick={handleSidebar} className="m-5 p-5">
-            <div className="rounded-xl border">
-              <CancelIcon />
-            </div>
           </div>
         </div>
-      </div>
+      </HeadlessSlideOver>
     </div>
   );
 };
