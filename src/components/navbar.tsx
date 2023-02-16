@@ -11,6 +11,9 @@ const links = [
 ];
 
 const Navbar = () => {
+  // NOTE: could've put state in componenet
+  // wanted to learn how to pass state into other componeents!
+
   const [nav, setNav] = useState<boolean>(false);
 
   const handleNav = () => {
