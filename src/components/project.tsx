@@ -16,7 +16,7 @@ const Project: React.FC<Props> = ({ projectType, projects }) => {
       >
         {projectType}
       </h1>
-      <Carousel className=" py-10 text-white">
+      <Carousel className="text-white">
         {projects.map((project, index) => {
           return (
             // NOTE: carousel needs index -> either manually or index with map
@@ -25,9 +25,10 @@ const Project: React.FC<Props> = ({ projectType, projects }) => {
                 <Image
                   src={project.src}
                   alt={project.alt}
-                  width={500}
                   height={500}
+                  width={500}
                   loading="lazy"
+                  style={{ objectFit: "cover", maxHeight: 400 }}
                 />
                 <h1 className="text-[#222222]">{project.area}</h1>
                 <p className="text-[#222222]">{project.address}</p>
