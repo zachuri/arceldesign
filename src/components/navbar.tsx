@@ -46,12 +46,14 @@ const Navbar = () => {
       <div className="h-25 mx-8 hidden flex-row justify-between p-5 uppercase md:flex">
         {/* Logo */}
         <div className="items-center justify-center">
-          <h1 style={{ letterSpacing: 5 }} className="text-2xl text-[#fff]">
-            <Link href={"/"}>ArcelDesign, Inc.</Link>
-          </h1>
-          <p style={{ letterSpacing: 5 }} className="text-xs text-[#838383]">
-            Interior Design + Build
-          </p>
+          <Link href={"/"}>
+            <h1 style={{ letterSpacing: 5 }} className="text-2xl text-[#fff]">
+              ArcelDesign, Inc.
+            </h1>
+            <p style={{ letterSpacing: 5 }} className="text-xs text-[#838383]">
+              Interior Design + Build
+            </p>
+          </Link>
         </div>
         <div className="flex items-center justify-center space-x-3 text-[#CFCCC9]">
           {links.map((link) => (
