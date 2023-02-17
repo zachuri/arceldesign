@@ -21,6 +21,7 @@ const Project: React.FC<Props> = ({ projectType, projects }) => {
                 alt={project.alt}
                 width={500}
                 height={500}
+                loading="lazy"
               />
             </CarouselItem>
           );
