@@ -15,7 +15,7 @@ const Project: React.FC<Props> = ({ projectType, projects }) => {
         {projects.map((project, index) => {
           return (
             // NOTE: carousel needs index -> either manually or index with map
-            <CarouselItem index={index}>
+            <CarouselItem index={index} key={index}>
               <Image
                 src={project.src}
                 alt={project.alt}
