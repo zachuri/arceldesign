@@ -28,8 +28,14 @@ const Project: React.FC<Props> = ({ projectType, projects }) => {
                   height={500}
                   width={500}
                 />
-                <h1 className="text-[#222222]">{project.area}</h1>
-                <p className="text-[#222222]">{project.address}</p>
+                <div className="text-center">
+                  <h1 className="text-md uppercase tracking-widest text-[#222222] md:text-2xl">
+                    {project.area}
+                  </h1>
+                  <p className="text-xs text-[#222222] md:text-lg">
+                    {project.address}
+                  </p>
+                </div>
               </>
             </CarouselItem>
           );
