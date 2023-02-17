@@ -66,7 +66,7 @@ const HamburgerMenu: React.FC<Props> = ({ links }) => {
             {/* Exit sidebar */}
             <div
               onClick={() => setOpen(false)}
-              className="mt-20 rounded-xl border-2"
+              className="mt-20 rounded-2xl border-2"
             >
               <CancelIcon />
             </div>
