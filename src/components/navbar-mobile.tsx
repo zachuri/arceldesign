@@ -11,7 +11,7 @@ interface Props {
   links: { href: string; name: string }[];
 }
 
-const HamburgerMenu: React.FC<Props> = ({ links }) => {
+const NavbarMobile: React.FC<Props> = ({ links }) => {
   const [open, setOpen] = useState<boolean>(false);
 
   usePreventScroll({ isDisabled: !open });
@@ -37,6 +37,7 @@ const HamburgerMenu: React.FC<Props> = ({ links }) => {
           <HamburgerIcon />
         </button>
 
+        {/* Sidebar using headless UI*/}
         <HeadlessSlideOver
           open={open}
           setOpen={setOpen}
@@ -77,4 +78,4 @@ const HamburgerMenu: React.FC<Props> = ({ links }) => {
   );
 };
 
-export default HamburgerMenu;
+export default NavbarMobile;

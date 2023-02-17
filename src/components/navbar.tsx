@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import HamburgerMenu from "./hamburger-menu";
+import NavbarMobile from "./navbar-mobile";
 
 const links = [
   { href: "/projects", name: "Projects" },
@@ -43,7 +43,7 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger Menu for smaller screens */}
-      <HamburgerMenu links={links} />
+      <NavbarMobile links={links} />
     </div>
   );
 };
