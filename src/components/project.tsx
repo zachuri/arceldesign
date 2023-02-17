@@ -12,7 +12,7 @@ const Project: React.FC<Props> = ({ projectType, projects }) => {
     <>
       <h1
         style={{ letterSpacing: 10 }}
-        className="text-2xl uppercase text-[#222222]"
+        className="p-5 text-2xl uppercase text-[#222222]"
       >
         {projectType}
       </h1>
@@ -28,7 +28,7 @@ const Project: React.FC<Props> = ({ projectType, projects }) => {
                   height={500}
                   width={500}
                 />
-                <div className="text-center">
+                <div className="p-5">
                   <h1 className="text-md uppercase tracking-widest text-[#222222] md:text-2xl">
                     {project.area}
                   </h1>
