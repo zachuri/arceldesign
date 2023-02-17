@@ -12,8 +12,6 @@ const Home: NextPage = () => {
         <meta name="description" content="ARCELDESIGN, INC." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar />
       <Slider />
     </>
   );
