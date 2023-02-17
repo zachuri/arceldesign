@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "../components/project";
+import MainLayout from "../components/layout";
 
 const dentals = [
   { src: "/assets/home/home1.jpg", alt: "Picture of the author" },
@@ -29,12 +30,14 @@ const residential = [
 
 const Projects = () => {
   return (
-    <div className="bg-[#fbfbfb]">
-      <Project projectType="Dental" projects={dentals} />
-      <Project projectType="Corprate" projects={corparte} />
-      <Project projectType="hospitality" projects={hospitality} />
-      <Project projectType="residential" projects={residential} />
-    </div>
+    <MainLayout>
+      <div className="bg-[#fbfbfb]">
+        <Project projectType="Dental" projects={dentals} />
+        <Project projectType="Corprate" projects={corparte} />
+        <Project projectType="hospitality" projects={hospitality} />
+        <Project projectType="residential" projects={residential} />
+      </div>
+    </MainLayout>
   );
 };
 

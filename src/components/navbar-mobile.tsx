@@ -19,16 +19,13 @@ const NavbarMobile: React.FC<Props> = ({ links }) => {
   return (
     // Navbar for smaller screens
     <OverlayProvider>
-      <div className="flex flex-row items-center justify-center bg-[#282928] px-10 md:hidden">
-        <div className="w-full pt-5 drop-shadow-lg">
+      <div className="flex h-16 flex-row items-center justify-center bg-[#282928] px-10 md:hidden">
+        <div className="w-full drop-shadow-lg">
           <div className="uppercase">
             <h1 style={{ letterSpacing: 5 }} className="text-xl text-[#fff]">
               ArcelDesign, Inc.
             </h1>
-            <p
-              style={{ letterSpacing: 5 }}
-              className="mb-5 text-xs text-[#838383]"
-            >
+            <p style={{ letterSpacing: 5 }} className="text-xs text-[#838383]">
               Interior Design + Build
             </p>
           </div>
