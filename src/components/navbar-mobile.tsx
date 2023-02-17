@@ -22,12 +22,17 @@ const NavbarMobile: React.FC<Props> = ({ links }) => {
       <div className="flex h-16 flex-row items-center justify-center bg-[#282928] px-10 md:hidden">
         <div className="w-full drop-shadow-lg">
           <div className="uppercase">
-            <h1 style={{ letterSpacing: 5 }} className="text-xl text-[#fff]">
-              ArcelDesign, Inc.
-            </h1>
-            <p style={{ letterSpacing: 5 }} className="text-xs text-[#838383]">
-              Interior Design + Build
-            </p>
+            <Link href={"/"}>
+              <h1 style={{ letterSpacing: 5 }} className="text-xl text-[#fff]">
+                ArcelDesign, Inc.
+              </h1>
+              <p
+                style={{ letterSpacing: 5 }}
+                className="text-xs text-[#838383]"
+              >
+                Interior Design + Build
+              </p>
+            </Link>
           </div>
         </div>
         <button onClick={() => setOpen(true)}>
