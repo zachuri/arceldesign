@@ -8,7 +8,7 @@ export function CancelIcon() {
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="white"
-      className="h-6 w-6"
+      className="h-7 w-7"
     >
       <path
         strokeLinecap="round"
