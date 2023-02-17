@@ -49,6 +49,7 @@ const HeadlessSlideOver: React.FC<Props> = ({
               leaveTo="translate-x-full"
             >
               <div className="relative w-screen max-w-md">
+                {/* Place the cancel icon the the left of sidebar */}
                 {/* <Transition.Child
                   as={Fragment}
                   enter="ease-in-out duration-500"
