@@ -47,7 +47,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="items-center justify-center">
           <h1 style={{ letterSpacing: 5 }} className="text-2xl text-[#fff]">
-            ArcelDesign, Inc.
+            <Link href={"/"}>ArcelDesign, Inc.</Link>
           </h1>
           <p style={{ letterSpacing: 5 }} className="text-xs text-[#838383]">
             Interior Design + Build

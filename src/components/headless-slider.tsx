@@ -2,6 +2,7 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 interface Props {
   open: boolean;
@@ -72,7 +73,7 @@ const HeadlessSlideOver: React.FC<Props> = ({
                 <div className="flex h-full flex-col overflow-y-scroll bg-[#282928] py-5 shadow-xl">
                   <div className="px-4 sm:px-6">
                     <Dialog.Title className="text-center text-xl font-medium uppercase text-[#838383]">
-                      {title}
+                      <Link href={"/"}>{title}</Link>
                     </Dialog.Title>
                   </div>
                   <div className="relative flex-1">
