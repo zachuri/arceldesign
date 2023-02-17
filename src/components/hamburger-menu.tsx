@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { CancelIcon, HamburgerIcon } from "./svg-icons";
 import HeadlessSlideOver from "./headless-slider";
 import { OverlayProvider, usePreventScroll } from "react-aria";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { AiOutlinePhone } from "react-icons/ai";
 
 interface Props {
   links: { href: string; name: string }[];
@@ -39,8 +42,8 @@ const HamburgerMenu: React.FC<Props> = ({ links }) => {
           setOpen={setOpen}
           title={"ArcelDesign, Inc."}
         >
-          <div className="flex flex-row justify-between">
-            <div className="m-5 flex flex-col p-5  text-[#fff]">
+          <div className="flex flex-col items-center justify-between py-5">
+            <div className="text-[#fff]">
               {links.map((link) => (
                 <div
                   key={link.name}
@@ -51,6 +54,18 @@ const HamburgerMenu: React.FC<Props> = ({ links }) => {
                   </Link>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-5 flex flex-row space-x-8">
+              <FaInstagram size={20} fill="white" />
+              <FaFacebook size={20} fill="white" />
+              <MdOutlineEmail size={20} fill="white" />
+              <AiOutlinePhone size={20} fill="white" />
+            </div>
+
+            {/* Exit sidebar */}
+            <div className="mt-10 rounded-xl border-2">
+              <CancelIcon />
             </div>
           </div>
         </HeadlessSlideOver>

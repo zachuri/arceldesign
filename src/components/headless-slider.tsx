@@ -49,7 +49,7 @@ const HeadlessSlideOver: React.FC<Props> = ({
               leaveTo="translate-x-full"
             >
               <div className="relative w-screen max-w-md">
-                <Transition.Child
+                {/* <Transition.Child
                   as={Fragment}
                   enter="ease-in-out duration-500"
                   enterFrom="opacity-0"
@@ -67,14 +67,14 @@ const HeadlessSlideOver: React.FC<Props> = ({
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </button>
                   </div>
-                </Transition.Child>
-                <div className="flex h-full flex-col overflow-y-scroll bg-[#282928] py-6 shadow-xl">
+                </Transition.Child> */}
+                <div className="flex h-full flex-col overflow-y-scroll bg-[#282928] py-5 shadow-xl">
                   <div className="px-4 sm:px-6">
                     <Dialog.Title className="text-center text-lg font-medium text-[#838383]">
                       {title}
                     </Dialog.Title>
                   </div>
-                  <div className="relative flex-1 px-4 sm:px-6">
+                  <div className="relative flex-1">
                     {/* Replace with your content */}
                     {children}
                     {/* /End replace */}
