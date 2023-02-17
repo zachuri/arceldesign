@@ -22,13 +22,11 @@ const Project: React.FC<Props> = ({ projectType, projects }) => {
             // NOTE: carousel needs index -> either manually or index with map
             <CarouselItem index={index} key={index}>
               <>
-                <Image
+                <img
                   src={project.src}
                   alt={project.alt}
                   height={500}
                   width={500}
-                  loading="lazy"
-                  style={{ objectFit: "cover", maxHeight: 400 }}
                 />
                 <h1 className="text-[#222222]">{project.area}</h1>
                 <p className="text-[#222222]">{project.address}</p>
