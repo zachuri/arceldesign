@@ -8,6 +8,9 @@ const Projects = () => {
     <MainLayout>
       <div className="bg-[#fbfbfb]">
         <Project projectType="Dental" projects={dental} />
+        <Project projectType="Dental" projects={dental} />
+        <Project projectType="Dental" projects={dental} />
+        <Project projectType="Dental" projects={dental} />
       </div>
     </MainLayout>
   );
