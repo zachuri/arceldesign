@@ -57,10 +57,10 @@ const HamburgerMenu: React.FC<Props> = ({ links }) => {
             </div>
 
             <div className="mt-5 flex flex-row space-x-8">
-              <FaInstagram size={20} fill="white" />
-              <FaFacebook size={20} fill="white" />
-              <MdOutlineEmail size={20} fill="white" />
-              <AiOutlinePhone size={20} fill="white" />
+              <FaInstagram size={20} fill="#828282" />
+              <FaFacebook size={20} fill="#828282" />
+              <MdOutlineEmail size={20} fill="#828282" />
+              <AiOutlinePhone size={20} fill="#828282" />
             </div>
 
             {/* Exit sidebar */}
