@@ -3,13 +3,13 @@
     "src": "/assets/dental/dental1.jpg",
     "alt": "Center For Pediatric Dentistry",
     "area": "Center For Pediatric Dentistry",
-    "address": "La Habra, California 90631"
+    "address": "La Habra, California"
   },
   {
     "src": "/assets/dental/dental2.jpg",
     "alt": "Edna Cuevas, DDs",
     "area": "Edna Cuevas, DDs",
-    "address": "Covina, Californai CA 917890"
+    "address": "Covina, California "
   },
   {
     "src": "/assets/dental/dental3.jpg",
@@ -63,7 +63,7 @@
     "src": "/assets/dental/dental11.jpg",
     "alt": "Synergy Dental Implant",
     "area": "Synergy Dental Implant",
-    "address": "West Covina"
+    "address": "West Covina, California"
   },
   {
     "src": "/assets/dental/dental12.jpg",
