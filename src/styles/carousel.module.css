@@ -16,7 +16,6 @@
   max-width: min(70%, 620px);
   opacity: 0.4;
   transition: opacity 0.4s;
-  max-height: 500px;
 }
 
 .slide:global(.active) {
