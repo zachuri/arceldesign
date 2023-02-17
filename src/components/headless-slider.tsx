@@ -70,7 +70,7 @@ const HeadlessSlideOver: React.FC<Props> = ({
                 </Transition.Child> */}
                 <div className="flex h-full flex-col overflow-y-scroll bg-[#282928] py-5 shadow-xl">
                   <div className="px-4 sm:px-6">
-                    <Dialog.Title className="text-center text-lg font-medium text-[#838383]">
+                    <Dialog.Title className="text-center text-xl font-medium text-[#838383]">
                       {title}
                     </Dialog.Title>
                   </div>
