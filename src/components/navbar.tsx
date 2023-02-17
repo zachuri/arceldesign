@@ -43,7 +43,7 @@ const Navbar = () => {
     //   </div>
 
     <div className="fixed top-0 z-[100] w-full bg-[#282928] drop-shadow-lg">
-      <div className="mx-8 hidden flex-row justify-between p-5 uppercase md:flex">
+      <div className="h-25 mx-8 hidden flex-row justify-between p-5 uppercase md:flex">
         {/* Logo */}
         <div className="items-center justify-center">
           <h1 style={{ letterSpacing: 5 }} className="text-2xl text-[#fff]">
@@ -57,7 +57,7 @@ const Navbar = () => {
           {links.map((link) => (
             <div
               key={link.name}
-              className="text-md p-1 pb-1 hover:text-[#838383]"
+              className="text-md p-1 pb-1 hover:border-b hover:text-[#838383] hover:duration-200 hover:ease-in-out"
             >
               <Link href={link.href}>
                 <button>{link.name}</button>
