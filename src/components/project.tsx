@@ -28,11 +28,12 @@ const Project: React.FC<Props> = ({ projectType, projects }) => {
                   height={500}
                   width={500}
                 />
-                <div className="p-5">
+                {/* full padding breaks the slide */}
+                <div className="pl-5 pt-5 pb-5">
                   <h1 className="text-md uppercase tracking-widest text-[#222222] md:text-2xl">
                     {project.area}
                   </h1>
-                  <p className="text-xs text-[#222222] md:text-lg">
+                  <p className="text-sm text-[#222222] md:text-lg">
                     {project.address}
                   </p>
                 </div>
