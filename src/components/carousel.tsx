@@ -37,7 +37,7 @@ const Carousel: React.FC<Props> = ({ children, className }) => {
   }, [emblaApi, setSelectedIndex]);
 
   useEffect(() => {
-    if (!emblaApi) return 
+    if (!emblaApi) return
     onSelect();
     emblaApi.on("select", onSelect);
   }, [emblaApi, onSelect]);
