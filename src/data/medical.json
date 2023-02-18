@@ -1,0 +1,92 @@
+[
+  {
+    "src": "/assets/medical/m1.jpg",
+    "alt": "Centrelake Imaging & Oncology",
+    "area": "Centrelake Imaging & Oncology",
+    "address": "Anaheim, California"
+  },
+  {
+    "src": "/assets/medical/m2.jpg",
+    "alt": "Mayflower Medical Group",
+    "area": "Mayflower Medical Group",
+    "address": "Anaheim, California"
+  },
+  {
+    "src": "/assets/medical/m3.jpg",
+    "alt": "Centrelake Imaging Center ",
+    "area": "Centrelake Imaging Center",
+    "address": "Chino, California"
+  },
+  {
+    "src": "/assets/medical/m4.jpg",
+    "alt": "Mayflower Medical Group",
+    "area": "Mayflower Medical Group",
+    "address": "El Monte, California"
+  },
+  {
+    "src": "/assets/medical/m5.jpg",
+    "alt": "Centrelake Imaging Center",
+    "area": "Centrelake Imaging Center",
+    "address": "El Monte, California"
+  },
+  {
+    "src": "/assets/medical/m6.jpg",
+    "alt": "Pediatrics El Monte",
+    "area": "Pediatrics El Monte",
+    "address": "El Monte, California"
+  },
+  {
+    "src": "/assets/medical/m7.jpg",
+    "alt": "Omni Eye Care Center",
+    "area": "Omni Eye Care Center",
+    "address": "El Monte, California"
+  },
+  {
+    "src": "/assets/medical/m8.jpg",
+    "alt": "Centrelake Imaging - Downey",
+    "area": "Centrelake Imaging - Downey",
+    "address": "Downey, California"
+  },
+  {
+    "src": "/assets/medical/m9.jpg",
+    "alt": "Centrelake Imaging",
+    "area": "Centrelake Imaging",
+    "address": "West Covina, California"
+  },
+  {
+    "src": "/assets/medical/m10.jpg",
+    "alt": "Omni Eye Care",
+    "area": "Omni Eye Care",
+    "address": "Covina, California"
+  },
+  {
+    "src": "/assets/medical/m11.jpg",
+    "alt": "Mayflower Medical Group",
+    "area": "Mayflower Medical Group",
+    "address": "West Covina, California"
+  },
+  {
+    "src": "/assets/medical/m12.jpg",
+    "alt": "Mayflower - Pediatrics",
+    "area": "Mayflower - Pediatrics",
+    "address": "West Covina, California"
+  },
+  {
+    "src": "/assets/medical/m13.jpg",
+    "alt": "Chu ChiroPractic",
+    "area": "Chu ChiroPractic",
+    "address": "West Covina, California"
+  },
+  {
+    "src": "/assets/medical/m14.jpg",
+    "alt": "Reyes Medical Associates, Inc.",
+    "area": "Reyes Medical Associates, Inc.",
+    "address": ""
+  },
+  {
+    "src": "/assets/medical/m15.jpg",
+    "alt": "C K Chan, OD",
+    "area": "C K Chan, OD",
+    "address": "West Covina, California"
+  }
+]
