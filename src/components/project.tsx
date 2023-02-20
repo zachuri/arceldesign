@@ -1,7 +1,9 @@
 import { useRouter } from "next/router";
 import Carousel from "./carousel";
+import { CarouselContext } from "./carousel";
 import CarouselItem from "./carousel-item";
 import LayoutMotion from "./motion";
+import { useContext } from "react";
 
 interface Props {
   type: String;
@@ -10,6 +12,7 @@ interface Props {
 
 const Project: React.FC<Props> = ({ type, projects }) => {
   const nextRouter = useRouter();
+  const { embla: emblaApi, selectedIndex } = useContext(CarouselContext);
 
   return (
     <LayoutMotion>
@@ -26,42 +29,61 @@ const Project: React.FC<Props> = ({ type, projects }) => {
               // NOTE: carousel needs index -> either manually or index with map
               <CarouselItem index={index} key={index}>
                 <>
-                  <button
-                    onClick={() => {
-                      // Format the link address
-                      const name = project.alt
-                        .replace(/[,.\s]+/g, "-")
-                        .toLowerCase();
+                  {selectedIndex === index ? (
+                    <button
+                      onClick={() => {
+                        // Format the link address
+                        const name = project.alt
+                          .replace(/[,.\s]+/g, "-")
+                          .toLowerCase();
 
-                      const address = project.address
-                        .split(",")[0]
-                        ?.toLowerCase();
+                        const address = project.address
+                          .split(",")[0]
+                          ?.toLowerCase();
 
-                      const navigate =
-                        name + "-" + address?.replace(/[,.\s]+/g, "-");
+                        const navigate =
+                          name + "-" + address?.replace(/[,.\s]+/g, "-");
 
-                      // next router push to project of type
-                      nextRouter.push({
-                        pathname: `${type + "/" + navigate}`,
-                      });
-                    }}
-                  >
-                    <img
-                      src={project.src}
-                      alt={project.alt}
-                      height={500}
-                      width={500}
-                    />
-                    {/* full padding breaks the slide */}
-                    <div className="pl-5 pt-5 pb-5">
-                      <h1 className="text-md md:text-md uppercase tracking-widest text-[#222222] lg:text-xl">
-                        {project.area}
-                      </h1>
-                      <p className="text-sm text-[#222222] md:text-sm lg:text-lg">
-                        {project.address}
-                      </p>
-                    </div>
-                  </button>
+                        // next router push to project of type
+                        nextRouter.push({
+                          pathname: `${type + "/" + navigate}`,
+                        });
+                      }}
+                    >
+                      <img
+                        src={project.src}
+                        alt={project.alt}
+                        height={500}
+                        width={500}
+                      />
+                      {/* full padding breaks the slide */}
+                      <div className="pl-5 pt-5 pb-5">
+                        <h1 className="text-md md:text-md uppercase tracking-widest text-[#222222] lg:text-xl">
+                          {project.area}
+                        </h1>
+                        <p className="text-sm text-[#222222] md:text-sm lg:text-lg">
+                          {project.address}
+                        </p>
+                      </div>
+                    </button>
+                  ) : (
+                    <>
+                      <img
+                        src={project.src}
+                        alt={project.alt}
+                        height={500}
+                        width={500}
+                      />
+                      <div className="pl-5 pt-5 pb-5">
+                        <h1 className="text-md md:text-md uppercase tracking-widest text-[#222222] lg:text-xl">
+                          {project.area}
+                        </h1>
+                        <p className="text-sm text-[#222222] md:text-sm lg:text-lg">
+                          {project.address}
+                        </p>
+                      </div>
+                    </>
+                  )}
                 </>
               </CarouselItem>
             );
