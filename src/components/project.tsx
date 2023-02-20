@@ -16,7 +16,7 @@ const Project: React.FC<Props> = ({ projectType, projects }) => {
       >
         {projectType}
       </h1>
-      <Carousel className="border border-black text-white">
+      <Carousel className=" text-white">
         {projects.map((project, index) => {
           return (
             // NOTE: carousel needs index -> either manually or index with map
