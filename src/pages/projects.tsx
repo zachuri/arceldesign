@@ -10,7 +10,7 @@ import residential from "../data/residential.json";
 const Projects = () => {
   return (
     <MainLayout>
-      <div className="bg-[#fbfbfb]">
+      <div className="bg-[#fbfbfb] xl:grid xl:grid-cols-2">
         <Project projectType="Dental" projects={dental} />
         <Project projectType="Corporate" projects={corporate} />
         <Project projectType="Medical" projects={medical} />
