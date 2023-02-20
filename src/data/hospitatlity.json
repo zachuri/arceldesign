@@ -1,0 +1,32 @@
+[
+  {
+    "src": "/assets/hospitality/h1.jpg",
+    "alt": "Nabemono Shabushabu",
+    "area": "Nabemono Shabushabu",
+    "address": "Alhambra, California"
+  },
+  {
+    "src": "/assets/hospitality/h2.jpg",
+    "alt": "Hong Kong Express",
+    "area": "Hong Kong Express",
+    "address": "Orange, California"
+  },
+  {
+    "src": "/assets/hospitality/h3.jpg",
+    "alt": "Panda Wok",
+    "area": "Panda Wok",
+    "address": "Orange, California"
+  },
+  {
+    "src": "/assets/hospitality/h4.jpg",
+    "alt": "Fortune Cookies Chinese Bistro",
+    "area": "Fortune Cookies Chinese Bistro",
+    "address": "Laguna Wood, California"
+  },
+  {
+    "src": "/assets/hospitality/h5.jpg",
+    "alt": "Pick a Poke",
+    "area": "Pick a Poke",
+    "address": "South Gate, California"
+  }
+]
