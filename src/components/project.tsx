@@ -3,14 +3,36 @@ import Carousel from "./carousel";
 import CarouselItem from "./carousel-item";
 import LayoutMotion from "./motion";
 
+interface PropsDisplay {
+  src: string;
+  alt: string;
+  area: string;
+  address: string;
+}
+
+function ProjectDisplay({ src, alt, area, address }: PropsDisplay) {
+  return (
+    <>
+      <img src={src} alt={alt} height={500} width={500} />
+      {/* full padding breaks the slide */}
+      <div className="pl-5 pt-5 pb-5">
+        <h1 className="text-md md:text-md uppercase tracking-widest text-[#222222] lg:text-xl">
+          {area}
+        </h1>
+        <p className="text-sm text-[#222222] md:text-sm lg:text-lg">
+          {address}
+        </p>
+      </div>
+    </>
+  );
+}
+
 interface Props {
   type: String;
   projects: { src: string; alt: string; area: string; address: string }[];
 }
 
 const Project: React.FC<Props> = ({ type, projects }) => {
-  const nextRouter = useRouter();
-
   return (
     <LayoutMotion>
       <div className="mx-5 ">
@@ -34,23 +56,12 @@ const Project: React.FC<Props> = ({ type, projects }) => {
                 key={index}
                 navigate={type + "/" + navigate}
               >
-                <>
-                  <img
-                    src={project.src}
-                    alt={project.alt}
-                    height={500}
-                    width={500}
-                  />
-                  {/* full padding breaks the slide */}
-                  <div className="pl-5 pt-5 pb-5">
-                    <h1 className="text-md md:text-md uppercase tracking-widest text-[#222222] lg:text-xl">
-                      {project.area}
-                    </h1>
-                    <p className="text-sm text-[#222222] md:text-sm lg:text-lg">
-                      {project.address}
-                    </p>
-                  </div>
-                </>
+                <ProjectDisplay
+                  src={project.src}
+                  alt={project.src}
+                  area={project.area}
+                  address={project.area}
+                />
               </CarouselItem>
             );
           })}
