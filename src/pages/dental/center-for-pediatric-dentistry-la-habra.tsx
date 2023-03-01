@@ -87,6 +87,22 @@ const COPLH = () => {
             </div>
           </div>
           <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
+
+          <div className="grid grid-cols-2">
+            <div className="left-0 mt-10 flex flex-col text-sm">
+              <div className="font-bold"> DESCRIPTION</div>
+              <div className="font-light">ABOUT COLLECTIONS </div>
+            </div>
+            <div className="mt-40">
+              <div className="text-[50px] font-bold">HARMONIOUS PALETTE</div>
+              <div className="text-xl font-medium">
+                Bringing natural soothing elements to set a harmonious tone. By
+                combining natural elements, and warm colors to the design, where
+                the space is large and oversized, a tranquil setting begins to
+                develop.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
