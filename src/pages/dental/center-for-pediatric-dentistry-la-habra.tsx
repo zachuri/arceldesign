@@ -10,34 +10,34 @@ import { IoIosArrowDropright } from "react-icons/io";
 
 const COPLH = () => {
   return (
-    <main className="mt-40">
-      {/* Main Page */}
-      <div className="ml-40 mr-40 mt-40 grid grid-cols-2 text-white">
-        {/* ===============*/}
-        {/* ====  left ====*/}
-        {/* ===============*/}
-        <div>
-          <div className="mb-10 text-[10]">
-            <div>Corporate Design</div>
-            <div>2014</div>
-          </div>
-          <div className="text-9xl">NOVA WORLD, INC</div>
-          <div className="mt-16 grid grid-cols-2">
-            <IoIosArrowDropright size="120"></IoIosArrowDropright>
-            <div className="flex flex-row-reverse">
-              <div className="flex flex-col-reverse">
-                <div className="font-extralight">San Dimas, California</div>
-                <div className="font-bold">Location</div>
+    <main>
+      <div className="mt-[250px] h-full w-full">
+        {/* Main Page */}
+        <div className="ml-40 mr-40 grid grid-cols-2 text-white">
+          {/* ===============*/}
+          {/* ====  left ====*/}
+          {/* ===============*/}
+          <div>
+            <div className="ml-2 mb-5 text-[10]">
+              <div>Corporate Design</div>
+              <div>2014</div>
+            </div>
+            <div className="text-9xl">NOVA WORLD, INC</div>
+            <div className="mt-16 grid grid-cols-2">
+              <IoIosArrowDropright size="120"></IoIosArrowDropright>
+              <div className="flex flex-row-reverse">
+                <div className="flex flex-col-reverse">
+                  <div className="font-extralight">San Dimas, California</div>
+                  <div className="font-bold">Location</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* ===============*/}
-        {/* ==== right ====*/}
-        {/* ===============*/}
-        <div>
+          {/* ===============*/}
+          {/* ==== right ====*/}
+          {/* ===============*/}
           <img
-            className="ml-20"
+            className="ml-20 object-fill"
             src={"/assets/dental/dental1/IMG_6566.jpg"}
             alt={"dental 1"}
           />
@@ -46,18 +46,49 @@ const COPLH = () => {
         {/* ===============*/}
         {/* ==== bottom ===*/}
         {/* ===============*/}
-        <div>
-          <div className="grid grid-cols-2">
+        <div className="mr-20 mt-10 ml-20 text-white">
+          <div className="flex flex-row space-x-10">
             <div className="flex flex-row">
               Gallery
-              <div className="mt-2 flex-grow border-t border-gray-400"></div>
+              <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
+            </div>
+            <div className="flex flex-row">
+              Similar Projects
+              <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
+            </div>
+          </div>
+
+          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-white"></div>
+
+          <div className="flex-cols-2 mb-10 flex text-sm">
+            <div className="left-0 flex flex-col">
+              <div className="font-bold">Corporate Collections</div>
+              <div className="font-light">Collection 01</div>
+            </div>
+            <div className="absolute right-0 mr-20 flex flex-col">
+              <div className="font-bold">Creative Design</div>
+              <div className="font-light">Nova World, Inc</div>
             </div>
           </div>
         </div>
       </div>
 
       {/* About Design */}
-      <div></div>
+      <div className="h-full w-full bg-white">
+        <div className="ml-20 mr-20">
+          <div className="grid grid-cols-2">
+            <div className="mt-10 flex flex-row">
+              <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
+              <div className="text-xl font-bold">ABOUT DESIGN</div>
+            </div>
+            <div className="left-0 mt-10 flex flex-col text-sm">
+              <div className="font-bold">Corporate Collections</div>
+              <div className="font-light">Collection 01</div>
+            </div>
+          </div>
+          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
+        </div>
+      </div>
     </main>
   );
 };
