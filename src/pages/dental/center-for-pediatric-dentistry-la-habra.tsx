@@ -6,17 +6,16 @@ import { Keyboard, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { IoIosArrowDropright } from "react-icons/io";
-
+import { IoIosArrowDropright, IoIosArrowRoundForward } from "react-icons/io";
 const COPLH = () => {
   return (
     <main>
       <div className="mt-[250px] h-full w-full">
+        {/* ===========================================================================*/}
         {/* Main Page */}
+        {/* ===========================================================================*/}
         <div className="ml-40 mr-40 grid grid-cols-2 text-white">
-          {/* ===============*/}
           {/* ====  left ====*/}
-          {/* ===============*/}
           <div>
             <div className="ml-2 mb-5 text-[10]">
               <div>Corporate Design</div>
@@ -33,9 +32,7 @@ const COPLH = () => {
               </div>
             </div>
           </div>
-          {/* ===============*/}
           {/* ==== right ====*/}
-          {/* ===============*/}
           <img
             className="ml-20 object-fill"
             src={"/assets/dental/dental1/IMG_6566.jpg"}
@@ -43,9 +40,7 @@ const COPLH = () => {
           />
         </div>
 
-        {/* ===============*/}
         {/* ==== bottom ===*/}
-        {/* ===============*/}
         <div className="mr-20 mt-10 ml-20 text-white">
           <div className="flex flex-row space-x-10">
             <div className="flex flex-row">
@@ -73,20 +68,22 @@ const COPLH = () => {
         </div>
       </div>
 
+      {/* ===========================================================================*/}
       {/* About Design */}
-      <div className="h-[2000px] w-full bg-white">
-        <div className="ml-20 mr-20">
+      {/* ===========================================================================*/}
+      <div className="bg-white">
+        <div className="ml-20 mr-20 pt-10 pb-10">
           <div className="grid grid-cols-2">
-            <div className="mt-10 flex flex-row space-x-1">
+            <div className="flex flex-row space-x-1">
               <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
               <div className="text-xl font-bold">ABOUT DESIGN</div>
             </div>
             <div className="grid grid-cols-2">
-              <div className="left-0 mt-10 flex flex-col text-sm">
+              <div className="left-0 flex flex-col text-sm">
                 <div className="font-bold">Corporate Collections</div>
                 <div className="font-light">Collection 01</div>
               </div>
-              <div className="mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
+              <div className=" flex flex-col-reverse text-right text-sm font-extrabold">
                 <p>01</p>
               </div>
             </div>
@@ -116,77 +113,93 @@ const COPLH = () => {
             />
           </div>
 
+          {/* Design Table Information */}
           <p className="mt-20 text-xl font-extrabold">DESIGN INFORMATION</p>
           <div className="border-b-1 mt-5 flex-grow border-t-2 border-black"></div>
 
-          <table className="mt-10 w-full  border-separate border-spacing-y-6 text-xl">
-            <tbody>
-              <tr>
-                <td className="border-b-2 border-dotted pb-4 font-light">
-                  CLIENT
-                </td>
-                <td className=" border-b-2 border-dotted pb-4 font-bold">
-                  Jenny Zhao & Rod Smith
-                </td>
-              </tr>
-              <tr>
-                <td className=" border-b-2 border-dotted pb-4 font-light">
-                  TOTAL SIZE
-                </td>
-                <td className=" border-b-2 border-dotted pb-4 font-bold">
-                  10,000 sq ft
-                </td>
-              </tr>
-              <tr>
-                <td className=" border-b-2 border-dotted pb-4 font-light">
-                  Location
-                </td>
-                <td className=" border-b-2 border-dotted pb-4 font-bold">
-                  San Dimas, CA
-                </td>
-              </tr>
-              <tr>
-                <td className="border-b-2 border-dotted pb-4 font-light">
-                  Production Completed{" "}
-                </td>
-                <td className=" border-b-2 border-dotted pb-4 font-bold">
-                  2014
-                </td>
-              </tr>
-              <tr>
-                <td className="border-b-2 border-dotted pb-4 font-light">
-                  {" "}
-                  Design Type{" "}
-                </td>
-                <td className=" border-b-2 border-dotted pb-4 font-bold">
-                  Corporate
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="mt-10 w-full  border-separate border-spacing-y-6 space-y-4 text-xl">
+            <div className="grid grid-cols-2">
+              <p className="border-b-2 border-dotted pb-4 font-light">CLIENT</p>
+              <p className=" border-b-2 border-dotted pb-4 font-bold">
+                Jenny Zhao & Rod Smith
+              </p>
+            </div>
+            <div className="grid grid-cols-2">
+              <p className=" border-b-2 border-dotted pb-4 font-light">
+                TOTAL SIZE
+              </p>
+              <p className=" border-b-2 border-dotted pb-4 font-bold">
+                10,000 sq ft
+              </p>
+            </div>
+            <div className="grid grid-cols-2">
+              <p className=" border-b-2 border-dotted pb-4 font-light">
+                Location
+              </p>
+              <p className=" border-b-2 border-dotted pb-4 font-bold">
+                San Dimas, CA
+              </p>
+            </div>
+            <div className="grid grid-cols-2">
+              <p className="border-b-2 border-dotted pb-4 font-light">
+                Production Completed{" "}
+              </p>
+              <p className=" border-b-2 border-dotted pb-4 font-bold">2014</p>
+            </div>
+            <div className="grid grid-cols-2">
+              <p className="border-b-2 border-dotted pb-4 font-light">
+                {" "}
+                Design Type{" "}
+              </p>
+              <p className=" border-b-2 border-dotted pb-4 font-bold">
+                Corporate
+              </p>
+            </div>
+          </div>
+
+          {/* Buttons for contact and similar projects */}
+          <div className="grid grid-cols-2">
+            <div />
+            <div className="grid grid-cols-2">
+              <div className="full text mt-10 flex flex-row space-x-1">
+                <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
+                <div className="text-xl font-bold">CONTACT TO CONSULT</div>
+              </div>
+              <p className="mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
+                02
+              </p>
+            </div>
+          </div>
+          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
 
           <div className="grid grid-cols-2">
             <div className="full text mt-10 flex flex-row space-x-1">
               <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
-              <div className="text-xl font-bold">CONTACT TO CONSULT</div>
+              <div className="text-xl font-bold">MORE PROJECTS </div>
             </div>
             <p className="mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
-              01
+              03
             </p>
           </div>
 
-          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
+          <div className="border-b-1 mt-5 flex-grow border-t-2 border-black "></div>
+        </div>
+      </div>
 
-          <div className="full text mt-10 flex flex-row space-x-1">
-            <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
-            <div className="text-xl font-bold">MORE PROJECTS </div>
+      {/* ===========================================================================*/}
+      {/* Contact Footer Page*/}
+      {/* ===========================================================================*/}
+      <div className="h-[2000px] w-full bg-zinc-900 text-white">
+        <div className="ml-20 mr-20 pt-10">
+          <div className="grid grid-cols-2 text-lg">
+            <p className="left-0 text-stone-500">CHECK OUT SOCIAL MEDIA V</p>
+            <div className="flex flex-row-reverse">
+              <div className="full flex flex-row-reverse rounded-full border border-white pr-3 pl-6">
+                <IoIosArrowRoundForward className="ml-2.5" size="25" />
+                <p>CONTACT NOW</p>
+              </div>
+            </div>
           </div>
-
-          <div className="mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
-            <p>01</p>
-          </div>
-
-          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
         </div>
       </div>
     </main>
