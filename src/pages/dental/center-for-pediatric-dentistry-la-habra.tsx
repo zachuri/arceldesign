@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { IoIosArrowDropright, IoIosArrowRoundForward } from "react-icons/io";
+
 const COPLH = () => {
   return (
     <main>
@@ -191,15 +192,50 @@ const COPLH = () => {
       {/* ===========================================================================*/}
       <div className="h-[2000px] w-full bg-zinc-900 text-white">
         <div className="ml-20 mr-20 pt-10">
+          {/* Title / Contact Button  */}
           <div className="grid grid-cols-2 text-lg">
-            <p className="left-0 text-stone-500">CHECK OUT SOCIAL MEDIA V</p>
+            <p className="left-0 text-stone-400">CHECK OUR SOCIAL MEDIA </p>
             <div className="flex flex-row-reverse">
-              <div className="full flex flex-row-reverse rounded-full border border-white pr-3 pl-6">
+              <div className="full flex flex-row-reverse rounded-full border border-white py-0.5 pr-5 pl-6">
                 <IoIosArrowRoundForward className="ml-2.5" size="25" />
                 <p>CONTACT NOW</p>
               </div>
             </div>
           </div>
+
+          <div className="grid grid-cols-2 pt-20 md:pl-[500px]">
+            <div className="flex flex-col space-y-10">
+              <div className="flex flex-row text-lg">
+                <p className="rounded-full border border-stone-700 px-4 py-0.5">
+                  OUR PHILOSOPHY
+                </p>
+              </div>
+              <p className="text-7xl">
+                "Allow the design process to evolve with an open mind." -Charles
+                Allem{" "}
+              </p>
+              <p className="pt-5 text-[20px] font-semibold text-stone-400">
+                ArcelDesign's philosphy reflects Allen's values of innovation
+                and limitless creativity to bring together a specifically
+                tailored and cohesive environment.
+              </p>
+            </div>
+            <div className="relative">
+              <img
+                height={250}
+                width={250}
+                className="absolute right-0 bottom-10 rounded-full"
+                src={"/assets/about/1570475856866.jpeg"}
+                alt={"about 1"}
+              />
+            </div>
+          </div>
+
+          <div className="full text relative mt-10 flex flex-row space-x-1">
+            <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-white"></div>
+            <div className="text-xl font-bold">MORE PROJECTS </div>
+          </div>
+          <div className="border-b-1 mt-5 flex-grow border-t-2 border-stone-800 "></div>
         </div>
       </div>
     </main>
@@ -282,6 +318,7 @@ export default COPLH;
 //         modules={[Keyboard, Pagination, Navigation]}
 //       >
 //         <SwiperSlide>
+
 //           <img src={"/assets/dental/dental1/IMG_6566.jpg"} alt={"dental 1"} />
 //         </SwiperSlide>
 //         <SwiperSlide>
