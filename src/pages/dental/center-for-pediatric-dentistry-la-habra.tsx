@@ -74,16 +74,21 @@ const COPLH = () => {
       </div>
 
       {/* About Design */}
-      <div className="h-full w-full bg-white">
+      <div className="h-[2000px] w-full bg-white">
         <div className="ml-20 mr-20">
           <div className="grid grid-cols-2">
-            <div className="mt-10 flex flex-row">
+            <div className="mt-10 flex flex-row space-x-1">
               <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
               <div className="text-xl font-bold">ABOUT DESIGN</div>
             </div>
-            <div className="left-0 mt-10 flex flex-col text-sm">
-              <div className="font-bold">Corporate Collections</div>
-              <div className="font-light">Collection 01</div>
+            <div className="grid grid-cols-2">
+              <div className="left-0 mt-10 flex flex-col text-sm">
+                <div className="font-bold">Corporate Collections</div>
+                <div className="font-light">Collection 01</div>
+              </div>
+              <div className="mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
+                <p>01</p>
+              </div>
             </div>
           </div>
           <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
@@ -93,9 +98,9 @@ const COPLH = () => {
               <div className="font-bold"> DESCRIPTION</div>
               <div className="font-light">ABOUT COLLECTIONS </div>
             </div>
-            <div className="mt-40">
+            <div className="mt-[150px]">
               <div className="text-[50px] font-bold">HARMONIOUS PALETTE</div>
-              <div className="text-xl font-medium">
+              <div className="mt-10 text-xl font-medium">
                 Bringing natural soothing elements to set a harmonious tone. By
                 combining natural elements, and warm colors to the design, where
                 the space is large and oversized, a tranquil setting begins to
@@ -103,6 +108,85 @@ const COPLH = () => {
               </div>
             </div>
           </div>
+          <div className="mt-20">
+            <img
+              className="h-[750px] w-full object-cover"
+              src={"/assets/dental/dental1/IMG_6567.jpg"}
+              alt={"dental 1"}
+            />
+          </div>
+
+          <p className="mt-20 text-xl font-extrabold">DESIGN INFORMATION</p>
+          <div className="border-b-1 mt-5 flex-grow border-t-2 border-black"></div>
+
+          <table className="mt-10 w-full  border-separate border-spacing-y-6 text-xl">
+            <tbody>
+              <tr>
+                <td className="border-b-2 border-dotted pb-4 font-light">
+                  CLIENT
+                </td>
+                <td className=" border-b-2 border-dotted pb-4 font-bold">
+                  Jenny Zhao & Rod Smith
+                </td>
+              </tr>
+              <tr>
+                <td className=" border-b-2 border-dotted pb-4 font-light">
+                  TOTAL SIZE
+                </td>
+                <td className=" border-b-2 border-dotted pb-4 font-bold">
+                  10,000 sq ft
+                </td>
+              </tr>
+              <tr>
+                <td className=" border-b-2 border-dotted pb-4 font-light">
+                  Location
+                </td>
+                <td className=" border-b-2 border-dotted pb-4 font-bold">
+                  San Dimas, CA
+                </td>
+              </tr>
+              <tr>
+                <td className="border-b-2 border-dotted pb-4 font-light">
+                  Production Completed{" "}
+                </td>
+                <td className=" border-b-2 border-dotted pb-4 font-bold">
+                  2014
+                </td>
+              </tr>
+              <tr>
+                <td className="border-b-2 border-dotted pb-4 font-light">
+                  {" "}
+                  Design Type{" "}
+                </td>
+                <td className=" border-b-2 border-dotted pb-4 font-bold">
+                  Corporate
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div className="grid grid-cols-2">
+            <div className="full text mt-10 flex flex-row space-x-1">
+              <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
+              <div className="text-xl font-bold">CONTACT TO CONSULT</div>
+            </div>
+            <p className="mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
+              01
+            </p>
+          </div>
+
+          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
+
+          <div className="full text mt-10 flex flex-row space-x-1">
+            <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
+            <div className="text-xl font-bold">MORE PROJECTS </div>
+          </div>
+
+          <div className="mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
+            <p>01</p>
+          </div>
+
+          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
         </div>
       </div>
     </main>
