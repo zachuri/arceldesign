@@ -190,7 +190,7 @@ const COPLH = () => {
       {/* ===========================================================================*/}
       {/* Contact Footer Page*/}
       {/* ===========================================================================*/}
-      <div className="h-[2000px] w-full bg-zinc-900 text-white">
+      <div className="h-full w-full bg-zinc-900 pb-14 text-white">
         <div className="ml-20 mr-20 pt-10">
           {/* Title / Contact Button  */}
           <div className="grid grid-cols-2 text-lg">
@@ -203,8 +203,11 @@ const COPLH = () => {
             </div>
           </div>
 
+          {/* LINE */}
+          <div className="border-b-1 mt-5 flex-grow border-t-2 border-stone-800 " />
+
           <div className="grid grid-cols-2 pt-20 md:pl-[500px]">
-            <div className="flex flex-col space-y-10">
+            <div className="-mr-40 flex flex-col space-y-10">
               <div className="flex flex-row text-lg">
                 <p className="rounded-full border border-stone-700 px-4 py-0.5">
                   OUR PHILOSOPHY
@@ -220,11 +223,11 @@ const COPLH = () => {
                 tailored and cohesive environment.
               </p>
             </div>
-            <div className="relative">
+            <div className="relative ml-40">
               <img
                 height={250}
                 width={250}
-                className="absolute right-0 bottom-10 rounded-full"
+                className="absolute right-0 bottom-10 mr-20 rounded-full"
                 src={"/assets/about/1570475856866.jpeg"}
                 alt={"about 1"}
               />
@@ -235,7 +238,28 @@ const COPLH = () => {
             <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-white"></div>
             <div className="text-xl font-bold">MORE PROJECTS </div>
           </div>
-          <div className="border-b-1 mt-5 flex-grow border-t-2 border-stone-800 "></div>
+
+          {/* LINE */}
+          <div className="border-b-1 mt-5 flex-grow border-t-2 border-stone-800 " />
+
+          <div className="mt-10 flex flex-row">
+            <p className="flex-auto text-stone-400">ARCEL DESIGN</p>
+            <div className="flex-auto">
+              <ul>
+                <li>FACEBOOK</li>
+                <li>LINKEDIN</li>
+                <li>INSTAGRAM</li>
+              </ul>
+            </div>
+            <div className="flex-auto">
+              <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+              </ul>
+            </div>
+            <p className="text-stone-400">©2022 ALL RIGHTS RESERVED</p>
+          </div>
         </div>
       </div>
     </main>
