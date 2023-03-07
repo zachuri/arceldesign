@@ -216,28 +216,31 @@ const COPLH = () => {
           {/* LINE */}
           <div className="border-b-1 flex-grow border-t-2 border-stone-800 " />
 
-          <div className="grid grid-cols-2 pt-20 md:pl-[500px]">
-            <div className="-mr-40 flex flex-col space-y-10">
+          <div className="grid grid-cols-3">
+            <div></div>
+            <div className="flex flex-col space-y-10 ">
               <div className="flex flex-row text-lg">
                 <p className="rounded-full border border-stone-700 px-4 py-0.5">
                   OUR PHILOSOPHY
                 </p>
               </div>
+
               <p className="text-3xl md:text-7xl">
                 "Allow the design process to evolve with an open mind." -Charles
                 Allem{" "}
               </p>
+
               <p className="pt-5 text-[20px] font-semibold text-stone-400">
                 ArcelDesign's philosphy reflects Allen's values of innovation
                 and limitless creativity to bring together a specifically
                 tailored and cohesive environment.
               </p>
             </div>
-            <div className="relative md:ml-40">
+            <div className="flex items-center justify-center pl-10">
               <Image
-                width={300}
-                height={300}
-                className="rounded-full md:absolute md:right-0 md:bottom-10 md:mr-20"
+                width={200}
+                height={200}
+                className="rounded-full md:absolute"
                 src={"/assets/about/1570475856866.jpeg"}
                 alt={"about 1"}
               />
@@ -249,9 +252,6 @@ const COPLH = () => {
               <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-white"></div>
               <div className="font-bold">MORE PROJECTS </div>
             </div>
-            <p className="absolute right-0 bottom-0 mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
-              03
-            </p>
           </div>
 
           {/* LINE */}
