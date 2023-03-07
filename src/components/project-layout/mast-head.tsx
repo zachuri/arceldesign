@@ -7,7 +7,7 @@ const MastHeadExample = () => {
     <>
       <div className="relative mx-5 flex h-screen items-center justify-center md:mx-20">
         {/* Middle */}
-        <div className="max-sm:-mt-10 flex flex-col items-center justify-center text-white xl:flex-row xl:space-x-10">
+        <div className="flex flex-col text-white max-sm:-mt-20 xl:flex-row xl:items-center xl:justify-center xl:space-x-10">
           {/* Left */}
           <div>
             <div className="">
