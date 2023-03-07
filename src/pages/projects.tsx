@@ -11,11 +11,11 @@ const Projects = () => {
   return (
     <MainLayout>
       <div className="bg-[#fbfbfb] xl:grid xl:grid-cols-2">
-        <Project projectType="Dental" projects={dental} />
-        <Project projectType="Corporate" projects={corporate} />
-        <Project projectType="Medical" projects={medical} />
-        <Project projectType="Hospitality" projects={hospitality} />
-        <Project projectType="Residential" projects={residential} />
+        <Project type="dental" projects={dental} />
+        <Project type="corporate" projects={corporate} />
+        <Project type="medical" projects={medical} />
+        <Project type="hospitality" projects={hospitality} />
+        <Project type="residential" projects={residential} />
       </div>
     </MainLayout>
   );
