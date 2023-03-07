@@ -216,8 +216,8 @@ const COPLH = () => {
           {/* LINE */}
           <div className="border-b-1 flex-grow border-t-2 border-stone-800 " />
 
-          <div className="grid grid-cols-3">
-            <div></div>
+          <div className="grid grid-cols-2 xl:grid-cols-3">
+            <div className="max-xl:hidden"></div>
             <div className="flex flex-col space-y-10 ">
               <div className="flex flex-row text-lg">
                 <p className="rounded-full border border-stone-700 px-4 py-0.5">
@@ -225,7 +225,7 @@ const COPLH = () => {
                 </p>
               </div>
 
-              <p className="text-3xl md:text-7xl">
+              <p className="text-5xl">
                 "Allow the design process to evolve with an open mind." -Charles
                 Allem{" "}
               </p>
@@ -236,7 +236,7 @@ const COPLH = () => {
                 tailored and cohesive environment.
               </p>
             </div>
-            <div className="flex items-center justify-center pl-10">
+            <div className="flex items-center justify-center">
               <Image
                 width={200}
                 height={200}
