@@ -13,37 +13,41 @@ import Image from "next/image";
 const COPLH = () => {
   return (
     <main>
-      <div className="mx-5 mt-[250px] md:mx-20">
+      <div className="mx-5 mt-[100px] md:mx-20 md:mt-[250px]">
         {/* ===========================================================================*/}
         {/* Main Page */}
         {/* ===========================================================================*/}
-        <div className=" flex flex-col text-white md:grid md:grid-cols-2">
+        <div className="flex flex-col justify-center text-white xl:flex xl:flex-row">
           {/* ====  left ====*/}
-          <div className="relative">
+          <div className="">
             <div className="ml-2 mb-5 text-[10]">
               <div>Corporate Design</div>
               <div>2014</div>
             </div>
-            <div className="mx-5 text-7xl  md:mx-0 md:text-9xl">
+            <div className="mx-5 text-5xl md:mx-0 md:text-7xl">
               NOVA WORLD, INC
             </div>
-            <div className="relative -mt-14 flex md:mt-16">
+            <div className="relative flex xl:mt-16">
               <IoIosArrowDropright
-                className="invisible md:visible "
+                className="invisible xl:visible "
                 size="120"
               ></IoIosArrowDropright>
-              <div className="absolute right-0 bottom-0 flex flex-col">
+              <div className="absolute right-0 bottom-0 flex flex-col max-sm:pb-10">
                 <div className="font-bold">Location</div>
                 <div className="font-extralight">San Dimas, California</div>
               </div>
             </div>
           </div>
+
           {/* ==== right ====*/}
-          <img
-            className="mt-5 object-fill md:mt-0 md:ml-20"
-            src={"/assets/dental/dental1/IMG_6566.jpg"}
-            alt={"dental 1"}
-          />
+          <div className="flex flex-col items-center justify-center md:pt-10 xl:ml-[100px]">
+            <Image
+              height={600}
+              width={600}
+              src={"/assets/dental/dental1/IMG_6566.jpg"}
+              alt={"dental 1"}
+            />
+          </div>
         </div>
 
         {/* ==== bottom ===*/}
@@ -214,9 +218,9 @@ const COPLH = () => {
           </div>
 
           {/* LINE */}
-          <div className="border-b-1 flex-grow border-t-2 border-stone-800 " />
+          <div className="border-b-1 flex-grow border-t-2 border-stone-800 pb-10 " />
 
-          <div className="grid grid-cols-2 xl:grid-cols-3">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3">
             <div className="max-xl:hidden"></div>
             <div className="flex flex-col space-y-10 ">
               <div className="flex flex-row text-lg">
@@ -225,7 +229,7 @@ const COPLH = () => {
                 </p>
               </div>
 
-              <p className="text-5xl">
+              <p className="text-4xl md:text-5xl">
                 "Allow the design process to evolve with an open mind." -Charles
                 Allem{" "}
               </p>
@@ -236,7 +240,7 @@ const COPLH = () => {
                 tailored and cohesive environment.
               </p>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center pt-10 md:pt-0">
               <Image
                 width={200}
                 height={200}
@@ -247,7 +251,7 @@ const COPLH = () => {
             </div>
           </div>
 
-          <div className="relative flex text-xl">
+          <div className="relative flex pt-5 text-xl md:pt-0">
             <div className="full mt-10 flex flex-row space-x-2">
               <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-white"></div>
               <div className="font-bold">MORE PROJECTS </div>
@@ -257,7 +261,7 @@ const COPLH = () => {
           {/* LINE */}
           <div className="border-b-1 mt-5 flex-grow border-t-2 border-stone-800 " />
 
-          <div className="mt-10 flex flex-col md:flex-row">
+          <div className="mt-10 flex flex-col space-y-10 md:flex-row md:space-y-0">
             <p className="flex-auto text-stone-400">ARCELDESIGN, INC.</p>
             <div className="flex-auto">
               <ul>
