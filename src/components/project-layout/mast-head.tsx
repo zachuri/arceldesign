@@ -2,37 +2,37 @@ import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
 import Image from "next/image";
 
-const MastHead = () => {
+const MastHeadExample = () => {
   return (
     <>
-      <div className="mx-5 mt-[100px] md:mx-20 md:mt-[250px]">
-        {/* ===========================================================================*/}
-        {/* Main Page */}
-        {/* ===========================================================================*/}
-        <div className="flex flex-col justify-center text-white xl:flex xl:flex-row">
-          {/* ====  left ====*/}
-          <div className="">
-            <div className="ml-2 mb-5 text-[10]">
-              <div>Corporate Design</div>
-              <div>2014</div>
-            </div>
-            <div className="mx-5 text-5xl md:mx-0 md:text-7xl">
-              NOVA WORLD, INC
-            </div>
-            <div className="relative flex xl:mt-16">
-              <IoIosArrowDropright
-                className="invisible xl:visible "
-                size="120"
-              ></IoIosArrowDropright>
-              <div className="absolute right-0 bottom-0 flex flex-col max-sm:pb-10">
-                <div className="font-bold">Location</div>
-                <div className="font-extralight">San Dimas, California</div>
+      <div className="relative mx-5 flex h-screen items-center justify-center md:mx-20">
+        {/* Middle */}
+        <div className="flex flex-col items-center justify-center text-white xl:flex-row xl:space-x-10">
+          {/* Left */}
+          <div>
+            <div className="">
+              <div className="ml-2 mb-5 text-[10]">
+                <div>Corporate Design</div>
+                <div>2014</div>
+              </div>
+              <div className="mx-5 text-5xl md:text-6xl">NOVA WORLD, INC</div>
+              <div className="flex justify-end max-xl:my-5 xl:mt-16 xl:justify-between">
+                <IoIosArrowDropright
+                  className="max-xl:hidden"
+                  size="120"
+                ></IoIosArrowDropright>
+
+                <div className="flex flex-col">
+                  <div className="flex-1"></div>
+                  <div className="font-bold">Location</div>
+                  <div className="font-extralight">San Dimas, California</div>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* ==== right ====*/}
-          <div className="flex flex-col items-center justify-center md:pt-10 xl:ml-[100px]">
+          {/* Right */}
+          <div className="flex flex-col items-center justify-center">
             <Image
               height={600}
               width={600}
@@ -42,8 +42,8 @@ const MastHead = () => {
           </div>
         </div>
 
-        {/* ==== bottom ===*/}
-        <div className="mt-10 text-white ">
+        {/* Bottom */}
+        <div className="absolute bottom-0 w-full text-white ">
           <div className="flex flex-row space-x-10">
             <div className="flex flex-row">
               Gallery
@@ -73,4 +73,4 @@ const MastHead = () => {
   );
 };
 
-export default MastHead;
+export default MastHeadExample;
