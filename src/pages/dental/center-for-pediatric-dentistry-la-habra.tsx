@@ -13,7 +13,7 @@ import Image from "next/image";
 const COPLH = () => {
   return (
     <main>
-      <div className="mx-5 mt-[250px] md:mx-40">
+      <div className="mx-5 mt-[250px] md:mx-20">
         {/* ===========================================================================*/}
         {/* Main Page */}
         {/* ===========================================================================*/}
@@ -78,25 +78,25 @@ const COPLH = () => {
       {/* About Design */}
       {/* ===========================================================================*/}
       <div className="bg-white">
-        <div className="ml-20 mr-20 pt-10 pb-10">
-          <div className="grid grid-cols-2">
+        <div className="mx-5 pt-10 pb-12 md:mx-20">
+          <div className="grid grid-rows-2 md:grid-cols-2">
             <div className="flex flex-row space-x-1">
               <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
               <div className="text-xl font-bold">ABOUT DESIGN</div>
             </div>
-            <div className="grid grid-cols-2">
-              <div className="left-0 flex flex-col text-sm">
+            <div className="relative">
+              <div className="flex flex-col text-sm">
                 <div className="font-bold">Corporate Collections</div>
                 <div className="font-light">Collection 01</div>
               </div>
-              <div className=" flex flex-col-reverse text-right text-sm font-extrabold">
+              <div className="absolute right-0 bottom-0  text-right text-sm font-extrabold">
                 <p>01</p>
               </div>
             </div>
           </div>
-          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
+          <div className="border-b-1 my-5 flex-grow border-t-2 border-black md:-my-5"></div>
 
-          <div className="grid grid-cols-2">
+          <div className="grid md:grid-cols-2">
             <div className="left-0 mt-10 flex flex-col text-sm">
               <div className="font-bold"> DESCRIPTION</div>
               <div className="font-light">ABOUT COLLECTIONS </div>
@@ -113,11 +113,11 @@ const COPLH = () => {
               </div>
             </div>
           </div>
-          <div className="mt-20">
+          <div className="mt-10 md:mt-20">
             <Image
-              width={300}
-              height={300}
-              className="h-[750px] w-full object-cover"
+              width={1920}
+              height={1080}
+              className="w-full object-cover md:h-[750px]"
               src={"/assets/dental/dental1/IMG_6567.jpg"}
               alt={"dental 1"}
             />
@@ -128,38 +128,39 @@ const COPLH = () => {
           <div className="border-b-1 mt-5 flex-grow border-t-2 border-black"></div>
 
           <div className="mt-10 w-full  border-separate border-spacing-y-6 space-y-4 text-xl">
-            <div className="grid grid-cols-2">
-              <p className="border-b-2 border-dotted pb-4 font-light">CLIENT</p>
+            <div className="grid md:grid-cols-2">
+              <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
+                CLIENT
+              </p>
               <p className=" border-b-2 border-dotted pb-4 font-bold">
                 Jenny Zhao & Rod Smith
               </p>
             </div>
-            <div className="grid grid-cols-2">
-              <p className=" border-b-2 border-dotted pb-4 font-light">
+            <div className="grid md:grid-cols-2">
+              <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
                 TOTAL SIZE
               </p>
               <p className=" border-b-2 border-dotted pb-4 font-bold">
                 10,000 sq ft
               </p>
             </div>
-            <div className="grid grid-cols-2">
-              <p className=" border-b-2 border-dotted pb-4 font-light">
+            <div className="grid md:grid-cols-2">
+              <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
                 Location
               </p>
               <p className=" border-b-2 border-dotted pb-4 font-bold">
                 San Dimas, CA
               </p>
             </div>
-            <div className="grid grid-cols-2">
-              <p className="border-b-2 border-dotted pb-4 font-light">
+            <div className="grid md:grid-cols-2">
+              <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
                 Production Completed{" "}
               </p>
               <p className=" border-b-2 border-dotted pb-4 font-bold">2014</p>
             </div>
-            <div className="grid grid-cols-2">
-              <p className="border-b-2 border-dotted pb-4 font-light">
-                {" "}
-                Design Type{" "}
+            <div className="grid md:grid-cols-2">
+              <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
+                Design Type
               </p>
               <p className=" border-b-2 border-dotted pb-4 font-bold">
                 Corporate
@@ -168,26 +169,26 @@ const COPLH = () => {
           </div>
 
           {/* Buttons for contact and similar projects */}
-          <div className="grid grid-cols-2">
+          <div className="grid md:grid-cols-2">
             <div />
-            <div className="grid grid-cols-2">
-              <div className="full text mt-10 flex flex-row space-x-1">
+            <div className="relative flex text-xl">
+              <div className="full mt-10 flex flex-row space-x-2">
                 <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
-                <div className="text-xl font-bold">CONTACT TO CONSULT</div>
+                <div className="font-bold">CONTACT TO CONSULT</div>
               </div>
-              <p className="mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
+              <p className="absolute right-0 bottom-0 mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
                 02
               </p>
             </div>
           </div>
           <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
 
-          <div className="grid grid-cols-2">
-            <div className="full text mt-10 flex flex-row space-x-1">
+          <div className="relative flex text-xl">
+            <div className="full mt-10 flex flex-row space-x-2">
               <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
-              <div className="text-xl font-bold">MORE PROJECTS </div>
+              <div className="font-bold">MORE PROJECTS </div>
             </div>
-            <p className="mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
+            <p className="absolute right-0 bottom-0 mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
               03
             </p>
           </div>
@@ -200,12 +201,12 @@ const COPLH = () => {
       {/* Contact Footer Page*/}
       {/* ===========================================================================*/}
       <div className="h-full w-full bg-zinc-900 pb-14 text-white">
-        <div className="ml-20 mr-20 pt-10">
+        <div className="mx-5 pt-20 md:mx-20 md:pt-10">
           {/* Title / Contact Button  */}
-          <div className="grid grid-cols-2 text-lg">
-            <p className="left-0 text-stone-400">CHECK OUR SOCIAL MEDIA </p>
-            <div className="flex flex-row-reverse">
-              <div className="full flex flex-row-reverse rounded-full border border-white py-0.5 pr-5 pl-6">
+          <div className="mb-10 grid grid-rows-2 text-lg md:mb-0 md:grid-cols-2">
+            <p className="text-stone-400">CHECK OUR SOCIAL MEDIA </p>
+            <div className="relative flex">
+              <div className="absolute mt-2.5 flex flex-row-reverse rounded-full border border-white py-0.5 pr-5 pl-6 md:right-0 md:mt-0">
                 <IoIosArrowRoundForward className="ml-2.5" size="25" />
                 <p>CONTACT NOW</p>
               </div>
@@ -213,7 +214,7 @@ const COPLH = () => {
           </div>
 
           {/* LINE */}
-          <div className="border-b-1 mt-5 flex-grow border-t-2 border-stone-800 " />
+          <div className="border-b-1 flex-grow border-t-2 border-stone-800 " />
 
           <div className="grid grid-cols-2 pt-20 md:pl-[500px]">
             <div className="-mr-40 flex flex-col space-y-10">
@@ -222,7 +223,7 @@ const COPLH = () => {
                   OUR PHILOSOPHY
                 </p>
               </div>
-              <p className="text-7xl">
+              <p className="text-3xl md:text-7xl">
                 "Allow the design process to evolve with an open mind." -Charles
                 Allem{" "}
               </p>
@@ -232,20 +233,25 @@ const COPLH = () => {
                 tailored and cohesive environment.
               </p>
             </div>
-            <div className="relative ml-40">
+            <div className="relative md:ml-40">
               <Image
                 width={300}
                 height={300}
-                className="absolute right-0 bottom-10 mr-20 rounded-full"
+                className="rounded-full md:absolute md:right-0 md:bottom-10 md:mr-20"
                 src={"/assets/about/1570475856866.jpeg"}
                 alt={"about 1"}
               />
             </div>
           </div>
 
-          <div className="full text relative mt-10 flex flex-row space-x-1">
-            <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-white"></div>
-            <div className="text-xl font-bold">MORE PROJECTS </div>
+          <div className="relative flex text-xl">
+            <div className="full mt-10 flex flex-row space-x-2">
+              <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-white"></div>
+              <div className="font-bold">MORE PROJECTS </div>
+            </div>
+            <p className="absolute right-0 bottom-0 mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
+              03
+            </p>
           </div>
 
           {/* LINE */}
