@@ -1,7 +1,5 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Masthead from "../components/masthead";
-import Navbar from "../components/navbar";
 import Slider from "../components/slider";
 
 const Home: NextPage = () => {
