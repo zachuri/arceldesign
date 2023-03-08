@@ -80,7 +80,9 @@ const Contact = () => (
               <li>CONTACT</li>
             </ul>
           </div>
-          <p className="text-stone-400">©2022 ALL RIGHTS RESERVED</p>
+          <p className="text-stone-400">
+            &copy; {new Date().getFullYear()} ALL RIGHTS RESERVED
+          </p>
         </div>
       </div>
     </div>
