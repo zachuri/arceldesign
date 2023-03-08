@@ -12,10 +12,10 @@ interface Props {
     location: string;
     completedYear: string;
   };
-  images: { src: string; alt: string; desc: string }[];
+  image: string;
 }
 
-const MastHeadExample: React.FC<Props> = ({ index, designInfo }) => {
+const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
   return (
     <>
       <div className="relative mx-5 flex h-screen items-center justify-center md:mx-20">
@@ -46,12 +46,7 @@ const MastHeadExample: React.FC<Props> = ({ index, designInfo }) => {
 
           {/* Right */}
           <div className="flex flex-col items-center justify-center">
-            <Image
-              height={600}
-              width={600}
-              src={"/assets/dental/dental1/IMG_6566.jpg"}
-              alt={"dental 1"}
-            />
+            <Image height={600} width={600} src={image} alt={"dental 1"} />
           </div>
         </div>
 
@@ -86,4 +81,4 @@ const MastHeadExample: React.FC<Props> = ({ index, designInfo }) => {
   );
 };
 
-export default MastHeadExample;
+export default MastHead;
