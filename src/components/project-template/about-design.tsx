@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
 import SliderImage from "./slider-image";
-import dental1 from "../../data/dental1.json";
 
 interface Props {
   index: number;
