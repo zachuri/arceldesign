@@ -7,7 +7,7 @@ const COPLH = () => {
   return (
     <main>
       <MastHead
-        index={0}
+        index={1}
         designInfo={{
           name: "Nova World, Inc.",
           type: "Corporate",
@@ -17,6 +17,7 @@ const COPLH = () => {
         image={"/assets/dental/dental1/IMG_6566.jpg"}
       />
       <AboutDesign
+        index={1}
         designDesc={{
           title: "Harmonious Palette",
           desc: "Bringing natural soothing elements to set a harmonious tone. \

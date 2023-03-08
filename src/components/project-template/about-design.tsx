@@ -4,6 +4,7 @@ import SliderImage from "./slider-image";
 import dental1 from "../../data/dental1.json";
 
 interface Props {
+  index: number;
   designDesc: {
     title: string;
     desc: string;
@@ -19,7 +20,12 @@ interface Props {
   images: { src: string; alt: string; desc: string }[];
 }
 
-const AboutDesign: React.FC<Props> = ({ designDesc, designInfo, images }) => {
+const AboutDesign: React.FC<Props> = ({
+  index,
+  designDesc,
+  designInfo,
+  images,
+}) => {
   return (
     <>
       <div className="bg-white">
@@ -32,7 +38,9 @@ const AboutDesign: React.FC<Props> = ({ designDesc, designInfo, images }) => {
             <div className="relative">
               <div className="flex flex-col text-sm">
                 <div className="font-bold">Corporate Collections</div>
-                <div className="font-light">Collection 01</div>
+                <div className="font-light">
+                  Collection {index < 10 ? "0" + index : index}
+                </div>
               </div>
               <div className="absolute right-0 bottom-0  text-right text-sm font-extrabold">
                 <p>01</p>

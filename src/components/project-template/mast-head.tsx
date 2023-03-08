@@ -66,7 +66,9 @@ const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
           <div className="relative mb-10 flex text-sm">
             <div className="absoute left-0 flex flex-col">
               <div className="font-bold">{designInfo.type} Collections</div>
-              <div className="font-light">Collection {index}</div>
+              <div className="font-light">
+                Collection {index < 10 ? "0" + index : index}
+              </div>
             </div>
             <div className="absolute right-0 flex flex-col">
               <div className="font-bold">Creative Design</div>
