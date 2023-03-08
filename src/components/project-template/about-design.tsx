@@ -91,7 +91,7 @@ const AboutDesign: React.FC<Props> = ({ designDesc, designInfo, images }) => {
                 Production Completed{" "}
               </p>
               <p className=" border-b-2 border-dotted pb-4 font-bold">
-                {designInfo.location}
+                {designInfo.completedYear}
               </p>
             </div>
             <div className="grid md:grid-cols-2">

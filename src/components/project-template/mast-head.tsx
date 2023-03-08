@@ -7,8 +7,6 @@ interface Props {
   designInfo: {
     name: string;
     type: string;
-    client: string;
-    size: string;
     location: string;
     completedYear: string;
   };
