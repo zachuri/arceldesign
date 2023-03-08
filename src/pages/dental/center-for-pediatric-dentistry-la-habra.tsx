@@ -1,7 +1,7 @@
 import AboutDesign from "../../components/project-template/about-design";
 import Contact from "../../components/project-template/contact";
 import MastHead from "../../components/project-template/mast-head";
-import images from "../../data/dental1.json";
+import images from "../../data/dental/dental1.json";
 
 const COPLH = () => {
   return (
@@ -10,7 +10,7 @@ const COPLH = () => {
         index={1}
         designInfo={{
           name: "Nova World, Inc.",
-          type: "Corporate",
+          type: "Dental",
           location: "San Dimas, California",
           completedYear: "2014",
         }}
@@ -26,7 +26,7 @@ const COPLH = () => {
         }}
         designInfo={{
           name: "Nova World, Inc.",
-          type: "Corporate",
+          type: "Dental",
           client: "Jenny Zhao & Rod Smith",
           size: "10,000 sq ft",
           location: "San Dimas, CA",
