@@ -31,8 +31,8 @@ const AboutDesign = () => {
               <div className="font-bold"> DESCRIPTION</div>
               <div className="font-light">ABOUT COLLECTIONS </div>
             </div>
-            <div className="mt-[150px]">
-              <div className=" text-2xl font-bold md:text-[50px]">
+            <div className="mt-20">
+              <div className="text-2xl font-bold md:text-5xl">
                 HARMONIOUS PALETTE
               </div>
               <div className="mt-10 text-xl font-medium">

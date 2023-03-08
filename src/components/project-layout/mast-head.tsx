@@ -11,7 +11,7 @@ const MastHeadExample = () => {
           {/* Left */}
           <div>
             <div className="">
-              <div className="ml-2 mb-5 text-[10]">
+              <div className="mb-5 text-[10]">
                 <div>Corporate Design</div>
                 <div>2014</div>
               </div>
