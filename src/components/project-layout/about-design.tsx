@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import SliderImage from "./slider-image";
+import dental1 from "../../data/dental1.json";
 
 const AboutDesign = () => {
   return (
@@ -44,13 +46,14 @@ const AboutDesign = () => {
             </div>
           </div>
           <div className="mt-10 md:mt-20">
-            <Image
+            {/* <Image
               width={1920}
               height={1080}
               className="w-full object-cover md:h-[750px]"
               src={"/assets/dental/dental1/IMG_6567.jpg"}
               alt={"dental 1"}
-            />
+            /> */}
+            <SliderImage images={dental1}></SliderImage>
           </div>
 
           {/* Design Table Information */}
