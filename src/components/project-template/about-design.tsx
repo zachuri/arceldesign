@@ -3,12 +3,25 @@ import Image from "next/image";
 import SliderImage from "./slider-image";
 import dental1 from "../../data/dental1.json";
 
-const AboutDesign = () => {
+interface Props {
+  designDesc: {
+    title: string;
+    desc: string;
+  };
+  designInfo: {
+    name: string;
+    type: string;
+    client: string;
+    size: string;
+    location: string;
+    completedYear: string;
+  };
+  images: { src: string; alt: string; desc: string }[];
+}
+
+const AboutDesign: React.FC<Props> = ({ designDesc, designInfo, images }) => {
   return (
     <>
-      {/* ===========================================================================*/}
-      {/* About Design */}
-      {/* ===========================================================================*/}
       <div className="bg-white">
         <div className="mx-5 pt-10 pb-12 md:mx-20">
           <div className="grid grid-rows-2 md:grid-cols-2">
@@ -35,25 +48,13 @@ const AboutDesign = () => {
             </div>
             <div className="mt-20">
               <div className="text-2xl font-bold md:text-5xl">
-                HARMONIOUS PALETTE
+                {designDesc.title}
               </div>
-              <div className="mt-10 text-xl font-medium">
-                Bringing natural soothing elements to set a harmonious tone. By
-                combining natural elements, and warm colors to the design, where
-                the space is large and oversized, a tranquil setting begins to
-                develop.
-              </div>
+              <div className="mt-10 text-xl font-medium">{designDesc.desc}</div>
             </div>
           </div>
           <div className="mt-10 md:mt-20">
-            {/* <Image
-              width={1920}
-              height={1080}
-              className="w-full object-cover md:h-[750px]"
-              src={"/assets/dental/dental1/IMG_6567.jpg"}
-              alt={"dental 1"}
-            /> */}
-            <SliderImage images={dental1}></SliderImage>
+            <SliderImage images={images}></SliderImage>
           </div>
 
           {/* Design Table Information */}
@@ -66,7 +67,7 @@ const AboutDesign = () => {
                 CLIENT
               </p>
               <p className=" border-b-2 border-dotted pb-4 font-bold">
-                Jenny Zhao & Rod Smith
+                {designInfo.client}
               </p>
             </div>
             <div className="grid md:grid-cols-2">
@@ -74,7 +75,7 @@ const AboutDesign = () => {
                 TOTAL SIZE
               </p>
               <p className=" border-b-2 border-dotted pb-4 font-bold">
-                10,000 sq ft
+                {designInfo.size}
               </p>
             </div>
             <div className="grid md:grid-cols-2">
@@ -82,21 +83,23 @@ const AboutDesign = () => {
                 Location
               </p>
               <p className=" border-b-2 border-dotted pb-4 font-bold">
-                San Dimas, CA
+                {designInfo.location}
               </p>
             </div>
             <div className="grid md:grid-cols-2">
               <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
                 Production Completed{" "}
               </p>
-              <p className=" border-b-2 border-dotted pb-4 font-bold">2014</p>
+              <p className=" border-b-2 border-dotted pb-4 font-bold">
+                {designInfo.location}
+              </p>
             </div>
             <div className="grid md:grid-cols-2">
               <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
                 Design Type
               </p>
               <p className=" border-b-2 border-dotted pb-4 font-bold">
-                Corporate
+                {designInfo.type}
               </p>
             </div>
           </div>
