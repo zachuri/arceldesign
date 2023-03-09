@@ -6,9 +6,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-import { Autoplay, Navigation, EffectFade, Pagination } from "swiper";
+import {
+  Autoplay,
+  Navigation,
+  EffectFade,
+  Pagination,
+  Scrollbar,
+} from "swiper";
 import Image from "next/image";
 
 interface Props {
@@ -31,15 +37,18 @@ const SliderImage: React.FC<Props> = ({ images }) => {
         loop={true}
         effect="fade"
         fadeEffect={{ crossFade: true }}
-        modules={[Autoplay, Navigation, EffectFade, Pagination]}
+        modules={[Autoplay, Navigation, EffectFade, Pagination, Scrollbar]}
         navigation={true}
         pagination={true}
+        scrollbar={{
+          hide: true,
+        }}
       >
         {images.map((image) => {
           return (
             <SwiperSlide key={image.alt}>
               {/* Solution to safair h-screen*/}
-              <div className="h-[300px] w-[300px]">
+              <div className="h-[300px] w-[300px] xl:h-[900px] xl:w-[300px]">
                 <Image
                   src={image.src}
                   alt={image.alt}
