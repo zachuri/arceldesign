@@ -77,6 +77,7 @@ const Slider = () => (
                 fill
                 style={{ objectFit: "cover" }}
                 quality={100}
+                loading="lazy"
               />
             </div>
 
