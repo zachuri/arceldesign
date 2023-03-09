@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import Carousel from "./carousel";
 import CarouselItem from "./carousel-item";
 import LayoutMotion from "./motion";
-import Image from "next/image";
 
 interface PropsDisplay {
   src: string;
@@ -14,7 +13,7 @@ interface PropsDisplay {
 function ProjectDisplay({ src, alt, area, address }: PropsDisplay) {
   return (
     <>
-      <Image src={src} alt={alt} height={500} width={500} />
+      <img src={src} alt={alt} height={500} width={500} />
       {/* full padding breaks the slide */}
       <div className="pl-5 pt-5 pb-5">
         <h1 className="text-md md:text-md uppercase tracking-widest text-[#222222] lg:text-xl">
