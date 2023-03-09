@@ -59,8 +59,10 @@ const AboutDesign: React.FC<Props> = ({
               <div className="mt-10 text-xl font-medium">{designDesc.desc}</div>
             </div>
           </div>
-          <div className="mt-10 md:mt-20">
-            <SliderImage images={images}></SliderImage>
+          <div className="md:flex md:flex-col md:items-center md:justify-center">
+            <div className="mt-10 md:mt-20 md:w-[750px]">
+              <SliderImage images={images} />
+            </div>
           </div>
 
           {/* Design Table Information */}

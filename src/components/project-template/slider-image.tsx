@@ -48,13 +48,14 @@ const SliderImage: React.FC<Props> = ({ images }) => {
           return (
             <SwiperSlide key={image.alt}>
               {/* Solution to safair h-screen*/}
-              <div className="h-[300px] w-[300px] xl:h-[900px] xl:w-[300px]">
+              <div className="h-[300px] md:h-[500px]">
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
                   style={{ objectFit: "cover" }}
                   quality={100}
+                  loading="lazy"
                 />
               </div>
             </SwiperSlide>
