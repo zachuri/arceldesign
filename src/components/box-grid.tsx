@@ -1,11 +1,11 @@
 import Box from "./box";
 
 interface Props {
-  images: { src: string; alt: string; address: string }[];
+  children: React.ReactNode;
   title: string;
 }
 
-const BoxGrid: React.FC<Props> = ({ images, title }) => {
+const BoxGrid: React.FC<Props> = ({ children, title }) => {
   return (
     <>
       <div className={"mt-[60px] grid place-items-center py-10 md:mt-[82.5px]"}>
@@ -13,17 +13,7 @@ const BoxGrid: React.FC<Props> = ({ images, title }) => {
           <h1 className="col-span-2 text-4xl uppercase text-white max-md:text-3xl md:col-span-3 xl:col-span-4">
             {title}
           </h1>
-          {images.map((image) => {
-            return (
-              <Box
-                key={image.src + image.alt}
-                src={image.src}
-                alt={image.alt}
-                address={image.address}
-                type={title}
-              />
-            );
-          })}
+          {children}
         </div>
       </div>
     </>
