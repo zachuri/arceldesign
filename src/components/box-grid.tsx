@@ -16,6 +16,7 @@ function Box({ src, alt }: { src: string; alt: string }) {
           src={src}
           alt={alt}
           loading="eager"
+          priority
         />
       </div>
       <p className="mt-5 aspect-auto text-center text-sm uppercase text-white md:text-base">
