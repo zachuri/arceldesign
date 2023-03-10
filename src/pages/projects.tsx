@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import BoxGrid from "../components/box-grid";
-import { GridLayout } from "../components/layout";
+import { GridLayout, MainLayout } from "../components/layout";
 
 const images = [
   { src: "/assets/corporate/c1.jpg", alt: "corporate" },
@@ -13,9 +13,9 @@ const images = [
 
 const Projects = () => {
   return (
-    <GridLayout total={images.length} title="Projects">
-      <BoxGrid images={images} />
-    </GridLayout>
+    <div>
+      <BoxGrid images={images} total={images.length} title={"projects"} />
+    </div>
   );
 };
 

@@ -2,14 +2,11 @@ import React from "react";
 import BoxGrid from "../../components/box-grid";
 
 import corporate from "../../data/corporate.json";
-import { GridLayout } from "../../components/layout";
 
 const Corporate = () => {
   return (
     <>
-      <GridLayout total={corporate.length} title={"Corporate"}>
-        <BoxGrid images={corporate} />
-      </GridLayout>
+      <BoxGrid images={corporate} total={corporate.length} title="corporate" />
     </>
   );
 };

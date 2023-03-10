@@ -1,5 +1,4 @@
 import React from "react";
-import { GridLayout } from "../../components/layout";
 import BoxGrid from "../../components/box-grid";
 
 import hospitality from "../../data/hospitatlity.json";
@@ -7,9 +6,11 @@ import hospitality from "../../data/hospitatlity.json";
 const Hospitality = () => {
   return (
     <>
-      <GridLayout total={hospitality.length} title="Hospitality">
-        <BoxGrid images={hospitality} />
-      </GridLayout>
+      <BoxGrid
+        images={hospitality}
+        total={hospitality.length}
+        title="hospitality"
+      />
     </>
   );
 };
