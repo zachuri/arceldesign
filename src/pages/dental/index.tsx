@@ -6,7 +6,7 @@ import { GridLayout } from "../../components/layout";
 
 const Dental = () => {
   return (
-    <GridLayout total={dental.length}>
+    <GridLayout total={dental.length} title="Dental">
       <BoxGrid images={dental} />;
     </GridLayout>
   );

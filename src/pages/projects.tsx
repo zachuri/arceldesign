@@ -13,7 +13,7 @@ const images = [
 
 const Projects = () => {
   return (
-    <GridLayout total={images.length}>
+    <GridLayout total={images.length} title="Projects">
       <BoxGrid images={images} />
     </GridLayout>
   );

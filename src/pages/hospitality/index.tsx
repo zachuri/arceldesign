@@ -7,7 +7,7 @@ import hospitality from "../../data/hospitatlity.json";
 const Hospitality = () => {
   return (
     <>
-      <GridLayout total={hospitality.length}>
+      <GridLayout total={hospitality.length} title="Hospitality">
         <BoxGrid images={hospitality} />
       </GridLayout>
     </>

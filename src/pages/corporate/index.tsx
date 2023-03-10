@@ -7,7 +7,7 @@ import { GridLayout } from "../../components/layout";
 const Corporate = () => {
   return (
     <>
-      <GridLayout total={corporate.length}>
+      <GridLayout total={corporate.length} title={"Corporate"}>
         <BoxGrid images={corporate} />
       </GridLayout>
     </>
