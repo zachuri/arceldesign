@@ -17,7 +17,10 @@ function Box({ src, alt }: { src: string; alt: string }) {
           alt={alt}
         />
       </div>
-      <p className="mb-5 text-center uppercase text-white max-md:text-xs">
+      <p
+        style={{ letterSpacing: 5 }}
+        className="mb-5 uppercase text-white max-md:text-xs md:text-lg"
+      >
         {alt}
       </p>
     </Link>
