@@ -1,7 +1,7 @@
-import AboutDesign from "../../components/project-template/about-design";
-import Contact from "../../components/project-template/contact";
-import MastHead from "../../components/project-template/mast-head";
-import images from "../../data/dental/dental2.json";
+import AboutDesign from "../../../components/project-template/about-design";
+import Contact from "../../../components/project-template/contact";
+import MastHead from "../../../components/project-template/mast-head";
+import images from "../../../data/dental/dental2.json";
 
 const ECDC = () => {
   return (
