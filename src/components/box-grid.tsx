@@ -37,7 +37,7 @@ const BoxGrid: React.FC<Props> = ({ images, total, title }) => {
       <div
         className={
           total < 6
-            ? "grid max-md:pt-10 min-h-screen place-items-center"
+            ? "grid place-items-center max-md:mt-[60px] max-md:py-10 md:min-h-screen"
             : "mt-[60px] grid place-items-center py-10 md:mt-[82.5px]"
         }
       >
