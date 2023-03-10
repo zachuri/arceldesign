@@ -80,7 +80,7 @@ const Slider = () => (
                   33vw"
                 style={{ objectFit: "cover" }}
                 quality={100}
-                loading="lazy"
+                loading="eager"
               />
             </div>
 

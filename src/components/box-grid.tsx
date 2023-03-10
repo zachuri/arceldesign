@@ -15,6 +15,7 @@ function Box({ src, alt }: { src: string; alt: string }) {
           style={{ objectFit: "cover" }}
           src={src}
           alt={alt}
+          loading="eager"
         />
       </div>
       <p className="mb-5 text-center uppercase text-white max-md:text-xs">
