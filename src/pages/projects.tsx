@@ -1,7 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
 import BoxGrid from "../components/box-grid";
-import { GridLayout, MainLayout } from "../components/layout";
 
 const images = [
   { src: "/assets/corporate/c1.jpg", alt: "corporate" },

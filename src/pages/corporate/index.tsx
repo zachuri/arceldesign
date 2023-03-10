@@ -1,4 +1,3 @@
-import React from "react";
 import BoxGrid from "../../components/box-grid";
 
 import corporate from "../../data/corporate.json";
