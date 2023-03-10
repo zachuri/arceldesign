@@ -5,7 +5,7 @@ import { MainLayout } from "./layout";
 function Box({ src, alt }: { src: string; alt: string }) {
   return (
     <Link href={"/" + alt}>
-      <div className="relative mb-5 p-[70px] text-lg sm:p-[120px] md:p-40">
+      <div className="b-5 relative p-[80px] text-lg sm:p-[120px] md:p-40">
         <Image
           fill
           // allows object to fit as a cover instead of filled
