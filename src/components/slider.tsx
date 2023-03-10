@@ -35,14 +35,14 @@ const images = [
     type: "Medical",
   },
   // {
-  //   src: "/assets/home/home3.jpg",
-  //   alt: "home 3",
+  //   src: "/assets/home/home4.jpg",
+  //   alt: "home 4",
   //   href: "/residential",
   //   type: "Residential",
   // },
   // {
-  //   src: "/assets/home/home3.jpg",
-  //   alt: "home 3",
+  //   src: "/assets/home/home5.jpg",
+  //   alt: "home 5",
   //   href: "/corporate",
   //   type: "Corporate",
   // },
@@ -70,11 +70,14 @@ const Slider = () => (
         return (
           <SwiperSlide key={image.alt}>
             {/* Solution to safair h-screen*/}
-            <div className="h-screen w-full">
+            <div className="relative h-screen w-full">
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
+                sizes="(max-width: 768px) 100vw,
+                  (max-width: 1200px) 50vw,
+                  33vw"
                 style={{ objectFit: "cover" }}
                 quality={100}
                 loading="lazy"

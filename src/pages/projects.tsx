@@ -1,23 +1,21 @@
-import React from "react";
-import Project from "../components/project";
-import { MainLayout } from "../components/layout";
-import dental from "../data/dental/dental.json";
-import corporate from "../data/corporate.json";
-import medical from "../data/medical.json";
-import hospitality from "../data/hospitatlity.json";
-import residential from "../data/residential.json";
+import Image from "next/image";
+import Link from "next/link";
+import BoxGrid from "../components/box-grid";
+import { GridLayout } from "../components/layout";
+
+const images = [
+  { src: "/assets/corporate/c1.jpg", alt: "corporate" },
+  { src: "/assets/dental/dental1.jpg", alt: "dental" },
+  { src: "/assets/hospitality/h1.jpg", alt: "hospitality" },
+  { src: "/assets/medical/m1.jpg", alt: "medical" },
+  { src: "/assets/residential/r1.jpg", alt: "residential" },
+];
 
 const Projects = () => {
   return (
-    <MainLayout>
-      <div className="bg-[#fbfbfb] xl:grid xl:grid-cols-2">
-        <Project type="dental" projects={dental} />
-        <Project type="corporate" projects={corporate} />
-        <Project type="medical" projects={medical} />
-        <Project type="hospitality" projects={hospitality} />
-        <Project type="residential" projects={residential} />
-      </div>
-    </MainLayout>
+    <GridLayout total={images.length} title="Projects">
+      <BoxGrid images={images} />
+    </GridLayout>
   );
 };
 

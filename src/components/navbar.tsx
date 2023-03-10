@@ -42,7 +42,7 @@ const Navbar = () => {
     //     </div>
     //   </div>
 
-    <div className="fixed top-0 z-[100] w-full bg-[#282928] drop-shadow-lg">
+    <div className="fixed top-0 z-[100] w-full bg-[#282928]">
       <div className="h-25 mx-8 hidden flex-row justify-between p-5 uppercase md:flex">
         {/* Logo */}
         <div className="items-center justify-center">
