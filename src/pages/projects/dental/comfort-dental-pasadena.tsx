@@ -34,7 +34,7 @@ const CDP = () => {
   return (
     <main>
       <MastHead
-        index={1}
+        index={2}
         designInfo={{
           name: "Comfort Dental",
           type: "Dental",

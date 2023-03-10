@@ -7,7 +7,7 @@ const ECDC = () => {
   return (
     <main>
       <MastHead
-        index={2}
+        index={3}
         designInfo={{
           name: "Edna Cuevas, DDS",
           type: "Dental",
@@ -17,7 +17,7 @@ const ECDC = () => {
         image={"/assets/dental/dental2/IMG_6121.jpg"}
       />
       <AboutDesign
-        index={2}
+        index={3}
         designDesc={{
           title: "Title",
           desc: "Description",
