@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import BoxGrid from "../components/box-grid";
+import { GridLayout } from "../components/layout";
 
 const images = [
   { src: "/assets/corporate/c1.jpg", alt: "corporate" },
@@ -11,7 +12,11 @@ const images = [
 ];
 
 const Projects = () => {
-  return <BoxGrid images={images} />;
+  return (
+    <GridLayout>
+      <BoxGrid images={images} />
+    </GridLayout>
+  );
 };
 
 export default Projects;
