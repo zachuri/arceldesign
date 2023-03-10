@@ -33,7 +33,7 @@ interface Props {
 
 const BoxGrid: React.FC<Props> = ({ images }) => {
   return (
-    <div className="grid grid-cols-2 gap-5 max-sm:mx-7 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-2 gap-5 md:grid-cols-2 lg:grid-cols-3">
       {images.map((image) => {
         return (
           <Box key={image.src + image.alt} src={image.src} alt={image.alt} />
