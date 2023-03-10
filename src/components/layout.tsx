@@ -13,25 +13,23 @@ export const AboutLayout: React.FC<{ children: React.ReactNode }> = ({
 };
 
 // When gird layout has 6 or less
-export const GridLayout: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+export const GridLayout: React.FC<{
+  children: React.ReactNode;
+  total: number;
+}> = ({ children, total }) => {
   return (
-    <div className="max-lg:mt-[130px]">
-      <div className="flex items-center justify-center lg:h-screen">
-        {children}
-      </div>
-    </div>
-  );
-};
-
-// When grid has more than 6 use this layout
-export const GridLayoutMax: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
-  return (
-    <div className="mt-[130px]">
-      <div className="flex items-center justify-center">{children}</div>
-    </div>
+    <>
+      {total < 6 ? (
+        <div className="max-lg:mt-[130px]">
+          <div className="flex items-center justify-center lg:h-screen">
+            {children}
+          </div>
+        </div>
+      ) : (
+        <div className="mt-[130px]">
+          <div className="flex items-center justify-center">{children}</div>
+        </div>
+      )}
+    </>
   );
 };
