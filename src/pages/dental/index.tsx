@@ -2,13 +2,13 @@ import React from "react";
 import BoxGrid from "../../components/box-grid";
 
 import dental from "../../data/dental/dental.json";
-import { GridLayoutMax } from "../../components/layout";
+import { GridLayout } from "../../components/layout";
 
 const Dental = () => {
   return (
-    <GridLayoutMax>
+    <GridLayout total={dental.length}>
       <BoxGrid images={dental} />;
-    </GridLayoutMax>
+    </GridLayout>
   );
 };
 
