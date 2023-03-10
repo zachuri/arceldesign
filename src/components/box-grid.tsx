@@ -14,13 +14,14 @@ function Box({
   type: string;
 }) {
   // Format the link address
-  const name = alt.replace(/[,.\s]+/g, "-").toLowerCase();
+  const name = alt.replace(/[,.]+/g, "").replace(/[\s]+/g, "-").toLowerCase();
   const location = address.split(",")[0]?.toLowerCase();
   let navigate = "";
 
   !location
     ? (navigate = name)
-    : (navigate = name + "-" + location?.replace(/[,.\s]+/g, "-"));
+    : (navigate =
+        name + "-" + location?.replace(/[,.]+/g, "").replace(/[\s]+/g, "-"));
 
   return (
     <Link href={type + "/" + navigate}>
