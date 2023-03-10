@@ -2,9 +2,28 @@ import Link from "next/link";
 import Image from "next/image";
 import { MainLayout } from "./layout";
 
-function Box({ src, alt }: { src: string; alt: string }) {
+function Box({
+  src,
+  alt,
+  address,
+  type,
+}: {
+  src: string;
+  alt: string;
+  address: string;
+  type: string;
+}) {
+  // Format the link address
+  const name = alt.replace(/[,.\s]+/g, "-").toLowerCase();
+  const location = address.split(",")[0]?.toLowerCase();
+  let navigate = "";
+
+  !location
+    ? (navigate = name)
+    : (navigate = name + "-" + location?.replace(/[,.\s]+/g, "-"));
+
   return (
-    <Link href={"/" + alt}>
+    <Link href={type + "/" + navigate}>
       <div className="relative aspect-square h-auto">
         <Image
           fill
@@ -27,12 +46,11 @@ function Box({ src, alt }: { src: string; alt: string }) {
 }
 
 interface Props {
-  total: number;
-  images: { src: string; alt: string }[];
+  images: { src: string; alt: string; address: string }[];
   title: string;
 }
 
-const BoxGrid: React.FC<Props> = ({ images, total, title }) => {
+const BoxGrid: React.FC<Props> = ({ images, title }) => {
   return (
     <>
       <div className={"mt-[60px] grid place-items-center py-10 md:mt-[82.5px]"}>
@@ -46,6 +64,8 @@ const BoxGrid: React.FC<Props> = ({ images, total, title }) => {
                 key={image.src + image.alt}
                 src={image.src}
                 alt={image.alt}
+                address={image.address}
+                type={title}
               />
             );
           })}
