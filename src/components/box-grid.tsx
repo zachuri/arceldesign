@@ -18,7 +18,7 @@ function Box({ src, alt }: { src: string; alt: string }) {
           loading="eager"
         />
       </div>
-      <p className="mt-5 aspect-auto text-center text-xs uppercase text-white md:text-base">
+      <p className="mt-5 aspect-auto text-center text-sm uppercase text-white md:text-base">
         {alt}
       </p>
     </Link>
@@ -37,7 +37,7 @@ const BoxGrid: React.FC<Props> = ({ images, total, title }) => {
       <div
         className={
           total < 6
-            ? "grid h-screen place-items-center"
+            ? "grid h-[calc(100vh-60px)] place-items-center md:h-[calc(100vh-82.5px)]"
             : "mt-[60px] grid place-items-center py-10 md:mt-[82.5px]"
         }
       >
