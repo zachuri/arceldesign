@@ -3,31 +3,36 @@
     "src": "/assets/dental/dental1.jpg",
     "alt": "Center For Pediatric Dentistry",
     "area": "Center For Pediatric Dentistry",
-    "address": "La Habra, California"
+    "address": "La Habra, California",
+    "href": "/cfpdlh"
   },
   {
     "src": "/assets/dental/dental2.jpg",
     "alt": "Edna Cuevas, DDs",
     "area": "Edna Cuevas, DDs",
-    "address": "Covina, California "
+    "address": "Covina, California",
+    "href": "/ecddc"
   },
   {
     "src": "/assets/dental/dental3.jpg",
     "alt": "Comfort Dental",
     "area": "Comfort Dental",
-    "address": "Pasadena, California"
+    "address": "Pasadena, California",
+    "href": "/cdp"
   },
   {
     "src": "/assets/dental/dental4.jpg",
     "alt": "Lincoln Dental",
     "area": "Lincoln Dental",
-    "address": "Pasadena, California"
+    "address": "Pasadena, California",
+    "href": "/ldp"
   },
   {
     "src": "/assets/dental/dental5.jpg",
     "alt": "Access Dental",
     "area": "Access Dental",
-    "address": "West Covina, California"
+    "address": "West Covina, California",
+    "href": "/adw"
   },
   {
     "src": "/assets/dental/dental6.jpg",
