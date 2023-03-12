@@ -1,5 +1,6 @@
 import React from "react";
 import SliderImage from "./slider-image";
+import Link from "next/link";
 
 interface Props {
   index: number;
@@ -118,27 +119,40 @@ const AboutDesign: React.FC<Props> = ({
           {/* Buttons for contact and similar projects */}
           <div className="grid md:grid-cols-2">
             <div />
-            <div className="relative flex text-xl">
-              <div className="full mt-10 flex flex-row space-x-2">
-                <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
-                <div className="font-bold">CONTACT TO CONSULT</div>
-              </div>
-              <p className="absolute right-0 bottom-0 mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
-                02
-              </p>
-            </div>
+
+            <Link
+              className="group relative flex flex-row text-xl"
+              href={"/contact"}
+            >
+              <span>
+                <div className="full mt-10 flex flex-row space-x-2">
+                  <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
+                  <div className="font-bold">CONTACT TO CONSULT</div>
+                </div>
+                <p className="absolute right-0 bottom-0 mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
+                  02
+                </p>
+              </span>
+              <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-black transition-all duration-700 group-hover:w-full"></span>
+            </Link>
           </div>
           <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
 
-          <div className="relative flex text-xl">
-            <div className="full mt-10 flex flex-row space-x-2">
-              <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
-              <div className="font-bold">MORE PROJECTS </div>
-            </div>
-            <p className="absolute right-0 bottom-0 mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
-              03
-            </p>
-          </div>
+          <Link
+            className="group relative flex flex-row text-xl"
+            href={"/projects/" + designInfo.type.toLowerCase()}
+          >
+            <span>
+              <div className="full mt-10 flex flex-row space-x-2">
+                <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-black"></div>
+                <div className="font-bold">SIMILAR PROJECTS</div>
+              </div>
+              <p className="absolute right-0 bottom-0 mt-10 flex flex-col-reverse text-right text-sm font-extrabold">
+                03
+              </p>
+            </span>
+            <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-black transition-all duration-700 group-hover:w-full"></span>
+          </Link>
 
           <div className="border-b-1 mt-5 flex-grow border-t-2 border-black "></div>
         </div>

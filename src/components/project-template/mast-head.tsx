@@ -59,7 +59,7 @@ const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
               <span className="flex flex-row">
                 Gallery
                 <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
-                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
               </span>
             </a>
 
@@ -70,7 +70,7 @@ const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
               <span className="flex flex-row">
                 Similar Projects
                 <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
-                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
               </span>
             </Link>
           </div>
