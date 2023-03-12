@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavbarMobile from "./navbar-mobile";
 
 const links = [
@@ -10,7 +10,35 @@ const links = [
   { href: "/contact", name: "Contact" },
 ];
 
+function useScrollDirection() {
+  const [scrollDirection, setScrollDirection] = useState<string | null>(null);
+
+  useEffect(() => {
+    let lastScrollY = window.pageYOffset;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (
+        direction !== scrollDirection &&
+        (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)
+      ) {
+        setScrollDirection(direction);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
+    };
+  }, [scrollDirection]);
+
+  return scrollDirection;
+}
+
 const Navbar = () => {
+  const scrollDirection = useScrollDirection();
+
   return (
     // Navbar for Desktop Screens
     // <div className="fixed top-0 z-[100] w-full">
@@ -42,8 +70,12 @@ const Navbar = () => {
     //     </div>
     //   </div>
 
-    <div className="fixed top-0 z-[100] w-full bg-[#282928]">
-      <div className="h-25 mx-8 hidden flex-row justify-between p-5 uppercase md:flex">
+    <div
+      className={`sticky z-10 ${
+        scrollDirection === "down" ? "-top-24" : "top-0"
+      } h-24 bg-[#282928] transition-all duration-500`}
+    >
+      <div className="mx-8 hidden flex-row justify-between p-5 uppercase md:flex">
         {/* Logo */}
         <div className="items-center justify-center">
           <Link href={"/"}>
