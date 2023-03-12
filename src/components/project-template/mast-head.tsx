@@ -52,22 +52,27 @@ const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
         {/* Bottom */}
         <div className="absolute bottom-0 w-full text-white ">
           <div className="flex flex-row space-x-10">
-            <div className="flex flex-row">
-              Gallery
-              <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
-            </div>
+            <a
+              className="group relative flex flex-row scroll-smooth"
+              href="#gallery"
+            >
+              <span className="flex flex-row">
+                Gallery
+                <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
+                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all group-hover:w-full"></span>
+              </span>
+            </a>
+
             <Link
-              className="flex flex-row"
+              className="group relative flex flex-row"
               href={"/projects/" + designInfo.type.toLowerCase()}
             >
-              Similar Projects
-              <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
+              <span className="flex flex-row">
+                Similar Projects
+                <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
+                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all group-hover:w-full"></span>
+              </span>
             </Link>
-
-            {/* <p className="group relative m-16">
-              <span>Hover over me</span>
-              <span className="absolute -bottom-1 left-0 h-2 w-0 bg-blue-400 transition-all group-hover:w-full"></span>
-            </p> */}
           </div>
 
           <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-white"></div>
