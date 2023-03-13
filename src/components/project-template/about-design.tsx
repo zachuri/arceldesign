@@ -49,7 +49,8 @@ const AboutDesign: React.FC<Props> = ({
               </div>
             </div>
           </div>
-          <div className="border-b-1 my-5 flex-grow border-t-2 border-black md:-my-5"></div>
+
+          <Line className="-mt-6" children={undefined} />
 
           <div className="grid md:grid-cols-2">
             <div className="left-0 mt-10 flex flex-col text-sm">
@@ -144,7 +145,8 @@ const AboutDesign: React.FC<Props> = ({
               <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-black transition-all duration-700 group-hover:w-full"></span>
             </Link>
           </div>
-          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
+
+          <Line className="mt-3" children={undefined} />
 
           <Link
             className="group relative flex flex-row text-xl"
@@ -162,8 +164,7 @@ const AboutDesign: React.FC<Props> = ({
             <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-black transition-all duration-700 group-hover:w-full"></span>
           </Link>
 
-          <Line />
-          {/* <div className="border-b-1 mt-5 flex-grow border-t-2 border-black "></div> */}
+          <Line className="mt-3" children={undefined} />
         </div>
       </div>
     </>

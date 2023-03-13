@@ -2,6 +2,7 @@ import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Image from "next/image";
 import Link from "next/link";
+import Fadeupscroll from "../layouts/fadeupscroll";
 
 const links1 = [
   { href: "/", name: "HOME" },
@@ -45,24 +46,31 @@ const Contact = () => (
         <div className="grid md:grid-cols-2 xl:grid-cols-3">
           <div className="max-xl:hidden"></div>
           <div className="flex flex-col space-y-10 ">
-            <div className="flex flex-row text-lg">
-              <p className="rounded-full border border-stone-700 px-4 py-0.5">
-                OUR PHILOSOPHY
+            <Fadeupscroll>
+              <div className="flex flex-row text-lg">
+                <p className="rounded-full border border-stone-700 px-4 py-0.5">
+                  OUR PHILOSOPHY
+                </p>
+              </div>
+            </Fadeupscroll>
+            <Fadeupscroll>
+              <p className="text-4xl md:text-5xl">
+                "Allow the design process to evolve with an open mind." -Charles
+                Allem{" "}
               </p>
-            </div>
+            </Fadeupscroll>
 
-            <p className="text-4xl md:text-5xl">
-              "Allow the design process to evolve with an open mind." -Charles
-              Allem{" "}
-            </p>
-
-            <p className="pt-5 text-[20px] font-semibold text-stone-400">
-              ArcelDesign's philosphy reflects Allen's values of innovation and
-              limitless creativity to bring together a specifically tailored and
-              cohesive environment.
-            </p>
+            <Fadeupscroll>
+              <p className="pt-5 text-[20px] font-semibold text-stone-400">
+                ArcelDesign's philosphy reflects Allen's values of innovation
+                and limitless creativity to bring together a specifically
+                tailored and cohesive environment.
+              </p>
+            </Fadeupscroll>
           </div>
-          <div className="flex items-center justify-center pt-10 md:pt-0">
+
+          {/* <Fadeupscroll className="flex items-center justify-center pt-10 md:pt-0"> */}
+          <Fadeupscroll className="flex justify-center pt-10 md:pt-28">
             <Image
               width={200}
               height={200}
@@ -70,7 +78,7 @@ const Contact = () => (
               src={"/assets/about/1570475856866.jpeg"}
               alt={"about 1"}
             />
-          </div>
+          </Fadeupscroll>
         </div>
 
         <div className="group relative w-fit pt-5 text-xl md:pt-0">

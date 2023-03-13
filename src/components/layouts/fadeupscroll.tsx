@@ -21,16 +21,21 @@ const variants = {
   },
 };
 
-const Fadeupscroll: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+interface MyComponentProps {
+  className?: string;
+  children: React.ReactNode;
+}
+
+const Fadeupscroll: React.FC<MyComponentProps> = ({ className, children }) => {
   return (
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
     >
-      <motion.div variants={variants}>{children}</motion.div>
+      <motion.div className={`${className}`} variants={variants}>
+        {children}
+      </motion.div>
     </motion.div>
   );
 };
