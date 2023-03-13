@@ -45,13 +45,7 @@ const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
 
           {/* Right */}
           <div className="flex flex-col items-center justify-center">
-            <Image
-              height={600}
-              width={600}
-              src={image}
-              alt={designInfo.name}
-              placeholder="blur"
-            />
+            <Image height={600} width={600} src={image} alt={designInfo.name} />
           </div>
         </div>
 
