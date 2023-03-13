@@ -75,7 +75,9 @@ const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
             </Link>
           </div>
 
-          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-white"></div>
+          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-white">
+            <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+          </div>
 
           <div className="relative mb-10 flex text-sm">
             <div className="absoute left-0 flex flex-col">

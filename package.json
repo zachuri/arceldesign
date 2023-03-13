@@ -23,7 +23,6 @@
     "react-icons": "^4.7.1",
     "sharp": "^0.31.3",
     "swiper": "^9.0.5",
-    "tw-elements": "^1.0.0-beta1",
     "zod": "^3.20.2"
   },
   "devDependencies": {
