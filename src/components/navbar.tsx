@@ -73,7 +73,7 @@ const Navbar = () => {
     <div
       className={`fixed z-[100] w-full ${
         scrollDirection === "down" ? "-top-16 md:-top-[88px]" : "top-0"
-      } h-16 bg-[#282928] transition-all duration-500 md:h-[88px]`}
+      } h-[60px] bg-[#282928] transition-all duration-500 md:h-[82.5px]`}
     >
       <div className="mx-8 hidden flex-row justify-between p-5 uppercase md:flex">
         {/* Logo */}
