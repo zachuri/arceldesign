@@ -1,6 +1,7 @@
 import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   index: number;
@@ -44,24 +45,39 @@ const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
 
           {/* Right */}
           <div className="flex flex-col items-center justify-center">
-            <Image height={600} width={600} src={image} alt={"dental 1"} />
+            <Image height={600} width={600} src={image} alt={designInfo.name} />
           </div>
         </div>
 
         {/* Bottom */}
         <div className="absolute bottom-0 w-full text-white ">
           <div className="flex flex-row space-x-10">
-            <div className="flex flex-row">
-              Gallery
-              <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
-            </div>
-            <div className="flex flex-row">
-              Similar Projects
-              <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
-            </div>
+            <a
+              className="group relative flex flex-row scroll-smooth"
+              href="#gallery"
+            >
+              <span className="flex flex-row">
+                Gallery
+                <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
+                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+              </span>
+            </a>
+
+            <Link
+              className="group relative flex flex-row"
+              href={"/projects/" + designInfo.type.toLowerCase()}
+            >
+              <span className="flex flex-row">
+                Similar Projects
+                <div className="mt-3 ml-2 w-10 border-t-2 border-gray-400"></div>
+                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+              </span>
+            </Link>
           </div>
 
-          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-white"></div>
+          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-white">
+            <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+          </div>
 
           <div className="relative mb-10 flex text-sm">
             <div className="absoute left-0 flex flex-col">
