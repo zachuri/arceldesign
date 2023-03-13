@@ -71,7 +71,7 @@ const Navbar = () => {
     //   </div>
 
     <div
-      className={`sticky z-10 ${
+      className={`fixed z-[100] w-full ${
         scrollDirection === "down" ? "-top-24" : "top-0"
       } h-24 bg-[#282928] transition-all duration-500`}
     >

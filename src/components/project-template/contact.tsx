@@ -1,6 +1,19 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Image from "next/image";
+import Link from "next/link";
+
+const links1 = [
+  { href: "/", name: "HOME" },
+  { href: "/about", name: "ABOUT" },
+  { href: "/contact", name: "CONTACT" },
+];
+
+const links2 = [
+  { href: "/", name: "FACEBOOK" },
+  { href: "/about", name: "LINKEDIN" },
+  { href: "/contact", name: "INSTAGRAM" },
+];
 
 const Contact = () => (
   <>
@@ -13,7 +26,13 @@ const Contact = () => (
         <div className="mb-10 grid grid-rows-2 text-lg md:mb-0 md:grid-cols-2">
           <p className="text-stone-400">CHECK OUR SOCIAL MEDIA </p>
           <div className="relative flex">
-            <div className="absolute mt-2.5 flex flex-row-reverse rounded-full border border-white py-0.5 pr-5 pl-6 md:right-0 md:mt-0">
+            <div
+              className="absolute mt-2.5 flex flex-row-reverse rounded-full border border-white py-0.5 pr-5 pl-6 transition
+            delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 md:right-0 md:mt-0
+            
+            
+            "
+            >
               <IoIosArrowRoundForward className="ml-2.5" size="25" />
               <p>CONTACT NOW</p>
             </div>
@@ -54,11 +73,14 @@ const Contact = () => (
           </div>
         </div>
 
-        <div className="relative flex pt-5 text-xl md:pt-0">
-          <div className="full mt-10 flex flex-row space-x-2">
-            <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-white"></div>
-            <div className="font-bold">MORE PROJECTS </div>
-          </div>
+        <div className="group relative w-fit pt-5 text-xl md:pt-0">
+          <span>
+            <div className="full mt-10 flex flex-row space-x-2">
+              <div className="mt-1.5 h-3.5 w-3.5 rounded-full bg-white"></div>
+              <div className="font-bold">MORE PROJECTS </div>
+            </div>
+          </span>
+          <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-white transition-all duration-700 group-hover:w-full"></span>
         </div>
 
         {/* LINE */}
@@ -66,20 +88,27 @@ const Contact = () => (
 
         <div className="mt-10 flex flex-col space-y-10 md:flex-row md:space-y-0">
           <p className="flex-auto text-stone-400">ARCELDESIGN, INC.</p>
+
           <div className="flex-auto">
-            <ul>
-              <li>FACEBOOK</li>
-              <li>LINKEDIN</li>
-              <li>INSTAGRAM</li>
-            </ul>
+            {links2.map((link) => (
+              <div key={link.name}>
+                <Link href={link.href}>
+                  <button>{link.name}</button>
+                </Link>
+              </div>
+            ))}
           </div>
+
           <div className="flex-auto">
-            <ul>
-              <li>HOME</li>
-              <li>ABOUT</li>
-              <li>CONTACT</li>
-            </ul>
+            {links1.map((link) => (
+              <div key={link.name}>
+                <Link href={link.href}>
+                  <button>{link.name}</button>
+                </Link>
+              </div>
+            ))}
           </div>
+
           <p className="text-stone-400">
             &copy; {new Date().getFullYear()} ALL RIGHTS RESERVED
           </p>
