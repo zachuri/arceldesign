@@ -34,18 +34,18 @@ const images = [
     href: "/medical",
     type: "Medical",
   },
-  // {
-  //   src: "/assets/home/home4.jpg",
-  //   alt: "home 4",
-  //   href: "/residential",
-  //   type: "Residential",
-  // },
-  // {
-  //   src: "/assets/home/home5.jpg",
-  //   alt: "home 5",
-  //   href: "/corporate",
-  //   type: "Corporate",
-  // },
+  {
+    src: "/assets/home/home4.jpg",
+    alt: "home 4",
+    href: "/residential",
+    type: "Residential",
+  },
+  {
+    src: "/assets/home/home5.jpg",
+    alt: "home 5",
+    href: "/corporate",
+    type: "Corporate",
+  },
 ];
 
 const Slider = () => (
@@ -78,10 +78,12 @@ const Slider = () => (
                 sizes="(max-width: 768px) 100vw,
                   (max-width: 1200px) 50vw,
                   33vw"
-                style={{ objectFit: "cover" }}
                 quality={100}
                 loading="eager"
                 priority
+                objectFit="cover"
+                layout="fill"
+                unoptimized
               />
             </div>
 
