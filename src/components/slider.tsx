@@ -82,6 +82,7 @@ const Slider = () => (
                 quality={100}
                 loading="eager"
                 priority
+                placeholder="blur"
               />
             </div>
 

@@ -36,6 +36,7 @@ const Box = ({
           alt={alt}
           loading="eager"
           priority
+          placeholder="blur"
         />
       </div>
       <p className="mt-5 aspect-auto text-center text-sm uppercase text-white md:text-base">
