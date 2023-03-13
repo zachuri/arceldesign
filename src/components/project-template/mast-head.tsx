@@ -2,6 +2,8 @@ import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import Fadeup from "../layouts/fadeup";
 
 interface Props {
   index: number;
@@ -13,6 +15,16 @@ interface Props {
   };
   image: string;
 }
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+    },
+  },
+};
 
 const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
   return (
@@ -42,11 +54,19 @@ const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
               </div>
             </div>
           </div>
-
+          {/* initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }} */}
           {/* Right */}
-          <div className="flex flex-col items-center justify-center">
-            <Image height={600} width={600} src={image} alt={designInfo.name} />
-          </div>
+          <Fadeup>
+            <div className="flex flex-col items-center justify-center">
+              <Image
+                height={600}
+                width={600}
+                src={image}
+                alt={designInfo.name}
+              />
+            </div>
+          </Fadeup>
         </div>
 
         {/* Bottom */}

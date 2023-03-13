@@ -135,59 +135,6 @@
   dependencies:
     "@swc/helpers" "^0.4.14"
 
-"@motionone/animation@^10.15.1":
-  "integrity" "sha512-mZcJxLjHor+bhcPuIFErMDNyrdb2vJur8lSfMCsuCB4UyV8ILZLvK+t+pg56erv8ud9xQGK/1OGPt10agPrCyQ=="
-  "resolved" "https://registry.npmjs.org/@motionone/animation/-/animation-10.15.1.tgz"
-  "version" "10.15.1"
-  dependencies:
-    "@motionone/easing" "^10.15.1"
-    "@motionone/types" "^10.15.1"
-    "@motionone/utils" "^10.15.1"
-    "tslib" "^2.3.1"
-
-"@motionone/dom@^10.15.3":
-  "integrity" "sha512-Xc5avlgyh3xukU9tydh9+8mB8+2zAq+WlLsC3eEIp7Ax7DnXgY7Bj/iv0a4X2R9z9ZFZiaXK3BO0xMYHKbAAdA=="
-  "resolved" "https://registry.npmjs.org/@motionone/dom/-/dom-10.15.5.tgz"
-  "version" "10.15.5"
-  dependencies:
-    "@motionone/animation" "^10.15.1"
-    "@motionone/generators" "^10.15.1"
-    "@motionone/types" "^10.15.1"
-    "@motionone/utils" "^10.15.1"
-    "hey-listen" "^1.0.8"
-    "tslib" "^2.3.1"
-
-"@motionone/easing@^10.15.1":
-  "integrity" "sha512-6hIHBSV+ZVehf9dcKZLT7p5PEKHGhDwky2k8RKkmOvUoYP3S+dXsKupyZpqx5apjd9f+php4vXk4LuS+ADsrWw=="
-  "resolved" "https://registry.npmjs.org/@motionone/easing/-/easing-10.15.1.tgz"
-  "version" "10.15.1"
-  dependencies:
-    "@motionone/utils" "^10.15.1"
-    "tslib" "^2.3.1"
-
-"@motionone/generators@^10.15.1":
-  "integrity" "sha512-67HLsvHJbw6cIbLA/o+gsm7h+6D4Sn7AUrB/GPxvujse1cGZ38F5H7DzoH7PhX+sjvtDnt2IhFYF2Zp1QTMKWQ=="
-  "resolved" "https://registry.npmjs.org/@motionone/generators/-/generators-10.15.1.tgz"
-  "version" "10.15.1"
-  dependencies:
-    "@motionone/types" "^10.15.1"
-    "@motionone/utils" "^10.15.1"
-    "tslib" "^2.3.1"
-
-"@motionone/types@^10.15.1":
-  "integrity" "sha512-iIUd/EgUsRZGrvW0jqdst8st7zKTzS9EsKkP+6c6n4MPZoQHwiHuVtTQLD6Kp0bsBLhNzKIBlHXponn/SDT4hA=="
-  "resolved" "https://registry.npmjs.org/@motionone/types/-/types-10.15.1.tgz"
-  "version" "10.15.1"
-
-"@motionone/utils@^10.15.1":
-  "integrity" "sha512-p0YncgU+iklvYr/Dq4NobTRdAPv9PveRDUXabPEeOjBLSO/1FNB2phNTZxOxpi1/GZwYpAoECEa0Wam+nsmhSw=="
-  "resolved" "https://registry.npmjs.org/@motionone/utils/-/utils-10.15.1.tgz"
-  "version" "10.15.1"
-  dependencies:
-    "@motionone/types" "^10.15.1"
-    "hey-listen" "^1.0.8"
-    "tslib" "^2.3.1"
-
 "@next/env@13.1.6":
   "integrity" "sha512-s+W9Fdqh5MFk6ECrbnVmmAOwxKQuhGMT7xXHrkYIBMBcTiOqNWhv5KbJIboKR5STXxNXl32hllnvKaffzFaWQg=="
   "resolved" "https://registry.npmjs.org/@next/env/-/env-13.1.6.tgz"
@@ -2271,13 +2218,11 @@
   "resolved" "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz"
   "version" "4.2.0"
 
-"framer-motion@^9.0.4":
-  "integrity" "sha512-lZ1+2/WBn8iYRYmeEFpu/X2fI1GNwJL+X21EpnWwKP3vkJsnWBXZF5kHF29wIPk9sBU2xDIpDm9SAVo206bp9A=="
-  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-9.0.4.tgz"
-  "version" "9.0.4"
+"framer-motion@^9.1.7":
+  "integrity" "sha512-nKxBkIO4IPkMEqcBbbATxsVjwPYShKl051yhBv9628iAH6JLeHD0siBHxkL62oQzMC1+GNX73XtPjgP753ufuw=="
+  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-9.1.7.tgz"
+  "version" "9.1.7"
   dependencies:
-    "@motionone/dom" "^10.15.3"
-    "hey-listen" "^1.0.8"
     "tslib" "^2.4.0"
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
@@ -2481,11 +2426,6 @@
   "version" "1.0.3"
   dependencies:
     "function-bind" "^1.1.1"
-
-"hey-listen@^1.0.8":
-  "integrity" "sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q=="
-  "resolved" "https://registry.npmjs.org/hey-listen/-/hey-listen-1.0.8.tgz"
-  "version" "1.0.8"
 
 "ieee754@^1.1.13":
   "integrity" "sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA=="
@@ -3695,7 +3635,7 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   "version" "1.14.1"
 
-"tslib@^2.3.1", "tslib@^2.4.0", "tslib@^2.5.0":
+"tslib@^2.4.0", "tslib@^2.5.0":
   "integrity" "sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz"
   "version" "2.5.0"
