@@ -2,6 +2,7 @@ import Box from "../../components/box";
 import BoxGrid from "../../components/box-grid";
 import { GetStaticProps } from "next";
 import { getBlurhash } from "next-blurhash";
+import Head from "next/head";
 
 type DemoProps = {
   imgHashes: { src: string; hash: string }[];
@@ -40,6 +41,11 @@ export const getStaticProps: GetStaticProps<DemoProps> = async () => {
 const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
   return (
     <div>
+      <Head>
+        <title>ARCELDESIGN, INC. | Projects</title>
+        <meta name="description" content="Projects" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <BoxGrid title={"projects"}>
         <Box
           src={"/assets/corporate/c1.jpg"}

@@ -4,6 +4,7 @@ import hospitality from "../../../data/hospitatlity.json";
 import Box from "../../../components/box";
 import { getBlurhash } from "next-blurhash";
 import { GetStaticProps } from "next";
+import Head from "next/head";
 
 type DemoProps = {
   imgHashes: { src: string; hash: string }[];
@@ -34,6 +35,11 @@ export const getStaticProps: GetStaticProps<DemoProps> = async () => {
 const Hospitality: React.FC<DemoProps> = ({ imgHashes }) => {
   return (
     <>
+      <Head>
+        <title>ARCELDESIGN, INC. | Hospitality</title>
+        <meta name="description" content="Hospitality" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <BoxGrid title="hospitality">
         {hospitality.map((item, index) => {
           return (

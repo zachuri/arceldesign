@@ -3,6 +3,7 @@ import BoxGrid from "../../../components/box-grid";
 import dental from "../../../data/dental/dental.json";
 import { getBlurhash } from "next-blurhash";
 import { GetStaticProps } from "next";
+import Head from "next/head";
 
 type DemoProps = {
   imgHashes: { src: string; hash: string }[];
@@ -16,7 +17,7 @@ export const getStaticProps: GetStaticProps<DemoProps> = async () => {
     hashes[dental[i]?.src as string] = hash;
   }
 
-  const imgHashes =dental 
+  const imgHashes = dental
     .filter((img) => hashes[img.src] !== undefined)
     .map((img) => ({
       src: img.src,
@@ -33,6 +34,11 @@ export const getStaticProps: GetStaticProps<DemoProps> = async () => {
 const Dental: React.FC<DemoProps> = ({ imgHashes }) => {
   return (
     <>
+      <Head>
+        <title>ARCELDESIGN, INC. | Dental</title>
+        <meta name="description" content="Dental" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <BoxGrid title="dental">
         {dental.map((item, index) => {
           return (

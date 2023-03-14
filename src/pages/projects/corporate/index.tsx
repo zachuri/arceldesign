@@ -3,6 +3,7 @@ import BoxGrid from "../../../components/box-grid";
 import corporate from "../../../data/corporate.json";
 import { getBlurhash } from "next-blurhash";
 import { GetStaticProps } from "next";
+import Head from "next/head";
 
 type DemoProps = {
   imgHashes: { src: string; hash: string }[];
@@ -33,6 +34,11 @@ export const getStaticProps: GetStaticProps<DemoProps> = async () => {
 const Corporate: React.FC<DemoProps> = ({ imgHashes }) => {
   return (
     <>
+      <Head>
+        <title>ARCELDESIGN, INC. | Corporate</title>
+        <meta name="description" content="Corporate" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <BoxGrid title="corporate">
         {corporate.map((item, index) => {
           return (
