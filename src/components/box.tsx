@@ -29,7 +29,7 @@ const Box = ({
   const [blurDataUrl] = useNextBlurhash("LEHV6nWB2yk8pyo0adR*.7kCMdnj");
 
   return (
-    <Link href={type + "/" + navigate}>
+    <Link href={type + "/" + navigate} key={type + src}>
       <div className="relative aspect-square h-auto">
         <BlurhashCanvas
           hash={hash}
