@@ -1,6 +1,6 @@
 import Head from "next/head";
 import AboutDesign from "../../../components/project-template/about-design";
-import Contact from "../../../components/project-template/contact";
+import Contact from "../../../components/project-template/contact/contact";
 import MastHead from "../../../components/project-template/mast-head";
 import images from "../../../data/dental/dental2.json";
 

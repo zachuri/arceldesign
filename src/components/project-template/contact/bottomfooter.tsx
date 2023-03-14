@@ -43,7 +43,7 @@ const itemVariants = {
   },
 };
 
-const ExampleAnimation = () => {
+const BottomFooter = () => {
   const { ref, inView } = useInView({
     threshold: 0.5, // Trigger when element is 50% visible
     triggerOnce: true, // Only trigger once
@@ -90,4 +90,4 @@ const ExampleAnimation = () => {
   );
 };
 
-export default ExampleAnimation;
+export default BottomFooter;
