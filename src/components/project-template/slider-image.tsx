@@ -50,6 +50,9 @@ const SliderImage: React.FC<Props> = ({ images }) => {
               {/* Solution to safair h-screen*/}
               <div className="h-[300px] md:h-[500px]">
                 <Image
+                  sizes="(max-width: 768px) 100vw,
+                  (max-width: 1200px) 50vw,
+                  33vw"
                   src={image.src}
                   alt={image.alt}
                   fill
