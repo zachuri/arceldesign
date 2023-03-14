@@ -33,7 +33,7 @@ export const getStaticProps: GetStaticProps<DemoProps> = async () => {
 
 const Dental: React.FC<DemoProps> = ({ imgHashes }) => {
   return (
-    <>
+    <div key="dental">
       <Head>
         <title>ARCELDESIGN, INC. | Dental</title>
         <meta name="description" content="Dental" />
@@ -52,7 +52,7 @@ const Dental: React.FC<DemoProps> = ({ imgHashes }) => {
           );
         })}
       </BoxGrid>
-    </>
+    </div>
   );
 };
 
