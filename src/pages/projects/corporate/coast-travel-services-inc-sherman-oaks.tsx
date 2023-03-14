@@ -5,48 +5,40 @@ import MastHead from "../../../components/project-template/mast-head";
 
 const images = [
   {
-    src: "/assets/corporate/c3-1.jpg",
-    alt: "corporate 3 1",
+    src: "/assets/corporate/c5-1.jpeg",
+    alt: "corporate 5 1",
     desc: "",
   },
   {
-    src: "/assets/corporate/c3-2.jpeg",
-    alt: "corporate 3 2",
+    src: "/assets/corporate/c5-2.jpeg",
+    alt: "corporate 5 2",
     desc: "",
   },
   {
-    src: "/assets/corporate/c3-3.jpg",
-    alt: "corporate 3 3",
+    src: "/assets/corporate/c5-3.jpeg",
+    alt: "corporate 5 3",
     desc: "",
   },
   {
-    src: "/assets/corporate/c3-4.jpg",
-    alt: "corporate 3 4",
-    desc: "",
-  },
-  {
-    src: "/assets/corporate/c3-5.jpg",
-    alt: "corporate 3 5",
+    src: "/assets/corporate/c5-4.jpeg",
+    alt: "corporate 5 4",
     desc: "",
   },
 ];
 
 const info = {
-  index: 3,
-  name: "Diamond Star Office Condo",
+  index: 5,
+  name: "Coast Travel Services, Inc.",
   type: "Corporate",
-  client: "CGM Development, Inc. ",
-  size: "15,000 sq ft",
-  location: "Diamond Bar, California",
-  completedYear: "2013",
-  title: "Timeless Elegance.",
-  desc: 'This grand lobby with strong symmetry of beam and columns, reminiscent the "Ancient Greece" \
-  known as the Colonnade denotes a long sequence of columns joined by their entablature emulated in this \
-  space in a modern twist. The customized crystal chandeliers & crystal sconces, red carpet rich in color, \
-  luscious wall treatments, and semi-curve wall crystal glass mosaic compliments the grandeur & elegance of the interiors.',
+  client: "Anie Arciaga",
+  size: "1200 sq ft",
+  location: "Sherman Oaks, California",
+  completedYear: "2011",
+  title: "Instant Atmosphere.",
+  desc: "Pared down and functional, but light and airy for this travel agency office. With contemporary furnishings and modern color scheme complete the coziness-like feel for the entire space.",
 };
 
-const DSOC = () => {
+const TSG = () => {
   return (
     <>
       <Head>
@@ -87,4 +79,4 @@ const DSOC = () => {
   );
 };
 
-export default DSOC;
+export default TSG;

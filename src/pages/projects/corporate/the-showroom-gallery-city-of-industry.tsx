@@ -60,7 +60,7 @@ const TSG = () => {
   return (
     <>
       <Head>
-        <title>ArcelDesign | {info.name}</title>
+        <title>ARCELDESIGN, INC. | {info.name}</title>
         <meta name="description" content={info.name} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -73,7 +73,7 @@ const TSG = () => {
             location: info.location,
             completedYear: info.completedYear,
           }}
-          image={"/assets/corporate/c3-1.jpg"}
+          image={images[0]?.src as string}
         />
         <AboutDesign
           index={info.index}
