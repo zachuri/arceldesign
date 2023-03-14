@@ -1,7 +1,4 @@
-import Head from "next/head";
-import AboutDesign from "../../../components/project-template/about-design";
-import Contact from "../../../components/project-template/contact/contact";
-import MastHead from "../../../components/project-template/mast-head";
+import ProjectInput from "../../../components/project-template/project-input";
 
 const images = [
   {
@@ -26,48 +23,23 @@ const images = [
   },
 ];
 
+const info = {
+  index: 7,
+  name: "Shodhan Dentistry",
+  type: "Dental",
+  client: "Dr. Harin Shodhan, Dr. Keyur Shodhan",
+  size: "2400 sq ft / 7 chairs",
+  location: "Desert Hot Springs, California",
+  completedYear: "2009",
+  title: "Nature Therapy...",
+  desc: 'The combination of having incorporated natural stones and wood tones in this design space creates \
+  a cozy and “homier" feel, while instilling solidity. Together, all natural elements, hues and tones of warm \
+  butterscotch and cooper create a pleasant and welcoming atmosphere. Large-scale furnishings also support \
+  its state of grandness and fine quality while ensuring a welcoming feel.',
+};
+
 const SDDHS = () => {
-  return (
-    <>
-      <Head>
-        <title>ArcelDesign | Shodhan Dentistry</title>
-        <meta name="description" content="Shodhan Dentistry" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <MastHead
-          index={7}
-          designInfo={{
-            name: "Shodhan Dentistry",
-            type: "Dental",
-            location: "Desert Hot Springs, California",
-            completedYear: "2009",
-          }}
-          image={"/assets/dental/d7-1.jpg"}
-        />
-        <AboutDesign
-          index={7}
-          designDesc={{
-            title: "Modest Red...",
-            desc: "Modest accents of rich red color, dispersed throughout the space, promote a \
-          consistent richness to the eye in this environment. The dental office embodies an elegant \
-          and contemporary design, through its unique use of materials and artwork. Porcelain tiles \
-          resembling hardwood flooring, connecting the space together, add a solid and sturdy feel, while adding tranquility through their horizontal layout.",
-          }}
-          designInfo={{
-            name: "Shodan Dentistry",
-            type: "Dental",
-            client: "Dr. Harin Shodhan, Dr. Keyur Shodhan",
-            size: "2165 sq ft / 5 chairs",
-            location: "Redlands, CA",
-            completedYear: "20011",
-          }}
-          images={images}
-        />
-        <Contact />
-      </main>
-    </>
-  );
+  return <ProjectInput images={images} info={info} />;
 };
 
 export default SDDHS;

@@ -1,7 +1,4 @@
-import Head from "next/head";
-import AboutDesign from "../../../components/project-template/about-design";
-import Contact from "../../../components/project-template/contact/contact";
-import MastHead from "../../../components/project-template/mast-head";
+import ProjectInput from "../../../components/project-template/project-input";
 
 const images = [
   {
@@ -31,48 +28,22 @@ const images = [
   },
 ];
 
+const info = {
+  index: 12,
+  name: "Max Mosslehi, DMD, Inc.",
+  type: "Dental",
+  client: "Dr. Max Mosslehi",
+  size: "2000 sq ft / 5 chairs ",
+  location: "Tustin, California",
+  completedYear: "2016",
+  title: "Simply Natural",
+  desc: "The natural colors we can’t live without… Earth tone color palette adds the look and feels \
+  of nature to the entire space. The culcutta marble stone on the reception counter and the huge \
+  abstract paintings organic pattern with rich brown and blue gives an intimate and tranquil feel for the entire dental office ",
+};
+
 const OVDIWC = () => {
-  return (
-    <>
-      <Head>
-        <title>ArcelDesign | Max Mosslehi, D.D.M., Inc.</title>
-        <meta name="description" content="Max Mosslehi, D.D.M., Inc." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <MastHead
-          index={12}
-          designInfo={{
-            name: "Max Mosslehi, D.D.M., Inc.",
-            type: "Dental",
-            location: "Tustin, California",
-            completedYear: "2016",
-          }}
-          image={"/assets/dental/d12-1.png"}
-        />
-        <AboutDesign
-          index={12}
-          designDesc={{
-            title: "Simply Natural...",
-            desc: "The natural colors we can’t live without… Earth tone color palette adds the look and \
-            feels of nature to the entire space. The culcutta marble stone on the reception counter and \
-            the huge abstract paintings organic pattern with rich brown and blue gives an intimate and \
-            tranquil feel for the entire dental office.",
-          }}
-          designInfo={{
-            name: "Max Mosslehi, D.D.M., Inc.",
-            type: "Dental",
-            client: "Dr. Max Mosslehi",
-            size: "2000 sq ft / 3 chairs",
-            location: "Tustin, CA",
-            completedYear: "2016",
-          }}
-          images={images}
-        />
-        <Contact />
-      </main>
-    </>
-  );
+  return <ProjectInput images={images} info={info} />;
 };
 
 export default OVDIWC;

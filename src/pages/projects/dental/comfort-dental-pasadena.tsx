@@ -1,7 +1,4 @@
-import Head from "next/head";
-import AboutDesign from "../../../components/project-template/about-design";
-import Contact from "../../../components/project-template/contact/contact";
-import MastHead from "../../../components/project-template/mast-head";
+import ProjectInput from "../../../components/project-template/project-input";
 
 const images = [
   {
@@ -31,48 +28,20 @@ const images = [
   },
 ];
 
+const info = {
+  index: 3,
+  name: "Comfort Dental",
+  type: "Dental",
+  client: "Julian Nguyen, DDS, MS",
+  size: "1500 sq ft | 4 Chairs",
+  location: "Pasadena, California",
+  completedYear: "2013",
+  title: "Modern Comfort....",
+  desc: "Modern contemporary style, structure, and form combine harmoniously for this dental practice, creating an attractively ideal space, one minimal and therapeutic.",
+};
+
 const CDP = () => {
-  return (
-    <>
-      <Head>
-        <title>ArcelDesign | Comfort Dental</title>
-        <meta
-          name="description"
-          content="Arcel Design/ Dental/ Comfort Dental"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <MastHead
-          index={3}
-          designInfo={{
-            name: "Comfort Dental",
-            type: "Dental",
-            location: "Pasadena, California",
-            completedYear: "2013",
-          }}
-          image={"/assets/dental/d3-1.jpg"}
-        />
-        <AboutDesign
-          index={3}
-          designDesc={{
-            title: "Modern Comfort....",
-            desc: "Modern contemporary style, structure, and form combine harmoniously for this dental practice, creating an attractively ideal space, one minimal and therapeutic.",
-          }}
-          designInfo={{
-            name: "Comfort Dental",
-            type: "Dental",
-            client: "Julian Nguyen, DDS, MS",
-            size: "1500 sq ft",
-            location: "Pasadena, CA",
-            completedYear: "2013",
-          }}
-          images={images}
-        />
-        <Contact />
-      </main>
-    </>
-  );
+  return <ProjectInput images={images} info={info} />;
 };
 
 export default CDP;
