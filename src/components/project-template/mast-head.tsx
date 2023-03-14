@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Fadeup from "../layouts/fadeup";
+import Line from "../layouts/line_no_animation";
 
 interface Props {
   index: number;
