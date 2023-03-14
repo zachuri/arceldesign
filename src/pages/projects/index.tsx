@@ -11,8 +11,8 @@ type DemoProps = {
 
 export const getStaticProps: GetStaticProps<DemoProps> = async () => {
   const images = [
-    { src: "/assets/corporate/c1.jpg" },
-    { src: "/assets/dental/d1.jpg" },
+    { src: "/assets/corporate/c1-1.jpg" },
+    { src: "/assets/dental/d1-1.jpg" },
     { src: "/assets/hospitality/h1.jpg" },
     { src: "/assets/medical/m1.jpg" },
     { src: "/assets/residential/r1.jpg" },
