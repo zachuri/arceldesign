@@ -55,9 +55,8 @@ const BottomFooter = () => {
       initial="initial"
       animate={inView ? "animate" : "initial"}
       ref={ref}
-      className="container"
     >
-      <div className="mt-10 flex flex-col space-y-10 md:flex-row md:space-y-0">
+      <div className="mt-10 flex w-full flex-col space-y-10 md:flex-row md:space-y-0">
         <motion.p variants={itemVariants} className="flex-auto text-stone-400">
           ARCELDESIGN, INC.
         </motion.p>
