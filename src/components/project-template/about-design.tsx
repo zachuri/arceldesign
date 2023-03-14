@@ -50,7 +50,7 @@ const AboutDesign: React.FC<Props> = ({
             </div>
           </div>
 
-          <Line className="-mt-6" children={undefined} />
+          <Line className="mt-4 md:-mt-6" children={undefined} />
 
           <div className="grid md:grid-cols-2">
             <div className="left-0 mt-10 flex flex-col text-sm">
