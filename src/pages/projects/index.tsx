@@ -49,7 +49,7 @@ const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
           hash={imgHashes.at(0)?.hash as string}
         />
         <Box
-          src={"/assets/dental/dental1.jpg"}
+          src={"/assets/dental/d1.jpg"}
           alt={"dental"}
           address={""}
           type={"projects"}
