@@ -3,7 +3,8 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import Image from "next/image";
 import Link from "next/link";
 import Fadeupscroll from "../layouts/fadeupscroll";
-
+import Rowfadeup from "../layouts/rowfadeup";
+import { motion } from "framer-motion";
 const links1 = [
   { href: "/", name: "HOME" },
   { href: "/about", name: "ABOUT" },
@@ -94,7 +95,9 @@ const Contact = () => (
         {/* LINE */}
         <div className="border-b-1 mt-5 flex-grow border-t-2 border-stone-800 " />
 
-        <div className="mt-10 flex flex-col space-y-10 md:flex-row md:space-y-0">
+        <Rowfadeup />
+
+        {/* <div className="mt-10 flex flex-col space-y-10 md:flex-row md:space-y-0">
           <p className="flex-auto text-stone-400">ARCELDESIGN, INC.</p>
 
           <div className="flex-auto">
@@ -120,7 +123,7 @@ const Contact = () => (
           <p className="text-stone-400">
             &copy; {new Date().getFullYear()} ALL RIGHTS RESERVED
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   </>
