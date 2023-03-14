@@ -51,14 +51,14 @@ const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
       <Fadeup>
         <BoxGrid title={"projects"}>
           <Box
-            src={"/assets/corporate/c1.jpg"}
+            src={"/assets/corporate/c1-1.jpg"}
             alt={"corporate"}
             address={""}
             type={"projects"}
             hash={imgHashes.at(0)?.hash as string}
           />
           <Box
-            src={"/assets/dental/d1.jpg"}
+            src={"/assets/dental/d1-1.jpg"}
             alt={"dental"}
             address={""}
             type={"projects"}
