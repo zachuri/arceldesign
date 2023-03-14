@@ -5,22 +5,22 @@ import MastHead from "../../../components/project-template/mast-head";
 
 const images = [
   {
-    src: "/assets/dental/dental7/_MG_1229.jpg",
+    src: "/assets/dental/d7-1.jpg",
     alt: "dental 7 1",
     desc: "",
   },
   {
-    src: "/assets/dental/dental7/_MG_1245.jpg",
+    src: "/assets/dental/d7-2.jpg",
     alt: "dental 7 2",
     desc: "",
   },
   {
-    src: "/assets/dental/dental7/_MG_1275a.jpg",
+    src: "/assets/dental/d7-3.jpg",
     alt: "dental 7 3",
     desc: "",
   },
   {
-    src: "/assets/dental/dental7/_MG_1293.jpg",
+    src: "/assets/dental/d7-4.jpg",
     alt: "dental 7 4",
     desc: "",
   },
@@ -31,10 +31,7 @@ const SDDHS = () => {
     <>
       <Head>
         <title>ArcelDesign | Shodhan Dentistry</title>
-        <meta
-          name="description"
-          content="Arcel Design/ Dental/ Shodhan Dentistry"
-        />
+        <meta name="description" content="Shodhan Dentistry" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -46,7 +43,7 @@ const SDDHS = () => {
             location: "Desert Hot Springs, California",
             completedYear: "2009",
           }}
-          image={"/assets/dental/dental6/RedlandsOffice-1.jpg"}
+          image={"/assets/dental/d7-1.jpg"}
         />
         <AboutDesign
           index={7}

@@ -5,33 +5,23 @@ import MastHead from "../../../components/project-template/mast-head";
 
 const images = [
   {
-    src: "/assets/dental/dental6/RedlandsOffice-1.jpg",
-    alt: "dental redlands 1",
+    src: "/assets/dental/d6-1.jpg",
+    alt: "dental 6 1",
     desc: "",
   },
   {
-    src: "/assets/dental/dental6/RedlandsOffice-3.jpg",
-    alt: "dental redlands 3",
+    src: "/assets/dental/d6-2.jpg",
+    alt: "dental 6 3",
     desc: "",
   },
   {
-    src: "/assets/dental/dental6/RedlandsOffice-4.jpg",
-    alt: "dental redlands 4",
+    src: "/assets/dental/d6-3.jpg",
+    alt: "dental 6 4",
     desc: "",
   },
   {
-    src: "/assets/dental/dental6/RedlandsOffice-6.jpg",
-    alt: "dental redlands 4",
-    desc: "",
-  },
-  {
-    src: "/assets/dental/dental6/RedlandsOffice-7.jpg",
-    alt: "dental redlands 5",
-    desc: "",
-  },
-  {
-    src: "/assets/dental/dental6/RedlandsOffice-8.jpg",
-    alt: "dental redlands 8",
+    src: "/assets/dental/d6-4.jpg",
+    alt: "dental 6 4",
     desc: "",
   },
 ];
@@ -41,10 +31,7 @@ const RFDR = () => {
     <>
       <Head>
         <title>ArcelDesign | Redlands Family Dental Center</title>
-        <meta
-          name="description"
-          content="Arcel Design/ Dental/ Redlands Family Dental Center"
-        />
+        <meta name="description" content="Redlands Family Dental Center" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -56,7 +43,7 @@ const RFDR = () => {
             location: "Redlands, California",
             completedYear: "2009",
           }}
-          image={"/assets/dental/dental6/RedlandsOffice-1.jpg"}
+          image={"/assets/dental/d6-1.jpg"}
         />
         <AboutDesign
           index={6}

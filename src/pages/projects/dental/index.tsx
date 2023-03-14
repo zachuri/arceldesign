@@ -1,6 +1,6 @@
 import Box from "../../../components/box";
 import BoxGrid from "../../../components/box-grid";
-import dental from "../../../data/dental/dental.json";
+import dental from "../../../data/dental.json";
 import { getBlurhash } from "next-blurhash";
 import { GetStaticProps } from "next";
 import Head from "next/head";

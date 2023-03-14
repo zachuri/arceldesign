@@ -5,28 +5,28 @@ import MastHead from "../../../components/project-template/mast-head";
 
 const images = [
   {
-    src: "/assets/dental/dental8/02.jpg",
+    src: "/assets/dental/d8-1.jpg",
+    alt: "dental 8 1",
+    desc: "",
+  },
+  {
+    src: "/assets/dental/d8-2.jpg",
     alt: "dental 8 2",
     desc: "",
   },
   {
-    src: "/assets/dental/dental8/04.jpg",
+    src: "/assets/dental/d8-3.jpg",
+    alt: "dental 8 3",
+    desc: "",
+  },
+  {
+    src: "/assets/dental/d8-4.jpg",
     alt: "dental 8 4",
     desc: "",
   },
   {
-    src: "/assets/dental/dental8/06.jpg",
-    alt: "dental 8 6",
-    desc: "",
-  },
-  {
-    src: "/assets/dental/dental8/07b.jpg",
-    alt: "dental 8 7b",
-    desc: "",
-  },
-  {
-    src: "/assets/dental/dental8/10a.jpg",
-    alt: "dental 8 10a",
+    src: "/assets/dental/d8-5.jpg",
+    alt: "dental 8 5",
     desc: "",
   },
 ];
@@ -36,10 +36,7 @@ const DCCHCH = () => {
     <>
       <Head>
         <title>ArcelDesign | Dental Care of Chino Hills</title>
-        <meta
-          name="description"
-          content="Arcel Design/ Dental/ Dental Care of Chino Hills"
-        />
+        <meta name="description" content="Dental Care of Chino Hills" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -51,7 +48,7 @@ const DCCHCH = () => {
             location: "Chino Hills, California",
             completedYear: "2010",
           }}
-          image={"/assets/dental/dental8/02.jpg"}
+          image={"/assets/dental/d8-2.jpg"}
         />
         <AboutDesign
           index={8}

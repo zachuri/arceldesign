@@ -5,27 +5,27 @@ import MastHead from "../../../components/project-template/mast-head";
 
 const images = [
   {
-    src: "/assets/dental/dental9/Rosetta+(1).jpg",
+    src: "/assets/dental/d9-1.jpg",
     alt: "dental 9 1",
     desc: "",
   },
   {
-    src: "/assets/dental/dental9/Rosetta+(3).jpg",
+    src: "/assets/dental/d9-2.jpg",
     alt: "dental 9 2",
     desc: "",
   },
   {
-    src: "/assets/dental/dental9/Rosetta+(4).jpg",
+    src: "/assets/dental/d9-3.jpg",
     alt: "dental 9 3",
     desc: "",
   },
   {
-    src: "/assets/dental/dental9/Rosetta+(11).jpg",
+    src: "/assets/dental/d9-4.jpg",
     alt: "dental 9 4",
     desc: "",
   },
   {
-    src: "/assets/dental/dental9/Rosetta+(12).jpg",
+    src: "/assets/dental/d9-5.jpg",
     alt: "dental 9 5",
     desc: "",
   },
@@ -36,10 +36,7 @@ const RVDDDIA = () => {
     <>
       <Head>
         <title>ArcelDesign | Rosetta Vergel De Dios, DMD INC.</title>
-        <meta
-          name="description"
-          content="Arcel Design/ Dental/ Rosetta Vergel De Dios"
-        />
+        <meta name="description" content="Rosetta Vergel De Dios" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -51,7 +48,7 @@ const RVDDDIA = () => {
             location: "Anaheim , California",
             completedYear: "2011",
           }}
-          image="/assets/dental/dental9/Rosetta+(1).jpg"
+          image="/assets/dental/d9-1.jpg"
         />
         <AboutDesign
           index={9}

@@ -5,28 +5,28 @@ import MastHead from "../../../components/project-template/mast-head";
 
 const images = [
   {
-    src: "/assets/dental/dental4/Arcel_LDC+(2).jpg",
-    alt: "dental 2",
+    src: "/assets/dental/d4-1.jpg",
+    alt: "dental 4 1",
     desc: "",
   },
   {
-    src: "/assets/dental/dental4/Arcel_LDC+(11).jpg",
-    alt: "dental 11",
+    src: "/assets/dental/d4-2.jpg",
+    alt: "dental 4 1",
     desc: "",
   },
   {
-    src: "/assets/dental/dental4/Arcel_LDC+(12).jpg",
-    alt: "dental 12",
+    src: "/assets/dental/d4-3.jpg",
+    alt: "dental 4 2",
     desc: "",
   },
   {
-    src: "/assets/dental/dental4/Arcel_LDC+(14).jpg",
-    alt: "dental 14",
+    src: "/assets/dental/d4-4.jpg",
+    alt: "dental 4 4",
     desc: "",
   },
   {
-    src: "/assets/dental/dental4/Arcel_LDC+(15).jpg",
-    alt: "dental 15",
+    src: "/assets/dental/d4-5.jpg",
+    alt: "dental 4 5",
     desc: "",
   },
 ];
@@ -36,10 +36,7 @@ const LDP = () => {
     <>
       <Head>
         <title>ArcelDesign | Lincoln Dental</title>
-        <meta
-          name="description"
-          content="Arcel Design/ Dental/ Lincoln Dental"
-        />
+        <meta name="description" content="Lincoln Dental" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -51,7 +48,7 @@ const LDP = () => {
             location: "Pasadena, California",
             completedYear: "2010",
           }}
-          image={"/assets/dental/dental4/Arcel_LDC+(2).jpg"}
+          image={"/assets/dental/d4-1.jpg"}
         />
         <AboutDesign
           index={4}

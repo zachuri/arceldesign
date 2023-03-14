@@ -5,28 +5,28 @@ import MastHead from "../../../components/project-template/mast-head";
 
 const images = [
   {
-    src: "/assets/dental/dental3/4.jpg",
-    alt: "dental4",
+    src: "/assets/dental/d3-1.jpg",
+    alt: "dental 3 1",
     desc: "",
   },
   {
-    src: "/assets/dental/dental3/5.jpg",
-    alt: "dental5",
+    src: "/assets/dental/d3-2.jpg",
+    alt: "dental 3 2",
     desc: "",
   },
   {
-    src: "/assets/dental/dental3/14a.jpg",
-    alt: "dental4a",
+    src: "/assets/dental/d3-3.jpg",
+    alt: "dental 3 3",
     desc: "",
   },
   {
-    src: "/assets/dental/dental3/cCD15.jpg",
-    alt: "dental4a",
+    src: "/assets/dental/d3-4.jpg",
+    alt: "dental 3 4",
     desc: "",
   },
   {
-    src: "/assets/dental/dental3/image-asset.jpeg",
-    alt: "dental4a",
+    src: "/assets/dental/d3-5.jpeg",
+    alt: "dental 3 5",
     desc: "",
   },
 ];
@@ -44,17 +44,17 @@ const CDP = () => {
       </Head>
       <main>
         <MastHead
-          index={2}
+          index={3}
           designInfo={{
             name: "Comfort Dental",
             type: "Dental",
             location: "Pasadena, California",
             completedYear: "2013",
           }}
-          image={"/assets/dental/dental3/4.jpg"}
+          image={"/assets/dental/d3-1.jpg"}
         />
         <AboutDesign
-          index={1}
+          index={3}
           designDesc={{
             title: "Modern Comfort....",
             desc: "Modern contemporary style, structure, and form combine harmoniously for this dental practice, creating an attractively ideal space, one minimal and therapeutic.",

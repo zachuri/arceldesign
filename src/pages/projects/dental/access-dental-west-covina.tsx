@@ -5,28 +5,28 @@ import MastHead from "../../../components/project-template/mast-head";
 
 const images = [
   {
-    src: "/assets/dental/dental5/ArcelDesign_Day2_1.jpg",
-    alt: "dental 2",
+    src: "/assets/dental/d5-1.jpg",
+    alt: "dental 5 1",
     desc: "",
   },
   {
-    src: "/assets/dental/dental5/ArcelDesign_Day2_2.jpg",
-    alt: "dental 11",
+    src: "/assets/dental/d5-2.jpg",
+    alt: "dental 5 2",
     desc: "",
   },
   {
-    src: "/assets/dental/dental5/ArcelDesign_Day2_3.jpg",
-    alt: "dental 12",
+    src: "/assets/dental/d5-3.jpg",
+    alt: "dental 5 3",
     desc: "",
   },
   {
-    src: "/assets/dental/dental5/EntryWay.jpg",
-    alt: "dental 14",
+    src: "/assets/dental/d5-4.jpg",
+    alt: "dental 5 4",
     desc: "",
   },
   {
-    src: "/assets/dental/dental5/ReceptionDesk.jpg",
-    alt: "dental 15",
+    src: "/assets/dental/d5-5.jpg",
+    alt: "dental 5 5",
     desc: "",
   },
 ];
@@ -38,7 +38,7 @@ const ADWC = () => {
         <title>ArcelDesign | Access Dental</title>
         <meta
           name="description"
-          content="Arcel Design/ Dental/ Access Dental"
+          content="Access Dental"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -51,7 +51,7 @@ const ADWC = () => {
             location: "West Covina, California",
             completedYear: "2009",
           }}
-          image={"/assets/dental/dental5/ArcelDesign_Day2_1.jpg"}
+          image={"/assets/dental/d5-1.jpg"}
         />
         <AboutDesign
           index={5}
