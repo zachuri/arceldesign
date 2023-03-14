@@ -1,7 +1,43 @@
 import Box from "../../components/box";
 import BoxGrid from "../../components/box-grid";
+import { GetStaticProps } from "next";
+import { getBlurhash } from "next-blurhash";
 
-const Projects = () => {
+type DemoProps = {
+  imgHashes: { src: string; hash: string }[];
+};
+
+export const getStaticProps: GetStaticProps<DemoProps> = async () => {
+  const images = [
+    { src: "/assets/corporate/c1.jpg" },
+    { src: "/assets/dental/d1.jpg" },
+    { src: "/assets/hospitality/h1.jpg" },
+    { src: "/assets/medical/m1.jpg" },
+    { src: "/assets/residential/r1.jpg" },
+  ];
+
+  const hashes: { [src: string]: string | undefined } = {};
+
+  for (let i = 0; i < images.length; i++) {
+    const hash = await getBlurhash(images[i]?.src as string);
+    hashes[images[i]?.src as string] = hash;
+  }
+
+  const imgHashes = images
+    .filter((img) => hashes[img.src] !== undefined)
+    .map((img) => ({
+      src: img.src,
+      hash: hashes[img.src]!,
+    }));
+
+  return {
+    props: {
+      imgHashes,
+    },
+  };
+};
+
+const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
   return (
     <div>
       <BoxGrid title={"projects"}>
@@ -10,18 +46,21 @@ const Projects = () => {
           alt={"corporate"}
           address={""}
           type={"projects"}
+          hash={imgHashes.at(0)?.hash as string}
         />
         <Box
           src={"/assets/dental/dental1.jpg"}
           alt={"dental"}
           address={""}
           type={"projects"}
+          hash={imgHashes.at(1)?.hash as string}
         />
         <Box
           src={"/assets/hospitality/h1.jpg"}
           alt={"hospitality"}
           address={""}
           type={"projects"}
+          hash={imgHashes.at(2)?.hash as string}
         />
 
         {/* Last two stay hidden when medium and up screen */}
@@ -31,6 +70,7 @@ const Projects = () => {
             alt={"medical"}
             address={""}
             type={"projects"}
+            hash={imgHashes.at(3)?.hash as string}
           />
         </div>
         <div className="md:hidden">
@@ -39,6 +79,7 @@ const Projects = () => {
             alt={"residential"}
             address={""}
             type={"projects"}
+            hash={imgHashes.at(4)?.hash as string}
           />
         </div>
 
@@ -52,6 +93,7 @@ const Projects = () => {
                 alt={"medical"}
                 address={""}
                 type={"projects"}
+                hash={imgHashes.at(3)?.hash as string}
               />
             </div>
             <div className="md:col-start-4 md:col-end-6">
@@ -60,6 +102,7 @@ const Projects = () => {
                 alt={"residential"}
                 address={""}
                 type={"projects"}
+                hash={imgHashes.at(4)?.hash as string}
               />
             </div>
           </div>

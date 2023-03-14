@@ -1,17 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
 import useNextBlurhash from "use-next-blurhash";
+import { BlurhashCanvas } from "react-blurhash";
 
 const Box = ({
   src,
   alt,
   address,
   type,
+  hash,
 }: {
   src: string;
   alt: string;
   address: string;
   type: string;
+  hash: string;
 }) => {
   // Format the link address
   const name = alt.replace(/[,.]+/g, "").replace(/[\s]+/g, "-").toLowerCase();
@@ -28,6 +31,21 @@ const Box = ({
   return (
     <Link href={type + "/" + navigate}>
       <div className="relative aspect-square h-auto">
+        <BlurhashCanvas
+          hash={hash}
+          width={32}
+          height={32}
+          punch={1}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            width: "100%",
+            height: "100%",
+          }}
+        />
         <Image
           fill
           // allows object to fit as a cover instead of filled
