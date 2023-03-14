@@ -3,6 +3,7 @@ import BoxGrid from "../../components/box-grid";
 import { GetStaticProps } from "next";
 import { getBlurhash } from "next-blurhash";
 import Head from "next/head";
+import Fadeup from "../../components/layouts/fadeup";
 
 type DemoProps = {
   imgHashes: { src: string; hash: string }[];
@@ -46,74 +47,77 @@ const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
         <meta name="description" content="Projects" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <BoxGrid title={"projects"}>
-        <Box
-          src={"/assets/corporate/c1.jpg"}
-          alt={"corporate"}
-          address={""}
-          type={"projects"}
-          hash={imgHashes.at(0)?.hash as string}
-        />
-        <Box
-          src={"/assets/dental/d1.jpg"}
-          alt={"dental"}
-          address={""}
-          type={"projects"}
-          hash={imgHashes.at(1)?.hash as string}
-        />
-        <Box
-          src={"/assets/hospitality/h1.jpg"}
-          alt={"hospitality"}
-          address={""}
-          type={"projects"}
-          hash={imgHashes.at(2)?.hash as string}
-        />
 
-        {/* Last two stay hidden when medium and up screen */}
-        <div className="md:hidden">
+      <Fadeup>
+        <BoxGrid title={"projects"}>
           <Box
-            src={"/assets/medical/m1.jpg"}
-            alt={"medical"}
+            src={"/assets/corporate/c1.jpg"}
+            alt={"corporate"}
             address={""}
             type={"projects"}
-            hash={imgHashes.at(3)?.hash as string}
+            hash={imgHashes.at(0)?.hash as string}
           />
-        </div>
-        <div className="md:hidden">
           <Box
-            src={"/assets/residential/r1.jpg"}
-            alt={"residential"}
+            src={"/assets/dental/d1.jpg"}
+            alt={"dental"}
             address={""}
             type={"projects"}
-            hash={imgHashes.at(4)?.hash as string}
+            hash={imgHashes.at(1)?.hash as string}
           />
-        </div>
+          <Box
+            src={"/assets/hospitality/h1.jpg"}
+            alt={"hospitality"}
+            address={""}
+            type={"projects"}
+            hash={imgHashes.at(2)?.hash as string}
+          />
 
-        {/* For medium and above screen -> center last row */}
-        {/* For smaller screens stay hidden */}
-        <div className="mt-10 max-md:hidden md:col-span-3 md:grid md:justify-items-stretch">
-          <div className="grid gap-6 md:grid-cols-6">
-            <div className="md:col-start-2 md:col-end-4">
-              <Box
-                src={"/assets/medical/m1.jpg"}
-                alt={"medical"}
-                address={""}
-                type={"projects"}
-                hash={imgHashes.at(3)?.hash as string}
-              />
-            </div>
-            <div className="md:col-start-4 md:col-end-6">
-              <Box
-                src={"/assets/residential/r1.jpg"}
-                alt={"residential"}
-                address={""}
-                type={"projects"}
-                hash={imgHashes.at(4)?.hash as string}
-              />
+          {/* Last two stay hidden when medium and up screen */}
+          <div className="md:hidden">
+            <Box
+              src={"/assets/medical/m1.jpg"}
+              alt={"medical"}
+              address={""}
+              type={"projects"}
+              hash={imgHashes.at(3)?.hash as string}
+            />
+          </div>
+          <div className="md:hidden">
+            <Box
+              src={"/assets/residential/r1.jpg"}
+              alt={"residential"}
+              address={""}
+              type={"projects"}
+              hash={imgHashes.at(4)?.hash as string}
+            />
+          </div>
+
+          {/* For medium and above screen -> center last row */}
+          {/* For smaller screens stay hidden */}
+          <div className="mt-10 max-md:hidden md:col-span-3 md:grid md:justify-items-stretch">
+            <div className="grid gap-6 md:grid-cols-6">
+              <div className="md:col-start-2 md:col-end-4">
+                <Box
+                  src={"/assets/medical/m1.jpg"}
+                  alt={"medical"}
+                  address={""}
+                  type={"projects"}
+                  hash={imgHashes.at(3)?.hash as string}
+                />
+              </div>
+              <div className="md:col-start-4 md:col-end-6">
+                <Box
+                  src={"/assets/residential/r1.jpg"}
+                  alt={"residential"}
+                  address={""}
+                  type={"projects"}
+                  hash={imgHashes.at(4)?.hash as string}
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </BoxGrid>
+        </BoxGrid>
+      </Fadeup>
     </div>
   );
 };
