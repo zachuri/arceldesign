@@ -18,34 +18,34 @@ import styles from "../styles/carousel.module.css";
 const images = [
   {
     src: "/assets/home/home1.jpg",
-    alt: "home 1",
-    href: "/hospitality",
+    alt: "hospitality",
+    href: "/projects/hospitality",
     type: "Hospitality",
   },
   {
     src: "/assets/home/home2.jpg",
-    alt: "home 2",
-    href: "/dental",
+    alt: "dental",
+    href: "/projects/dental",
     type: "Dental",
   },
   {
     src: "/assets/home/home3.jpg",
-    alt: "home 3",
-    href: "/medical",
+    alt: "medical",
+    href: "/projects/medical",
     type: "Medical",
   },
-  // {
-  //   src: "/assets/home/home4.jpg",
-  //   alt: "home 4",
-  //   href: "/residential",
-  //   type: "Residential",
-  // },
-  // {
-  //   src: "/assets/home/home5.jpg",
-  //   alt: "home 5",
-  //   href: "/corporate",
-  //   type: "Corporate",
-  // },
+  {
+    src: "/assets/home/home4.jpg",
+    alt: "residential",
+    href: "/projects/residential",
+    type: "Residential",
+  },
+  {
+    src: "/assets/home/home5.jpg",
+    alt: "corporate",
+    href: "/projects/corporate",
+    type: "Corporate",
+  },
 ];
 
 const Slider = () => (
@@ -79,9 +79,9 @@ const Slider = () => (
                   (max-width: 1200px) 50vw,
                   33vw"
                 style={{ objectFit: "cover" }}
-                quality={100}
                 loading="eager"
                 priority
+                unoptimized
               />
             </div>
 
