@@ -30,17 +30,19 @@ const container = {
 const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
   return (
     <>
-      <div className="relative mx-5 flex h-screen items-center justify-center md:mx-20">
+      <div className="relative mx-5 flex flex-col items-center justify-center max-md:mt-10 max-md:pt-[135px] md:mx-20 md:h-screen">
         {/* Middle */}
         <div className="flex flex-col text-white max-sm:-mt-20 xl:flex-row xl:items-center xl:justify-center xl:space-x-10">
           {/* Left */}
           <div>
             <div className="">
               <div className="mb-5 text-[10]">
-                <div>{designInfo.type} Design</div>
-                <div>{designInfo.completedYear}</div>
+                <p className="capitalize">{designInfo.type} Design</p>
+                <p>{designInfo.completedYear}</p>
               </div>
-              <div className="mx-5 text-5xl md:text-6xl">{designInfo.name}</div>
+              <div className="mx-5 text-5xl uppercase md:text-6xl">
+                {designInfo.name}
+              </div>
               <div className="flex justify-end max-xl:my-5 xl:mt-16 xl:justify-between">
                 <IoIosArrowDropright
                   className="max-xl:hidden"
@@ -71,7 +73,7 @@ const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
         </div>
 
         {/* Bottom */}
-        <div className="absolute bottom-0 w-full text-white ">
+        <div className="w-full text-white max-md:mt-10 md:absolute md:bottom-0">
           <div className="flex flex-row space-x-10">
             <a
               className="group relative flex flex-row scroll-smooth"
