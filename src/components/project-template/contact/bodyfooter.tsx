@@ -37,7 +37,7 @@ export default function bodyfooter() {
             width={200}
             height={200}
             className="rounded-full md:absolute"
-            src={"/assets/about/1570475856866.jpeg"}
+            src={"/assets/about/about-avatar.jpeg"}
             alt={"about 1"}
           />
         </Fadeupscroll>
