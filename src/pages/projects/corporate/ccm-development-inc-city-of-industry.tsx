@@ -75,7 +75,7 @@ const CCMD = () => {
             location: info.location,
             completedYear: info.completedYear,
           }}
-          image={"/assets/corporate/c1-1.jpg"}
+          image={"/assets/corporate/c2-1.jpg"}
         />
         <AboutDesign
           index={info.index}
