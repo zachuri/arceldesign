@@ -1,6 +1,9 @@
 import React from "react";
 import SliderImage from "./slider-image";
 import Link from "next/link";
+import Fadeup from "../layouts/fadeup";
+import Fadeupscroll from "../layouts/fadeupscroll";
+import Line from "../layouts/line";
 
 interface Props {
   index: number;
@@ -46,19 +49,24 @@ const AboutDesign: React.FC<Props> = ({
               </div>
             </div>
           </div>
-          <div className="border-b-1 my-5 flex-grow border-t-2 border-black md:-my-5"></div>
+
+          <Line className="-mt-6" children={undefined} />
 
           <div className="grid md:grid-cols-2">
             <div className="left-0 mt-10 flex flex-col text-sm">
               <div className="font-bold"> DESCRIPTION</div>
               <div className="font-light">ABOUT COLLECTIONS </div>
             </div>
-            <div className="mt-20">
-              <div className="text-2xl font-bold md:text-5xl">
-                {designDesc.title}
+            <Fadeupscroll>
+              <div className="mt-20">
+                <div className="text-2xl font-bold md:text-5xl">
+                  {designDesc.title}
+                </div>
+                <div className="mt-10 text-xl font-medium">
+                  {designDesc.desc}
+                </div>
               </div>
-              <div className="mt-10 text-xl font-medium">{designDesc.desc}</div>
-            </div>
+            </Fadeupscroll>
           </div>
           <div
             id="gallery"
@@ -70,52 +78,53 @@ const AboutDesign: React.FC<Props> = ({
           </div>
 
           {/* Design Table Information */}
-          <p className="mt-20 text-xl font-extrabold">DESIGN INFORMATION</p>
-          <div className="border-b-1 mt-5 flex-grow border-t-2 border-black"></div>
+          <Fadeupscroll>
+            <p className="mt-20 text-xl font-extrabold">DESIGN INFORMATION</p>
+            <div className="border-b-1 mt-5 flex-grow border-t-2 border-black"></div>
 
-          <div className="mt-10 w-full  border-separate border-spacing-y-6 space-y-4 text-xl">
-            <div className="grid md:grid-cols-2">
-              <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
-                CLIENT
-              </p>
-              <p className=" border-b-2 border-dotted pb-4 font-bold">
-                {designInfo.client}
-              </p>
+            <div className="mt-10 w-full  border-separate border-spacing-y-6 space-y-4 text-xl">
+              <div className="grid md:grid-cols-2">
+                <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
+                  CLIENT
+                </p>
+                <p className=" border-b-2 border-dotted pb-4 font-bold">
+                  {designInfo.client}
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2">
+                <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
+                  TOTAL SIZE
+                </p>
+                <p className=" border-b-2 border-dotted pb-4 font-bold">
+                  {designInfo.size}
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2">
+                <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
+                  Location
+                </p>
+                <p className=" border-b-2 border-dotted pb-4 font-bold">
+                  {designInfo.location}
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2">
+                <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
+                  Production Completed{" "}
+                </p>
+                <p className=" border-b-2 border-dotted pb-4 font-bold">
+                  {designInfo.completedYear}
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2">
+                <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
+                  Design Type
+                </p>
+                <p className=" border-b-2 border-dotted pb-4 font-bold">
+                  {designInfo.type}
+                </p>
+              </div>
             </div>
-            <div className="grid md:grid-cols-2">
-              <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
-                TOTAL SIZE
-              </p>
-              <p className=" border-b-2 border-dotted pb-4 font-bold">
-                {designInfo.size}
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2">
-              <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
-                Location
-              </p>
-              <p className=" border-b-2 border-dotted pb-4 font-bold">
-                {designInfo.location}
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2">
-              <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
-                Production Completed{" "}
-              </p>
-              <p className=" border-b-2 border-dotted pb-4 font-bold">
-                {designInfo.completedYear}
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2">
-              <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
-                Design Type
-              </p>
-              <p className=" border-b-2 border-dotted pb-4 font-bold">
-                {designInfo.type}
-              </p>
-            </div>
-          </div>
-
+          </Fadeupscroll>
           {/* Buttons for contact and similar projects */}
           <div className="grid md:grid-cols-2">
             <div />
@@ -136,7 +145,8 @@ const AboutDesign: React.FC<Props> = ({
               <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-black transition-all duration-700 group-hover:w-full"></span>
             </Link>
           </div>
-          <div className="border-b-1 mt-5 mb-5 flex-grow border-t-2 border-black"></div>
+
+          <Line className="mt-3" children={undefined} />
 
           <Link
             className="group relative flex flex-row text-xl"
@@ -154,7 +164,7 @@ const AboutDesign: React.FC<Props> = ({
             <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-black transition-all duration-700 group-hover:w-full"></span>
           </Link>
 
-          <div className="border-b-1 mt-5 flex-grow border-t-2 border-black "></div>
+          <Line className="mt-3" children={undefined} />
         </div>
       </div>
     </>

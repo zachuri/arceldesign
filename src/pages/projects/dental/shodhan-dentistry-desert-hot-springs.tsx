@@ -1,6 +1,6 @@
-import Head from 'next/head';
+import Head from "next/head";
 import AboutDesign from "../../../components/project-template/about-design";
-import Contact from "../../../components/project-template/contact";
+import Contact from "../../../components/project-template/contact/contact";
 import MastHead from "../../../components/project-template/mast-head";
 
 const images = [
