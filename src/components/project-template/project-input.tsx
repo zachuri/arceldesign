@@ -20,11 +20,13 @@ interface Props {
 }
 
 const ProjectInput: React.FC<Props> = ({ info, images }) => {
+  const headTitle = `ARCELDESIGN, INC. | ${info.title}`;
+
   return (
     <>
       <Head>
         {/* <title>ARCELDESIGN, INC. | {info.name}</title> */}
-        <title>ARCELDESIGN, INC.</title>
+        <title>{headTitle}</title>
         <meta name="description" content={info.name} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
