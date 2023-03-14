@@ -23,7 +23,8 @@ const ProjectInput: React.FC<Props> = ({ info, images }) => {
   return (
     <>
       <Head>
-        <title>ARCELDESIGN, INC. | {info.name}</title>
+        {/* <title>ARCELDESIGN, INC. | {info.name}</title> */}
+        <title>ARCELDESIGN, INC.</title>
         <meta name="description" content={info.name} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
