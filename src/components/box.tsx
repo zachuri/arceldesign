@@ -95,4 +95,5 @@ const Box = ({
     </motion.div>
   );
 };
+
 export default Box;

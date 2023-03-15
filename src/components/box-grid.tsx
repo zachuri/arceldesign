@@ -1,4 +1,3 @@
-import Box from "./box";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
