@@ -31,7 +31,6 @@ const BoxGrid: React.FC<Props> = ({ children, title }) => {
         initial="initial"
         animate={inView ? "animate" : "initial"}
         ref={ref}
-        className="container"
       >
         <div
           className={"mt-[60px] grid place-items-center py-10 md:mt-[82.5px]"}
