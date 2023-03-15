@@ -48,6 +48,7 @@ const Dental: React.FC<DemoProps> = ({ imgHashes }) => {
               address={item.address}
               type={"dental"}
               hash={imgHashes.at(index)?.hash as string}
+              key={item.src}
             />
           );
         })}

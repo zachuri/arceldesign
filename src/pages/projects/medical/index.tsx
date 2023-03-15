@@ -49,6 +49,7 @@ const Medical: React.FC<DemoProps> = ({ imgHashes }) => {
               address={item.address}
               type={"medical"}
               hash={imgHashes.at(index)?.hash as string}
+              key={item.src}
             />
           );
         })}

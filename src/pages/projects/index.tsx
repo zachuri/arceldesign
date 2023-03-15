@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps<DemoProps> = async () => {
 
 const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
   return (
-    <div>
+    <>
       <Head>
         <title>ARCELDESIGN, INC. | Projects</title>
         <meta name="description" content="Projects" />
@@ -118,7 +118,7 @@ const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
           </div>
         </BoxGrid>
       </Fadeup>
-    </div>
+    </>
   );
 };
 

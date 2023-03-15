@@ -49,6 +49,7 @@ const Hospitality: React.FC<DemoProps> = ({ imgHashes }) => {
               address={item.address}
               type={"hospitality"}
               hash={imgHashes.at(index)?.hash as string}
+              key={item.src}
             />
           );
         })}
