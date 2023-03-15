@@ -20,7 +20,8 @@ interface Props {
 }
 
 const ProjectInput: React.FC<Props> = ({ info, images }) => {
-  const headTitle = `ARCELDESIGN, INC. | ${info.name}`;
+  // const headTitle = `ARCELDESIGN, INC. | ${info.name}`;
+  const headTitle = `${info.name} | ARCELDESIGN, INC.`;
 
   return (
     <>
