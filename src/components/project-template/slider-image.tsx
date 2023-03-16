@@ -1,6 +1,7 @@
 //@ts-nocheck
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { BlurhashCanvas } from "react-blurhash";
 
 // Import Swiper styles
 import "swiper/css";
