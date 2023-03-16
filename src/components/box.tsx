@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import useNextBlurhash from "use-next-blurhash";
+// import useNextBlurhash from "use-next-blurhash";
 import { BlurhashCanvas } from "react-blurhash";
 import Fadeup from "./layouts/fadeup";
 import { motion } from "framer-motion";
@@ -43,7 +43,7 @@ const Box = ({
     : (navigate =
         name + "-" + location?.replace(/[,.]+/g, "").replace(/[\s]+/g, "-"));
 
-  const [blurDataUrl] = useNextBlurhash("LEHV6nWB2yk8pyo0adR*.7kCMdnj");
+  // const [blurDataUrl] = useNextBlurhash("LEHV6nWB2yk8pyo0adR*.7kCMdnj");
 
   const { ref, inView } = useInView({
     threshold: 0.5, // Trigger when element is 50% visible
@@ -82,8 +82,8 @@ const Box = ({
               alt={alt}
               loading="eager"
               priority
-              placeholder="blur"
-              blurDataURL={blurDataUrl}
+              // placeholder="blur"
+              // blurDataURL={blurDataUrl}
             />
           </div>
 
