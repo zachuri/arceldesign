@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Fadeup from "../layouts/fadeup";
 import { BlurhashCanvas } from "react-blurhash";
-// import useNextBlurhash from "use-next-blurhash";
 
 interface Props {
   index: number;
@@ -66,31 +65,33 @@ const MastHead: React.FC<Props> = ({
           {/* initial={{ opacity: 0 }}
           animate={{ opacity: 1 }} */}
           {/* Right */}
-          <Fadeup>
-            <div style={{ position: "relative" }}>
-              <BlurhashCanvas
-                hash={imageHash}
-                width={32}
-                height={32}
-                punch={1}
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-              />
-              <Image
-                height={600}
-                width={600}
-                src={imagePath}
-                alt={designInfo.name}
-              />
-            </div>
-          </Fadeup>
+          <div>
+            <Fadeup>
+              <div style={{ position: "relative" }}>
+                <BlurhashCanvas
+                  hash={imageHash}
+                  width={32}
+                  height={32}
+                  punch={1}
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    // width: "100%",
+                    // height: "100%",
+                  }}
+                />
+                <Image
+                  alt={designInfo.name}
+                  src={imagePath}
+                  width={750}
+                  height={500}
+                />
+              </div>
+            </Fadeup>
+          </div>
         </div>
 
         {/* Bottom */}
