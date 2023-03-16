@@ -31,7 +31,7 @@ const Fadeupscroll: React.FC<MyComponentProps> = ({ className, children }) => {
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0 }}
     >
       <motion.div className={`${className}`} variants={variants}>
         {children}
