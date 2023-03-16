@@ -42,16 +42,33 @@ const SliderImage: React.FC<Props> = ({ images }) => {
         navigation={true}
         pagination={true}
         breakpoints={{
-          640: {
-            slidesPerView: 2,
+          486: {
+            slidesPerView: 1.1,
             spaceBetween: 10,
           },
-          768: {
-            slidesPerView: 2,
+
+          534: {
+            slidesPerView: 1.2,
             spaceBetween: 10,
           },
-          1024: {
-            slidesPerView: 2.5,
+
+          534: {
+            slidesPerView: 1.3,
+            spaceBetween: 10,
+          },
+
+          908: {
+            slidesPerView: 1.05,
+            spaceBetween: 10,
+          },
+
+          938: {
+            slidesPerView: 1.25,
+            spaceBetween: 10,
+          },
+
+          1125: {
+            slidesPerView: 1.35,
             spaceBetween: 10,
           },
         }}
