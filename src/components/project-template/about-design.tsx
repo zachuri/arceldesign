@@ -72,17 +72,21 @@ const AboutDesign: React.FC<Props> = ({
             id="gallery"
             className="md:flex md:flex-col md:items-center md:justify-center"
           >
-            <div className="mt-10 md:mt-20 md:w-[750px]">
+            {/* <div className="mt-10 md:mt-20 md:w-[750px]"> */}
+            <div className="mt-10 md:mt-20 md:w-full">
               <SliderImage images={images} />
             </div>
           </div>
 
           {/* Design Table Information */}
-          <Fadeupscroll>
-            <p className="mt-20 text-xl font-extrabold">DESIGN INFORMATION</p>
-            <div className="border-b-1 mt-5 flex-grow border-t-2 border-black"></div>
 
-            <div className="mt-10 w-full  border-separate border-spacing-y-6 space-y-4 text-xl">
+          <Fadeupscroll>
+            <p className=" mt-10 text-xl font-extrabold">DESIGN INFORMATION</p>
+            <div className="border-b-1 mt-5 flex-grow border-t-2 border-black"></div>
+          </Fadeupscroll>
+
+          <div className="mt-10 w-full  border-separate border-spacing-y-6 space-y-4 text-xl">
+            <Fadeupscroll>
               <div className="grid md:grid-cols-2">
                 <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
                   CLIENT
@@ -91,6 +95,9 @@ const AboutDesign: React.FC<Props> = ({
                   {designInfo.client}
                 </p>
               </div>
+            </Fadeupscroll>
+
+            <Fadeupscroll>
               <div className="grid md:grid-cols-2">
                 <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
                   TOTAL SIZE
@@ -99,6 +106,9 @@ const AboutDesign: React.FC<Props> = ({
                   {designInfo.size}
                 </p>
               </div>
+            </Fadeupscroll>
+
+            <Fadeupscroll>
               <div className="grid md:grid-cols-2">
                 <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
                   Location
@@ -107,6 +117,9 @@ const AboutDesign: React.FC<Props> = ({
                   {designInfo.location}
                 </p>
               </div>
+            </Fadeupscroll>
+
+            <Fadeupscroll>
               <div className="grid md:grid-cols-2">
                 <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
                   Production Completed{" "}
@@ -115,6 +128,8 @@ const AboutDesign: React.FC<Props> = ({
                   {designInfo.completedYear}
                 </p>
               </div>
+            </Fadeupscroll>
+            <Fadeupscroll>
               <div className="grid md:grid-cols-2">
                 <p className="border-dotted font-light text-stone-700 md:border-b-2 md:pb-4">
                   Design Type
@@ -123,8 +138,8 @@ const AboutDesign: React.FC<Props> = ({
                   {designInfo.type}
                 </p>
               </div>
-            </div>
-          </Fadeupscroll>
+            </Fadeupscroll>
+          </div>
           {/* Buttons for contact and similar projects */}
           <div className="grid md:grid-cols-2">
             <div />
