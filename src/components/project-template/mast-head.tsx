@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Fadeup from "../layouts/fadeup";
 import useNextBlurhash from "use-next-blurhash";
+import { BlurhashCanvas } from "react-blurhash";
 
 interface Props {
   index: number;
@@ -77,7 +78,8 @@ const MastHead: React.FC<Props> = ({
                 width={750}
                 height={500}
                 quality={100}
-                loading="lazy"
+                loading="eager"
+                priority
                 placeholder="blur"
                 blurDataURL={blurDataUrl}
               />
