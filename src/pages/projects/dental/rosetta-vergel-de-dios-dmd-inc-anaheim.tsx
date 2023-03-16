@@ -1,4 +1,6 @@
+import { GetStaticProps } from "next/types";
 import ProjectInput from "../../../components/project-template/project-input";
+import { getBlurhash } from "next-blurhash";
 
 const images = [
   {
@@ -43,8 +45,36 @@ const info = {
   openness of the space. All new arches and soffits are reemphasized with warm color, to create a warm and welcoming feel.",
 };
 
-const RVDDDIA = () => {
-  return <ProjectInput images={images} info={info} />;
+type DemoProps = {
+  imgHashed: { src: string; hash: string; alt: string; desc: string }[];
+};
+
+export const getStaticProps: GetStaticProps<DemoProps> = async () => {
+  const hashes: { [src: string]: string | undefined } = {};
+
+  for (let i = 0; i < images.length; i++) {
+    const hash = await getBlurhash(images[i]?.src as string);
+    hashes[images[i]?.src as string] = hash;
+  }
+
+  const imgHashed = images
+    .filter((img) => hashes[img.src] !== undefined)
+    .map((img) => ({
+      src: img.src,
+      alt: img.alt,
+      hash: hashes[img.src]!,
+      desc: img.desc,
+    }));
+
+  return {
+    props: {
+      imgHashed,
+    },
+  };
+};
+
+const RVDDDIA: React.FC<DemoProps> = ({ imgHashed }) => {
+  return <ProjectInput images={imgHashed} info={info} />;
 };
 
 export default RVDDDIA;

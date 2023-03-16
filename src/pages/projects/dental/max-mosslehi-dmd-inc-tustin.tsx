@@ -1,4 +1,6 @@
+import { getBlurhash } from "next-blurhash";
 import ProjectInput from "../../../components/project-template/project-input";
+import { GetStaticProps } from "next/types";
 
 const images = [
   {
@@ -42,8 +44,36 @@ const info = {
   abstract paintings organic pattern with rich brown and blue gives an intimate and tranquil feel for the entire dental office ",
 };
 
-const OVDIWC = () => {
-  return <ProjectInput images={images} info={info} />;
+type DemoProps = {
+  imgHashed: { src: string; hash: string; alt: string; desc: string }[];
+};
+
+export const getStaticProps: GetStaticProps<DemoProps> = async () => {
+  const hashes: { [src: string]: string | undefined } = {};
+
+  for (let i = 0; i < images.length; i++) {
+    const hash = await getBlurhash(images[i]?.src as string);
+    hashes[images[i]?.src as string] = hash;
+  }
+
+  const imgHashed = images
+    .filter((img) => hashes[img.src] !== undefined)
+    .map((img) => ({
+      src: img.src,
+      alt: img.alt,
+      hash: hashes[img.src]!,
+      desc: img.desc,
+    }));
+
+  return {
+    props: {
+      imgHashed,
+    },
+  };
+};
+
+const OVDIWC: React.FC<DemoProps> = ({ imgHashed }) => {
+  return <ProjectInput images={imgHashed} info={info} />;
 };
 
 export default OVDIWC;

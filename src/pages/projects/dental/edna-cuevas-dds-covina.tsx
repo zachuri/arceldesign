@@ -3,6 +3,8 @@ import AboutDesign from "../../../components/project-template/about-design";
 import Contact from "../../../components/project-template/contact/contact";
 import MastHead from "../../../components/project-template/mast-head";
 import ProjectInput from "../../../components/project-template/project-input";
+import { getBlurhash } from "next-blurhash";
+import { GetStaticProps } from "next/types";
 
 const images = [
   {
@@ -54,8 +56,36 @@ const info = {
   desc: "",
 };
 
-const ECDC = () => {
-  return <ProjectInput images={images} info={info} />;
+type DemoProps = {
+  imgHashed: { src: string; hash: string; alt: string; desc: string }[];
+};
+
+export const getStaticProps: GetStaticProps<DemoProps> = async () => {
+  const hashes: { [src: string]: string | undefined } = {};
+
+  for (let i = 0; i < images.length; i++) {
+    const hash = await getBlurhash(images[i]?.src as string);
+    hashes[images[i]?.src as string] = hash;
+  }
+
+  const imgHashed = images
+    .filter((img) => hashes[img.src] !== undefined)
+    .map((img) => ({
+      src: img.src,
+      alt: img.alt,
+      hash: hashes[img.src]!,
+      desc: img.desc,
+    }));
+
+  return {
+    props: {
+      imgHashed,
+    },
+  };
+};
+
+const ECDC: React.FC<DemoProps> = ({ imgHashed }) => {
+  return <ProjectInput info={info} images={imgHashed} />;
 };
 
 export default ECDC;
