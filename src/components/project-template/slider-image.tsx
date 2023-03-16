@@ -34,12 +34,27 @@ const SliderImage: React.FC<Props> = ({ images }) => {
           disableOnInteraction: false,
         }}
         slidesPerView={1}
+        spaceBetween={10}
         loop={true}
-        effect="fade"
-        fadeEffect={{ crossFade: true }}
+        // effect="fade"
+        // fadeEffect={{ crossFade: true }}
         modules={[Autoplay, Navigation, EffectFade, Pagination, Scrollbar]}
         navigation={true}
         pagination={true}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
+          },
+        }}
         scrollbar={{
           hide: true,
         }}

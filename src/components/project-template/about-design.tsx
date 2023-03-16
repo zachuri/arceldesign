@@ -72,7 +72,8 @@ const AboutDesign: React.FC<Props> = ({
             id="gallery"
             className="md:flex md:flex-col md:items-center md:justify-center"
           >
-            <div className="mt-10 md:mt-20 md:w-[750px]">
+            {/* <div className="mt-10 md:mt-20 md:w-[750px]"> */}
+            <div className="mt-10 md:mt-20 md:w-full">
               <SliderImage images={images} />
             </div>
           </div>
