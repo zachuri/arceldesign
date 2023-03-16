@@ -67,24 +67,36 @@ const MastHead: React.FC<Props> = ({
           {/* initial={{ opacity: 0 }}
           animate={{ opacity: 1 }} */}
           {/* Right */}
-          <div>
-            <Fadeup>
+          <Fadeup>
+            <div className="h-[300px] md:h-[500px]">
+              <BlurhashCanvas
+                hash={imageHash}
+                width={32}
+                height={32}
+                punch={1}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
               <Image
                 sizes="(max-width: 768px) 100vw,
                   (max-width: 1200px) 50vw,
                   33vw"
                 src={imagePath}
                 alt={designInfo.name}
-                width={750}
-                height={500}
+                fill
+                style={{ objectFit: "cover" }}
                 quality={100}
-                loading="eager"
-                priority
-                placeholder="blur"
-                blurDataURL={blurDataUrl}
+                loading="lazy"
               />
-            </Fadeup>
-          </div>
+            </div>
+          </Fadeup>
         </div>
 
         {/* Bottom */}
