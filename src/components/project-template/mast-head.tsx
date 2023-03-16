@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Fadeup from "../layouts/fadeup";
 import Line from "../layouts/line_no_animation";
+import { BlurhashCanvas } from "react-blurhash";
 
 interface Props {
   index: number;
@@ -14,7 +15,8 @@ interface Props {
     location: string;
     completedYear: string;
   };
-  image: string;
+  imagePath: string;
+  imageHash: string;
 }
 
 const container = {
@@ -27,7 +29,12 @@ const container = {
   },
 };
 
-const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
+const MastHead: React.FC<Props> = ({
+  index,
+  designInfo,
+  imagePath,
+  imageHash,
+}) => {
   return (
     <>
       <div className="relative mx-5 flex flex-col items-center justify-center max-md:mt-10 max-md:pt-[135px] md:mx-20 md:h-screen">
@@ -62,10 +69,25 @@ const MastHead: React.FC<Props> = ({ index, designInfo, image }) => {
           {/* Right */}
           <Fadeup>
             <div className="flex flex-col items-center justify-center">
+              <BlurhashCanvas
+                hash={imageHash}
+                width={32}
+                height={32}
+                punch={1}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
               <Image
                 height={600}
                 width={600}
-                src={image}
+                src={imagePath}
                 alt={designInfo.name}
               />
             </div>

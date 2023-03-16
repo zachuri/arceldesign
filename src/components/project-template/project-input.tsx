@@ -16,7 +16,7 @@ interface Props {
     title: string;
     desc: string;
   };
-  images: { src: string; alt: string; desc: string }[];
+  images: { src: string; alt: string; desc: string; hash: string }[];
 }
 
 const ProjectInput: React.FC<Props> = ({ info, images }) => {
@@ -40,7 +40,8 @@ const ProjectInput: React.FC<Props> = ({ info, images }) => {
             location: info.location,
             completedYear: info.completedYear,
           }}
-          image={images[0]?.src as string}
+          imagePath={images[0]?.src as string}
+          imageHash={images[0]?.hash as string}
         />
         <AboutDesign
           index={info.index}

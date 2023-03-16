@@ -19,7 +19,7 @@ interface Props {
     location: string;
     completedYear: string;
   };
-  images: { src: string; alt: string; desc: string }[];
+  images: { src: string; alt: string; desc: string; hash: string }[];
 }
 
 const AboutDesign: React.FC<Props> = ({
