@@ -39,7 +39,7 @@ const MastHead: React.FC<Props> = ({
     <>
       <div className="relative mx-5 flex flex-col items-center justify-center max-md:mt-10 max-md:pt-[135px] md:mx-20 md:h-screen">
         {/* Middle */}
-        <div className="flex flex-col text-white max-sm:-mt-20 xl:flex-row xl:items-center xl:justify-center xl:space-x-10">
+        <div className="flex flex-col text-white xl:flex-row xl:items-center xl:justify-center xl:space-x-10">
           {/* Left */}
           <div>
             <div className="">
@@ -68,7 +68,7 @@ const MastHead: React.FC<Props> = ({
           animate={{ opacity: 1 }} */}
           {/* Right */}
           <Fadeup>
-            <div className="h-[300px] md:h-[500px]">
+            <div className="h-[300px] md:h-[400px] md:w-[600px] xl:h-[500px] xl:w-[650px]">
               <BlurhashCanvas
                 hash={imageHash}
                 width={32}
