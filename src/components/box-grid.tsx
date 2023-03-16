@@ -21,7 +21,7 @@ const containerVariants = {
 
 const BoxGrid: React.FC<Props> = ({ children, title }) => {
   const { ref, inView } = useInView({
-    threshold: 0.5, // Trigger when element is 50% visible
+    threshold: 0.1, // Trigger when element is 10% visible
     triggerOnce: true, // Only trigger once
   });
   return (
