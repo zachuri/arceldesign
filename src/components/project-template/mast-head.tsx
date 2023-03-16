@@ -3,7 +3,6 @@ import { IoIosArrowDropright } from "react-icons/io";
 import Image from "next/image";
 import Link from "next/link";
 import Fadeup from "../layouts/fadeup";
-import { BlurhashCanvas } from "react-blurhash";
 import useNextBlurhash from "use-next-blurhash";
 
 interface Props {
@@ -35,7 +34,6 @@ const MastHead: React.FC<Props> = ({
   imageHash,
 }) => {
   const [blurDataUrl] = useNextBlurhash(imageHash);
-
   return (
     <>
       <div className="relative mx-5 flex flex-col items-center justify-center max-md:mt-10 max-md:pt-[135px] md:mx-20 md:h-screen">
@@ -70,16 +68,19 @@ const MastHead: React.FC<Props> = ({
           {/* Right */}
           <div>
             <Fadeup>
-              <div className="relative">
-                <Image
-                  alt={designInfo.name}
-                  src={imagePath}
-                  width={750}
-                  height={500}
-                  placeholder="blur"
-                  blurDataURL={blurDataUrl}
-                />
-              </div>
+              <Image
+                sizes="(max-width: 768px) 100vw,
+                  (max-width: 1200px) 50vw,
+                  33vw"
+                src={imagePath}
+                alt={designInfo.name}
+                width={750}
+                height={500}
+                quality={100}
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={blurDataUrl}
+              />
             </Fadeup>
           </div>
         </div>

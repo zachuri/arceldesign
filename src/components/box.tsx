@@ -43,8 +43,6 @@ const Box = ({
     : (navigate =
         name + "-" + location?.replace(/[,.]+/g, "").replace(/[\s]+/g, "-"));
 
-  // const [blurDataUrl] = useNextBlurhash("LEHV6nWB2yk8pyo0adR*.7kCMdnj");
-
   const { ref, inView } = useInView({
     threshold: 0.5, // Trigger when element is 50% visible
     triggerOnce: true, // Only trigger once
