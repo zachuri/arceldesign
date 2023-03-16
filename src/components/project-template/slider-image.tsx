@@ -53,7 +53,7 @@ const SliderImage: React.FC<Props> = ({ images }) => {
           },
 
           534: {
-            slidesPerView: 1.3,
+            slidesPerView: 1.04,
             spaceBetween: 10,
           },
 
@@ -67,8 +67,48 @@ const SliderImage: React.FC<Props> = ({ images }) => {
             spaceBetween: 10,
           },
 
-          1125: {
-            slidesPerView: 1.35,
+          1154: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
+
+          1286: {
+            slidesPerView: 1.75,
+            spaceBetween: 10,
+          },
+
+          1464: {
+            slidesPerView: 1.85,
+            spaceBetween: 10,
+          },
+
+          1532: {
+            slidesPerView: 1.95,
+            spaceBetween: 10,
+          },
+
+          1622: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+
+          1850: {
+            slidesPerView: 2.1,
+            spaceBetween: 10,
+          },
+
+          2250: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+
+          2500: {
+            slidesPerView: 3.5,
+            spaceBetween: 10,
+          },
+
+          3000: {
+            slidesPerView: 4,
             spaceBetween: 10,
           },
         }}
