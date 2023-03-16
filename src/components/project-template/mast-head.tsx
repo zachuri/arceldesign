@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Fadeup from "../layouts/fadeup";
 import { BlurhashCanvas } from "react-blurhash";
-import useNextBlurhash from "use-next-blurhash";
+// import useNextBlurhash from "use-next-blurhash";
 
 interface Props {
   index: number;
