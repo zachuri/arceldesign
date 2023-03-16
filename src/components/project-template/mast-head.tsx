@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Fadeup from "../layouts/fadeup";
 import { BlurhashCanvas } from "react-blurhash";
+import useNextBlurhash from "use-next-blurhash";
 
 interface Props {
   index: number;
@@ -33,6 +34,8 @@ const MastHead: React.FC<Props> = ({
   imagePath,
   imageHash,
 }) => {
+  const [blurDataUrl] = useNextBlurhash(imageHash);
+
   return (
     <>
       <div className="relative mx-5 flex flex-col items-center justify-center max-md:mt-10 max-md:pt-[135px] md:mx-20 md:h-screen">
@@ -67,27 +70,14 @@ const MastHead: React.FC<Props> = ({
           {/* Right */}
           <div>
             <Fadeup>
-              <div style={{ position: "relative" }}>
-                <BlurhashCanvas
-                  hash={imageHash}
-                  width={32}
-                  height={32}
-                  punch={1}
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    // width: "100%",
-                    // height: "100%",
-                  }}
-                />
+              <div className="relative">
                 <Image
                   alt={designInfo.name}
                   src={imagePath}
                   width={750}
                   height={500}
+                  placeholder="blur"
+                  blurDataURL={blurDataUrl}
                 />
               </div>
             </Fadeup>
