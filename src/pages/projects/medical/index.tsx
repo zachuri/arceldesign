@@ -7,7 +7,7 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 
 type DemoProps = {
-  imgHashes: { src: string; hash: string }[];
+  imgHashed: { src: string; hash: string; alt: string; address: string }[];
 };
 
 export const getStaticProps: GetStaticProps<DemoProps> = async () => {
@@ -18,21 +18,23 @@ export const getStaticProps: GetStaticProps<DemoProps> = async () => {
     hashes[medical[i]?.src as string] = hash;
   }
 
-  const imgHashes = medical
+  const imgHashed = medical
     .filter((img) => hashes[img.src] !== undefined)
     .map((img) => ({
       src: img.src,
+      alt: img.alt,
+      address: img.address,
       hash: hashes[img.src]!,
     }));
 
   return {
     props: {
-      imgHashes,
+      imgHashed,
     },
   };
 };
 
-const Medical: React.FC<DemoProps> = ({ imgHashes }) => {
+const Medical: React.FC<DemoProps> = ({ imgHashed }) => {
   return (
     <div key="medical">
       <Head>
@@ -41,14 +43,14 @@ const Medical: React.FC<DemoProps> = ({ imgHashes }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <BoxGrid title="medical">
-        {medical.map((item, index) => {
+        {imgHashed.map((item) => {
           return (
             <Box
               src={item.src}
               alt={item.alt}
               address={item.address}
               type={"medical"}
-              hash={imgHashes.at(index)?.hash as string}
+              hash={item.hash}
               key={item.src}
             />
           );
