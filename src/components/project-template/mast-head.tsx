@@ -37,7 +37,7 @@ const MastHead: React.FC<Props> = ({
   const [blurDataUrl] = useNextBlurhash(imageHash);
   return (
     <>
-      <div className="relative mx-5 flex flex-col items-center justify-center max-md:mt-10 max-md:pt-[135px] md:mx-20 md:h-screen">
+      <div className="relative mx-5 flex flex-col items-center justify-center max-md:mt-24  md:mx-20 md:h-screen">
         {/* Middle */}
         <div className="flex flex-col text-white xl:flex-row xl:items-center xl:justify-center xl:space-x-10">
           {/* Left */}
