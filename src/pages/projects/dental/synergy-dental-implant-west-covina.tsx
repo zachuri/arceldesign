@@ -24,7 +24,7 @@ const images = [
     desc: "",
   },
   {
-    src: "/assets/dental/d11-5.jpeg",
+    src: "/assets/dental/d11-5.jpg",
     alt: "dental 11 5",
     desc: "",
   },
