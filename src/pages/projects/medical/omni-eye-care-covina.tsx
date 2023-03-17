@@ -5,25 +5,25 @@ import { getBlurhash } from "next-blurhash";
 
 const images = [
   {
-    src: "/assets/medical/m10-1.jpeg",
+    src: "/assets/medical/m10-1.jpg",
     alt: "medical m10 1",
     desc: "",
   },
 
   {
-    src: "/assets/medical/m10-2.jpeg",
+    src: "/assets/medical/m10-2.jpg",
     alt: "medical m10 2",
     desc: "",
   },
 
   {
-    src: "/assets/medical/m10-3.jpeg",
+    src: "/assets/medical/m10-3.jpg",
     alt: "medical m10 3",
     desc: "",
   },
 
   {
-    src: "/assets/medical/m10-4.jpeg",
+    src: "/assets/medical/m10-4.jpg",
     alt: "medical m10 4",
     desc: "",
   },
