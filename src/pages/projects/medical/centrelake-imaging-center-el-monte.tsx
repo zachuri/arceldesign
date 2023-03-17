@@ -6,12 +6,12 @@ import { getBlurhash } from "next-blurhash";
 const images = [
   {
     src: "/assets/medical/m5-1.jpg",
-    alt: "hospitatliy m5 1",
+    alt: "medical m5 1",
     desc: "",
   },
   {
     src: "/assets/medical/m5-2.png",
-    alt: "hospitatliy m5 2",
+    alt: "medical m5 2",
     desc: "",
   },
 ];

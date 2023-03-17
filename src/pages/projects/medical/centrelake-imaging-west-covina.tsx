@@ -6,47 +6,47 @@ import { getBlurhash } from "next-blurhash";
 const images = [
   {
     src: "/assets/medical/m9-1.jpg",
-    alt: "hospitatliy m9 1",
+    alt: "medical m9 1",
     desc: "",
   },
   {
     src: "/assets/medical/m9-2.jpg",
-    alt: "hospitatliy m9 2",
+    alt: "medical m9 2",
     desc: "",
   },
   {
     src: "/assets/medical/m9-3.jpg",
-    alt: "hospitatliy m9 3",
+    alt: "medical m9 3",
     desc: "",
   },
   {
     src: "/assets/medical/m9-4.jpg",
-    alt: "hospitatliy m9 4",
+    alt: "medical m9 4",
     desc: "",
   },
   {
     src: "/assets/medical/m9-5.jpg",
-    alt: "hospitatliy m9 5",
+    alt: "medical m9 5",
     desc: "",
   },
   {
     src: "/assets/medical/m9-6.jpg",
-    alt: "hospitatliy m9 6",
+    alt: "medical m9 6",
     desc: "",
   },
   {
     src: "/assets/medical/m9-7.jpg",
-    alt: "hospitatliy m9 7",
+    alt: "medical m9 7",
     desc: "",
   },
   {
     src: "/assets/medical/m9-8.jpg",
-    alt: "hospitatliy m9 8",
+    alt: "medical m9 8",
     desc: "",
   },
   {
     src: "/assets/medical/m9-9.jpg",
-    alt: "hospitatliy m9 9",
+    alt: "medical m9 9",
     desc: "",
   },
 ];

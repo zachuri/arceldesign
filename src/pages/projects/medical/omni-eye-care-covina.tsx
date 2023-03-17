@@ -5,46 +5,49 @@ import { getBlurhash } from "next-blurhash";
 
 const images = [
   {
-    src: "/assets/medical/m2-1.jpeg",
-    alt: "medical m2 1",
+    src: "/assets/medical/m10-1.jpg",
+    alt: "medical m10 1",
     desc: "",
   },
 
   {
-    src: "/assets/medical/m2-2.jpeg",
-    alt: "medical m2 2",
+    src: "/assets/medical/m10-2.jpg",
+    alt: "medical m10 2",
     desc: "",
   },
 
   {
-    src: "/assets/medical/m2-3.jpeg",
-    alt: "medical m2 3",
+    src: "/assets/medical/m10-3.jpg",
+    alt: "medical m10 3",
     desc: "",
   },
 
   {
-    src: "/assets/medical/m2-4.jpeg",
-    alt: "medical m2 4",
+    src: "/assets/medical/m10-4.jpg",
+    alt: "medical m10 4",
     desc: "",
   },
 
   {
-    src: "/assets/medical/m2-5.jpg",
-    alt: "medical m2 5",
+    src: "/assets/medical/m10-5.jpg",
+    alt: "medical m10 5",
     desc: "",
   },
 ];
 
 const info = {
-  index: 2,
-  name: "Mayflower Medical Group",
+  index: 10,
+  name: "Omni Eye Care",
   type: "Medical",
-  client: "",
-  size: "",
-  location: "Anaheim, California",
-  completedYear: "",
-  title: "",
-  desc: "",
+  client: "Shelly Bagai-Lapsi, MD",
+  size: "1500 sq ft",
+  location: "Covina, California",
+  completedYear: "2013",
+  title: "Design Centered",
+  desc: "Color can transform a space from purely functional to cool and welcoming. \
+  In this practice, the natural light from the skylight and two-tone stone flooring \
+  inspired an uplifting, blue-based color palette. Stunning colorful Artwork in \
+  canvas prints and mosaic glass tile turquoise in color complement calmness and enjoyable environment.",
 };
 
 type DemoProps = {
