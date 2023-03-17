@@ -5,7 +5,7 @@ import { getBlurhash } from "next-blurhash";
 
 const images = [
   {
-    src: "/assets/hospitality/h2.jpg",
+    src: "/assets/hospitality/h2-1.jpg",
     alt: "hospitatliy h2 ",
     desc: "",
   },
