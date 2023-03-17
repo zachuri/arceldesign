@@ -15,7 +15,7 @@ export const getStaticProps: GetStaticProps<DemoProps> = async () => {
     { src: "/assets/dental/d1-1.jpg" },
     { src: "/assets/hospitality/h1-1.jpeg" },
     { src: "/assets/medical/m1-1.jpg" },
-    { src: "/assets/residential/r1.jpg" },
+    { src: "/assets/residential/r1-1.jpg" },
   ];
 
   const hashes: { [src: string]: string | undefined } = {};
@@ -84,7 +84,7 @@ const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
           </div>
           <div className="md:hidden">
             <Box
-              src={"/assets/residential/r1.jpg"}
+              src={"/assets/residential/r1-1.jpg"}
               alt={"residential"}
               address={""}
               type={"projects"}
@@ -98,7 +98,7 @@ const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
             <div className="grid gap-6 md:grid-cols-6">
               <div className="md:col-start-2 md:col-end-4">
                 <Box
-                  src={"/assets/medical/m1.jpg"}
+                  src={"/assets/medical/m1-1.jpg"}
                   alt={"medical"}
                   address={""}
                   type={"projects"}
@@ -107,7 +107,7 @@ const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
               </div>
               <div className="md:col-start-4 md:col-end-6">
                 <Box
-                  src={"/assets/residential/r1.jpg"}
+                  src={"/assets/residential/r1-1.jpg"}
                   alt={"residential"}
                   address={""}
                   type={"projects"}
