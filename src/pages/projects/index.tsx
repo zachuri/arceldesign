@@ -13,8 +13,8 @@ export const getStaticProps: GetStaticProps<DemoProps> = async () => {
   const images = [
     { src: "/assets/corporate/c1-1.jpg" },
     { src: "/assets/dental/d1-1.jpg" },
-    { src: "/assets/hospitality/h1.jpg" },
-    { src: "/assets/medical/m1.jpg" },
+    { src: "/assets/hospitality/h1-1.jpeg" },
+    { src: "/assets/medical/m1-1.jpg" },
     { src: "/assets/residential/r1.jpg" },
   ];
 
@@ -65,7 +65,7 @@ const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
             hash={imgHashes.at(1)?.hash as string}
           />
           <Box
-            src={"/assets/hospitality/h1.jpg"}
+            src={"/assets/hospitality/h1-1.jpeg"}
             alt={"hospitality"}
             address={""}
             type={"projects"}
@@ -75,7 +75,7 @@ const Projects: React.FC<DemoProps> = ({ imgHashes }) => {
           {/* Last two stay hidden when medium and up screen */}
           <div className="md:hidden">
             <Box
-              src={"/assets/medical/m1.jpg"}
+              src={"/assets/medical/m1-1.jpg"}
               alt={"medical"}
               address={""}
               type={"projects"}
