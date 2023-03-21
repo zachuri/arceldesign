@@ -1,7 +1,50 @@
 import React from "react";
-import { AboutLayout } from "../components/layout";
+import { MainLayout } from "../components/layout";
 import Head from "next/head";
 import Fadeup from "../components/layouts/fadeup";
+
+function Title() {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <ul className="flex flex-col items-center justify-center space-y-3">
+        <li className="uppercase">
+          Arcel R Punsalang, CID - Commercial Assoc. IIDA
+        </li>
+        <li>Principal - Lead Designer</li>
+        <li>Adjunct Interior Designer Professor</li>
+        <li>
+          Inland Empire City Center IIDA Student Affairs Liaison 2014-2018
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function Services() {
+  return (
+    <>
+      <h1 className="text-4xl font-bold">Services Focus</h1>
+      <h3 className="text-2xl">Limitless Possibilites</h3>
+      <div>
+        <ul className="list-disc space-y-3">
+          <li>Design Concepts Development</li>
+          <li>Progamming | Space Evaluation</li>
+          <li>Conceptual Space Planning</li>
+          <li>Interior Construction Drawings</li>
+          <li>Interior Finish Specification</li>
+          <li>Furniture, Furnishings, & Equipment</li>
+          <li>Custom Millwork & Drawing Details</li>
+          <li>Engineering Consultant Services</li>
+          <li>Building Permit Processing</li>
+          <li>Project Management</li>
+          <li>Construction Cost Coordination</li>
+          <li>Construction Administration</li>
+          <li>ADA Compliance Evaluation</li>
+        </ul>
+      </div>
+    </>
+  );
+}
 
 const About = () => {
   return (
@@ -12,9 +55,11 @@ const About = () => {
           <meta name="description" content="About" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <AboutLayout>
-          <article className="mx-5 flex flex-col items-center justify-center pt-5 text-[#FFFFFB] md:h-screen">
+        <MainLayout>
+          <article className="mx-5 flex flex-col items-center justify-center pt-5 text-[#FFFFFB]">
             <div className="sm:max-w-2xl">
+              <Title />
+
               <h1 className="my-5 text-3xl font-bold">
                 About ArcelDesign, Inc.
               </h1>
@@ -78,9 +123,10 @@ const About = () => {
                 designs evolve, allowing our work to express the timelessness,
                 simplicity and grace, imbuing our creative genius.
               </p>
+              <Services />
             </div>
           </article>
-        </AboutLayout>
+        </MainLayout>
       </Fadeup>
     </>
   );
