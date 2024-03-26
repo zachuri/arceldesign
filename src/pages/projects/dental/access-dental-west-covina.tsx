@@ -1,38 +1,38 @@
+import { getBlurhash } from "next-blurhash";
 import { GetStaticProps } from "next/types";
 import ProjectInput from "../../../components/project-template/project-input";
-import { getBlurhash } from "next-blurhash";
 
 const images = [
   {
-    src: "/assets/corporate/c6-1.jpg",
-    alt: "corporate 6 1",
+    src: "/assets/dental/d5-1.jpg",
+    alt: "dental 5 1",
     desc: "",
   },
   {
-    src: "/assets/corporate/c6-2.jpg",
-    alt: "corporate 6 2",
+    src: "/assets/dental/d5-2.jpg",
+    alt: "dental 5 2",
     desc: "",
   },
   {
-    src: "/assets/corporate/c6-3.jpg",
-    alt: "corporate 6 3",
+    src: "/assets/dental/d5-3.jpg",
+    alt: "dental 5 3",
     desc: "",
   },
   {
-    src: "/assets/corporate/c6-4.jpg",
-    alt: "corporate 6 4",
+    src: "/assets/dental/d5-4.jpg",
+    alt: "dental 5 4",
     desc: "",
   },
   {
-    src: "/assets/corporate/c6-5.jpg",
-    alt: "corporate 6 5",
+    src: "/assets/dental/d5-5.jpg",
+    alt: "dental 5 5",
     desc: "",
   },
 ];
 
 const info = {
   index: 5,
-  name: "Access Denal",
+  name: "Access Dental",
   type: "Dental",
   client: "Sarah Atendido, DMD",
   size: "1600 sq ft | 4 Chairs",
